@@ -1,7 +1,7 @@
 {
   "name": "Citoyenneté Canadienne - Flashcards",
   "short_name": "Citoyenneté",
-  "start_url": "/index.html",
+  "start_url": "/flashcards-citoyennete/index.html",
   "display": "standalone",
   "background_color": "#f8f9fa",
   "theme_color": "#D80621",
