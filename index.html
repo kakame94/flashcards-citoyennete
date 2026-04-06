@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Citoyenneté">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#D80621">
+  <title>Examen de Citoyennet&eacute; Canadienne - Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23D80621'/><text y='.9em' font-size='90' x='5'>🍁</text></svg>">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div id="app">
+    <!-- HEADER -->
+    <header>
+      <div class="header-content">
+        <h1>🍁 Citoyennet&eacute; Canadienne</h1>
+        <p class="subtitle">Pr&eacute;paration &agrave; l'examen &mdash; D&eacute;couvrir le Canada</p>
+      </div>
+      <nav id="nav-tabs">
+        <button class="tab active" data-mode="flashcard">Flashcards</button>
+        <button class="tab" data-mode="quiz">Quiz QCM</button>
+        <button class="tab" data-mode="exam">Examen simul&eacute;</button>
+        <button class="tab" data-mode="stats">Statistiques</button>
+      </nav>
+    </header>
+
+    <!-- CHAPTER SELECTOR -->
+    <section id="chapter-selector" class="section">
+      <h2>Choisir un chapitre</h2>
+      <div id="chapter-grid" class="chapter-grid"></div>
+      <button id="btn-all-chapters" class="btn btn-primary">Tous les chapitres</button>
+    </section>
+
+    <!-- FLASHCARD MODE -->
+    <section id="flashcard-view" class="section hidden">
+      <div class="progress-bar-container">
+        <div id="flashcard-progress" class="progress-bar"></div>
+      </div>
+      <div class="card-counter">
+        <span id="card-index">1</span> / <span id="card-total">0</span>
+        <span id="mastery-badge" class="mastery-badge"></span>
+      </div>
+      <div id="flashcard" class="flashcard" tabindex="0">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">
+            <p id="flash-question"></p>
+          </div>
+          <div class="flashcard-back">
+            <p id="flash-answer"></p>
+            <p id="flash-explanation" class="explanation"></p>
+          </div>
+        </div>
+      </div>
+      <div class="flashcard-controls">
+        <button id="btn-dont-know" class="btn btn-danger">✗ Je ne sais pas</button>
+        <button id="btn-flip" class="btn btn-secondary">Retourner</button>
+        <button id="btn-know" class="btn btn-success">✓ Je sais</button>
+      </div>
+      <button id="btn-back-flash" class="btn btn-link">← Retour aux chapitres</button>
+    </section>
+
+    <!-- QUIZ MODE -->
+    <section id="quiz-view" class="section hidden">
+      <div class="progress-bar-container">
+        <div id="quiz-progress" class="progress-bar"></div>
+      </div>
+      <div class="card-counter">
+        Question <span id="quiz-index">1</span> / <span id="quiz-total">0</span>
+      </div>
+      <div class="quiz-card">
+        <p id="quiz-question" class="quiz-question"></p>
+        <div id="quiz-choices" class="quiz-choices"></div>
+        <div id="quiz-feedback" class="quiz-feedback hidden"></div>
+        <button id="btn-next-quiz" class="btn btn-primary hidden">Question suivante →</button>
+      </div>
+      <button id="btn-back-quiz" class="btn btn-link">← Retour aux chapitres</button>
+    </section>
+
+    <!-- EXAM MODE -->
+    <section id="exam-view" class="section hidden">
+      <div id="exam-header" class="exam-header">
+        <h2>Examen simul&eacute;</h2>
+        <p>20 questions &mdash; 45 minutes &mdash; 15/20 pour r&eacute;ussir</p>
+        <button id="btn-start-exam" class="btn btn-primary btn-large">Commencer l'examen</button>
+      </div>
+      <div id="exam-active" class="hidden">
+        <div class="exam-timer-bar">
+          <span id="exam-timer" class="exam-timer">45:00</span>
+          <div class="progress-bar-container">
+            <div id="exam-progress" class="progress-bar"></div>
+          </div>
+          <span class="card-counter">Question <span id="exam-index">1</span>/20</span>
+        </div>
+        <div class="quiz-card">
+          <p id="exam-question" class="quiz-question"></p>
+          <div id="exam-choices" class="quiz-choices"></div>
+          <button id="btn-next-exam" class="btn btn-primary">Suivante →</button>
+        </div>
+      </div>
+      <div id="exam-results" class="hidden">
+        <div class="results-card">
+          <h2 id="exam-result-title"></h2>
+          <p id="exam-result-score" class="result-score"></p>
+          <div id="exam-result-details"></div>
+          <button id="btn-retry-exam" class="btn btn-primary">Refaire un examen</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS MODE -->
+    <section id="stats-view" class="section hidden">
+      <h2>Statistiques</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-total-studied">0</div>
+          <div class="stat-label">Cartes &eacute;tudi&eacute;es</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-mastered">0</div>
+          <div class="stat-label">Ma&icirc;tris&eacute;es</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-accuracy">0%</div>
+          <div class="stat-label">Pr&eacute;cision Quiz</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-exams">0</div>
+          <div class="stat-label">Examens pass&eacute;s</div>
+        </div>
+      </div>
+      <h3>Progression par chapitre</h3>
+      <div id="chapter-stats"></div>
+      <h3>Historique des examens</h3>
+      <div id="exam-history"></div>
+      <button id="btn-reset-stats" class="btn btn-danger btn-small">R&eacute;initialiser les statistiques</button>
+    </section>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

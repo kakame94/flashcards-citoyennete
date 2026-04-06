@@ -1,0 +1,667 @@
+{
+  "chapitres": [
+    {
+      "id": "droits-responsabilites",
+      "titre": "Droits et responsabilit\u00e9s",
+      "icone": "\u2696\ufe0f",
+      "cartes": [
+        {
+          "question": "Quels sont les deux documents qui prot\u00e8gent les droits des Canadiens?",
+          "reponse": "La Charte canadienne des droits et libert\u00e9s et la D\u00e9claration canadienne des droits.",
+          "choix": ["La Constitution et le Code civil", "La Charte canadienne des droits et libert\u00e9s et la D\u00e9claration canadienne des droits", "Le Trait\u00e9 de Paris et l'Acte de Qu\u00e9bec", "La Loi sur la citoyennet\u00e9 et la Loi constitutionnelle"],
+          "explication": "La Charte (1982) fait partie de la Constitution. La D\u00e9claration canadienne des droits (1960) a \u00e9t\u00e9 adopt\u00e9e par le Parlement f\u00e9d\u00e9ral."
+        },
+        {
+          "question": "Quelles sont les quatre libert\u00e9s fondamentales prot\u00e9g\u00e9es par la Charte?",
+          "reponse": "Libert\u00e9 de conscience et religion, libert\u00e9 de pens\u00e9e et expression, libert\u00e9 de r\u00e9union pacifique, libert\u00e9 d'association.",
+          "choix": ["Libert\u00e9 de conscience, pens\u00e9e, r\u00e9union pacifique et association", "Libert\u00e9 de presse, parole, religion et mouvement", "Libert\u00e9 de vote, travail, \u00e9ducation et sant\u00e9", "Libert\u00e9 de commerce, religion, expression et propri\u00e9t\u00e9"],
+          "explication": "Ces quatre libert\u00e9s fondamentales sont inscrites \u00e0 l'article 2 de la Charte canadienne des droits et libert\u00e9s."
+        },
+        {
+          "question": "Qu'est-ce que l'\u00e9galit\u00e9 des sexes signifie au Canada?",
+          "reponse": "Les femmes et les hommes sont \u00e9gaux devant la loi.",
+          "choix": ["Les femmes et les hommes sont \u00e9gaux devant la loi", "Les femmes ont plus de droits que les hommes", "L'\u00e9galit\u00e9 s'applique seulement au travail", "C'est un objectif mais pas une loi"],
+          "explication": "L'\u00e9galit\u00e9 des sexes est un droit fondamental au Canada, inscrit dans la Charte."
+        },
+        {
+          "question": "Nommez trois responsabilit\u00e9s de la citoyennet\u00e9 canadienne.",
+          "reponse": "Respecter les lois, voter aux \u00e9lections, servir comme jur\u00e9.",
+          "choix": ["Respecter les lois, voter, servir comme jur\u00e9", "Payer ses imp\u00f4ts, conduire prudemment, recycler", "Parler fran\u00e7ais et anglais, voter, travailler", "Avoir un emploi, payer ses imp\u00f4ts, aller \u00e0 l'\u00e9cole"],
+          "explication": "Autres responsabilit\u00e9s : aider les autres dans la communaut\u00e9 et prot\u00e9ger le patrimoine naturel, culturel et architectural du Canada."
+        },
+        {
+          "question": "Qu'est-ce que le droit de mobilit\u00e9?",
+          "reponse": "Le droit de vivre et de travailler n'importe o\u00f9 au Canada.",
+          "choix": ["Le droit de vivre et travailler n'importe o\u00f9 au Canada", "Le droit de voyager \u00e0 l'\u00e9tranger sans passeport", "Le droit d'utiliser les transports en commun gratuitement", "Le droit de d\u00e9m\u00e9nager dans un autre pays"],
+          "explication": "Les droits de mobilit\u00e9 permettent aux citoyens canadiens de se d\u00e9placer et de s'\u00e9tablir dans toute province ou territoire."
+        },
+        {
+          "question": "Qu'est-ce que le serment de citoyennet\u00e9?",
+          "reponse": "Un serment de fid\u00e9lit\u00e9 au Roi/Reine du Canada que les nouveaux citoyens doivent pr\u00eater.",
+          "choix": ["Un serment de fid\u00e9lit\u00e9 au Roi du Canada", "Un serment de fid\u00e9lit\u00e9 au Premier ministre", "Un serment d'ob\u00e9issance au Parlement", "Un serment de loyaut\u00e9 au drapeau"],
+          "explication": "En pr\u00eatant le serment de citoyennet\u00e9, vous jurez ou affirmez fid\u00e9lit\u00e9 au souverain du Canada."
+        },
+        {
+          "question": "Quels droits linguistiques sont prot\u00e9g\u00e9s au Canada?",
+          "reponse": "Le fran\u00e7ais et l'anglais sont les deux langues officielles du Canada.",
+          "choix": ["Le fran\u00e7ais et l'anglais sont les langues officielles", "Seul l'anglais est la langue officielle", "Chaque province choisit sa langue officielle", "Le fran\u00e7ais, l'anglais et les langues autochtones sont officielles"],
+          "explication": "Le fran\u00e7ais et l'anglais ont un statut \u00e9gal au Parlement et dans le gouvernement f\u00e9d\u00e9ral. Le Nouveau-Brunswick est la seule province officiellement bilingue."
+        },
+        {
+          "question": "Qu'est-ce que le multiculturalisme canadien?",
+          "reponse": "Une politique fondamentale du Canada qui reconna\u00eet et valorise la diversit\u00e9 culturelle.",
+          "choix": ["Une politique qui reconna\u00eet et valorise la diversit\u00e9 culturelle", "Un programme d'immigration", "Un cours obligatoire \u00e0 l'\u00e9cole", "Un minist\u00e8re du gouvernement"],
+          "explication": "Le Canada a \u00e9t\u00e9 le premier pays au monde \u00e0 adopter une politique officielle de multiculturalisme en 1971."
+        },
+        {
+          "question": "\u00c0 partir de quel \u00e2ge le vote est-il un droit au Canada?",
+          "reponse": "18 ans.",
+          "choix": ["16 ans", "18 ans", "19 ans", "21 ans"],
+          "explication": "Tout citoyen canadien de 18 ans ou plus a le droit de voter aux \u00e9lections f\u00e9d\u00e9rales et provinciales."
+        },
+        {
+          "question": "Qu'est-ce que la pr\u00e9somption d'innocence?",
+          "reponse": "Toute personne est consid\u00e9r\u00e9e innocente jusqu'\u00e0 preuve du contraire.",
+          "choix": ["Toute personne est innocente jusqu'\u00e0 preuve du contraire", "La police doit prouver la culpabilit\u00e9 en 24 heures", "L'accus\u00e9 doit prouver son innocence", "Seuls les citoyens b\u00e9n\u00e9ficient de ce droit"],
+          "explication": "C'est un principe fondamental du syst\u00e8me de justice canadien, garanti par la Charte."
+        }
+      ]
+    },
+    {
+      "id": "histoire",
+      "titre": "L'histoire du Canada",
+      "icone": "\ud83d\udcdc",
+      "cartes": [
+        {
+          "question": "Qui sont les trois peuples autochtones reconnus au Canada?",
+          "reponse": "Les Premi\u00e8res Nations, les Inuits et les M\u00e9tis.",
+          "choix": ["Premi\u00e8res Nations, Inuits et M\u00e9tis", "Cris, Algonquins et Iroquois", "Autochtones, Aborig\u00e8nes et Indig\u00e8nes", "Hurons, Mohawks et Inuits"],
+          "explication": "La Constitution canadienne reconna\u00eet trois groupes de peuples autochtones."
+        },
+        {
+          "question": "Qui a explor\u00e9 le Canada pour la France et a donn\u00e9 son nom au pays?",
+          "reponse": "Jacques Cartier.",
+          "choix": ["Samuel de Champlain", "Jacques Cartier", "Jean Cabot", "Pierre de Monts"],
+          "explication": "Jacques Cartier a fait trois voyages en Nouvelle-France entre 1534 et 1542. Le nom \u00abCanada\u00bb vient du mot iroquois \u00abkanata\u00bb signifiant village."
+        },
+        {
+          "question": "Qui est le fondateur de la ville de Qu\u00e9bec en 1608?",
+          "reponse": "Samuel de Champlain.",
+          "choix": ["Jacques Cartier", "Samuel de Champlain", "Louis de Buade", "Paul de Chomedey de Maisonneuve"],
+          "explication": "Champlain est consid\u00e9r\u00e9 comme le \u00abP\u00e8re de la Nouvelle-France\u00bb."
+        },
+        {
+          "question": "En quelle ann\u00e9e la Conf\u00e9d\u00e9ration canadienne a-t-elle eu lieu?",
+          "reponse": "Le 1er juillet 1867.",
+          "choix": ["1er juillet 1867", "1er janvier 1860", "1er juillet 1871", "11 novembre 1867"],
+          "explication": "L'Acte de l'Am\u00e9rique du Nord britannique a cr\u00e9\u00e9 le Dominion du Canada en unissant quatre provinces."
+        },
+        {
+          "question": "Quelles sont les quatre provinces fondatrices de la Conf\u00e9d\u00e9ration?",
+          "reponse": "L'Ontario, le Qu\u00e9bec, la Nouvelle-\u00c9cosse et le Nouveau-Brunswick.",
+          "choix": ["Ontario, Qu\u00e9bec, Nouvelle-\u00c9cosse et Nouveau-Brunswick", "Ontario, Qu\u00e9bec, Manitoba et Colombie-Britannique", "Ontario, Qu\u00e9bec, Nouvelle-\u00c9cosse et \u00cele-du-Prince-\u00c9douard", "Ontario, Qu\u00e9bec, Alberta et Saskatchewan"],
+          "explication": "Ces quatre provinces se sont unies par l'Acte de l'Am\u00e9rique du Nord britannique de 1867."
+        },
+        {
+          "question": "Qui est consid\u00e9r\u00e9 comme le P\u00e8re de la Conf\u00e9d\u00e9ration et premier Premier ministre du Canada?",
+          "reponse": "Sir John A. Macdonald.",
+          "choix": ["Sir Wilfrid Laurier", "Sir John A. Macdonald", "George-\u00c9tienne Cartier", "Alexander Mackenzie"],
+          "explication": "Macdonald a \u00e9t\u00e9 le premier Premier ministre du Canada de 1867 \u00e0 1873, puis de 1878 \u00e0 1891."
+        },
+        {
+          "question": "Qu'est-ce que la Bataille des plaines d'Abraham (1759)?",
+          "reponse": "La bataille d\u00e9cisive o\u00f9 les Britanniques ont vaincu les Fran\u00e7ais \u00e0 Qu\u00e9bec.",
+          "choix": ["Les Britanniques ont vaincu les Fran\u00e7ais \u00e0 Qu\u00e9bec", "Les Fran\u00e7ais ont vaincu les Britanniques", "Les Autochtones ont repouss\u00e9 les Europ\u00e9ens", "Les Am\u00e9ricains ont envahi le Canada"],
+          "explication": "Cette bataille a marqu\u00e9 la fin de la Nouvelle-France. Les g\u00e9n\u00e9raux Wolfe (britannique) et Montcalm (fran\u00e7ais) y sont morts."
+        },
+        {
+          "question": "Que s'est-il pass\u00e9 pendant la guerre de 1812?",
+          "reponse": "Le Canada a repouss\u00e9 l'invasion am\u00e9ricaine, confirmant son existence en tant que pays distinct.",
+          "choix": ["Le Canada a repouss\u00e9 l'invasion am\u00e9ricaine", "Le Canada a d\u00e9clar\u00e9 son ind\u00e9pendance", "La France a repris le Qu\u00e9bec", "Le Canada a rejoint les \u00c9tats-Unis"],
+          "explication": "La guerre de 1812 est un moment cl\u00e9 o\u00f9 les Canadiens (anglophones, francophones et autochtones) se sont battus ensemble contre l'invasion am\u00e9ricaine."
+        },
+        {
+          "question": "Qu'est-ce que l'Acte de l'Am\u00e9rique du Nord britannique?",
+          "reponse": "La loi de 1867 qui a cr\u00e9\u00e9 le Canada en tant que f\u00e9d\u00e9ration.",
+          "choix": ["La loi de 1867 cr\u00e9ant le Canada comme f\u00e9d\u00e9ration", "Un trait\u00e9 entre la France et l'Angleterre", "La d\u00e9claration d'ind\u00e9pendance du Canada", "Un accord commercial avec les \u00c9tats-Unis"],
+          "explication": "L'AANB, aussi appel\u00e9 Loi constitutionnelle de 1867, a \u00e9tabli la structure f\u00e9d\u00e9rale du Canada."
+        },
+        {
+          "question": "En quelle ann\u00e9e les femmes ont-elles obtenu le droit de vote au f\u00e9d\u00e9ral?",
+          "reponse": "En 1918.",
+          "choix": ["1867", "1900", "1918", "1940"],
+          "explication": "Les femmes ont obtenu le droit de vote aux \u00e9lections f\u00e9d\u00e9rales en 1918. Au Qu\u00e9bec, au niveau provincial, ce fut en 1940."
+        },
+        {
+          "question": "Qu'est-ce que la traite des fourrures?",
+          "reponse": "Le commerce de fourrures entre les Autochtones et les Europ\u00e9ens, moteur \u00e9conomique de la Nouvelle-France.",
+          "choix": ["Le commerce de fourrures entre Autochtones et Europ\u00e9ens", "Un imp\u00f4t sur les v\u00eatements en fourrure", "Un accord commercial avec la Chine", "Une loi prot\u00e9geant les animaux"],
+          "explication": "La traite des fourrures a \u00e9t\u00e9 le moteur \u00e9conomique de la colonisation fran\u00e7aise et la Compagnie de la Baie d'Hudson en \u00e9tait un acteur majeur."
+        },
+        {
+          "question": "Qui \u00e9taient les Loyalistes?",
+          "reponse": "Des colons am\u00e9ricains fid\u00e8les \u00e0 la Couronne britannique qui ont fui aux Canada apr\u00e8s la R\u00e9volution am\u00e9ricaine.",
+          "choix": ["Des colons am\u00e9ricains fid\u00e8les \u00e0 la Couronne britannique", "Des soldats fran\u00e7ais de la Nouvelle-France", "Des marchands de fourrures hollandais", "Des missionnaires catholiques"],
+          "explication": "Les Loyalistes ont contribu\u00e9 \u00e0 la fondation de l'Ontario et du Nouveau-Brunswick et ont renforc\u00e9 la pr\u00e9sence anglophone au Canada."
+        },
+        {
+          "question": "Qu'est-ce que le chemin de fer du Canadien Pacifique?",
+          "reponse": "Le chemin de fer transcontinental achev\u00e9 en 1885 reliant l'est \u00e0 l'ouest du Canada.",
+          "choix": ["Le chemin de fer transcontinental achev\u00e9 en 1885", "Un r\u00e9seau de m\u00e9tro \u00e0 Montr\u00e9al", "Un train entre le Canada et les \u00c9tats-Unis", "Un projet abandonn\u00e9 en 1900"],
+          "explication": "Le CPR a \u00e9t\u00e9 essentiel pour unifier le pays et pour l'entr\u00e9e de la Colombie-Britannique dans la Conf\u00e9d\u00e9ration."
+        },
+        {
+          "question": "Que comm\u00e9more le jour du Souvenir (11 novembre)?",
+          "reponse": "Les sacrifices des Canadiens qui ont servi dans les forces arm\u00e9es en temps de guerre.",
+          "choix": ["Les sacrifices des Canadiens dans les forces arm\u00e9es", "La fondation du Canada", "L'ind\u00e9pendance du Canada", "La fin de la Premi\u00e8re Guerre mondiale uniquement"],
+          "explication": "Le coquelicot est port\u00e9 en m\u00e9moire des soldats canadiens. La minute de silence est observ\u00e9e \u00e0 11h le 11 novembre."
+        },
+        {
+          "question": "Quelle bataille est consid\u00e9r\u00e9e comme un moment d\u00e9finissant le Canada durant la Premi\u00e8re Guerre mondiale?",
+          "reponse": "La bataille de la cr\u00eate de Vimy (1917).",
+          "choix": ["La bataille de la cr\u00eate de Vimy", "La bataille de Normandie", "La bataille de Passchendaele", "La bataille de l'Atlantique"],
+          "explication": "La prise de la cr\u00eate de Vimy en avril 1917 est souvent consid\u00e9r\u00e9e comme le moment o\u00f9 le Canada est devenu une nation \u00e0 part enti\u00e8re."
+        },
+        {
+          "question": "Quel r\u00f4le le Canada a-t-il jou\u00e9 lors du jour J (6 juin 1944)?",
+          "reponse": "Les Canadiens ont d\u00e9barqu\u00e9 sur la plage Juno en Normandie.",
+          "choix": ["D\u00e9barquement sur la plage Juno en Normandie", "D\u00e9barquement sur la plage Omaha", "Bombardement a\u00e9rien de Berlin", "Lib\u00e9ration de Paris"],
+          "explication": "Le Canada a contribu\u00e9 de mani\u00e8re importante au d\u00e9barquement de Normandie. Les forces canadiennes ont \u00e9galement lib\u00e9r\u00e9 les Pays-Bas."
+        },
+        {
+          "question": "Qu'est-ce que le Statut de Westminster de 1931?",
+          "reponse": "La loi qui a accord\u00e9 au Canada son autonomie l\u00e9gislative par rapport \u00e0 la Grande-Bretagne.",
+          "choix": ["L'autonomie l\u00e9gislative du Canada par rapport \u00e0 la Grande-Bretagne", "L'ind\u00e9pendance compl\u00e8te du Canada", "La cr\u00e9ation de la Cour supr\u00eame", "L'adoption du drapeau canadien"],
+          "explication": "Le Statut de Westminster a donn\u00e9 au Canada et aux autres dominions britanniques le pouvoir de faire leurs propres lois."
+        },
+        {
+          "question": "En quelle ann\u00e9e la Constitution canadienne a-t-elle \u00e9t\u00e9 rapatri\u00e9e?",
+          "reponse": "En 1982.",
+          "choix": ["1967", "1975", "1982", "1990"],
+          "explication": "Le rapatriement de la Constitution en 1982 sous Pierre Elliott Trudeau a inclus la Charte canadienne des droits et libert\u00e9s."
+        },
+        {
+          "question": "Qui \u00e9tait Louis Riel?",
+          "reponse": "Le chef m\u00e9tis qui a men\u00e9 les r\u00e9bellions de la Rivi\u00e8re-Rouge (1869-70) et du Nord-Ouest (1885).",
+          "choix": ["Chef m\u00e9tis des r\u00e9bellions de la Rivi\u00e8re-Rouge et du Nord-Ouest", "Le premier Premier ministre francophone", "Un explorateur de l'Arctique", "Le fondateur de la GRC"],
+          "explication": "Louis Riel a d\u00e9fendu les droits des M\u00e9tis et a fond\u00e9 le Manitoba. Il a \u00e9t\u00e9 pendu pour haute trahison en 1885."
+        },
+        {
+          "question": "Qu'est-ce que la Grande D\u00e9pression au Canada?",
+          "reponse": "Une crise \u00e9conomique majeure des ann\u00e9es 1930 avec un ch\u00f4mage massif.",
+          "choix": ["Crise \u00e9conomique des ann\u00e9es 1930 avec ch\u00f4mage massif", "Une r\u00e9cession dans les ann\u00e9es 1970", "La crise financi\u00e8re de 2008", "Une p\u00e9riode de s\u00e9cheresse dans les Prairies"],
+          "explication": "La Grande D\u00e9pression a touch\u00e9 tout le Canada et a men\u00e9 \u00e0 la cr\u00e9ation de programmes sociaux comme l'assurance-ch\u00f4mage."
+        }
+      ]
+    },
+    {
+      "id": "gouvernement",
+      "titre": "Le gouvernement f\u00e9d\u00e9ral",
+      "icone": "\ud83c\udfe9",
+      "cartes": [
+        {
+          "question": "Quel est le syst\u00e8me de gouvernement du Canada?",
+          "reponse": "Une monarchie constitutionnelle, une d\u00e9mocratie parlementaire et une f\u00e9d\u00e9ration.",
+          "choix": ["Monarchie constitutionnelle, d\u00e9mocratie parlementaire et f\u00e9d\u00e9ration", "R\u00e9publique f\u00e9d\u00e9rale et d\u00e9mocratie directe", "Monarchie absolue et f\u00e9d\u00e9ration", "R\u00e9publique parlementaire et \u00c9tat unitaire"],
+          "explication": "Le Canada combine ces trois \u00e9l\u00e9ments dans son syst\u00e8me de gouvernement."
+        },
+        {
+          "question": "Qui est le chef d'\u00c9tat du Canada?",
+          "reponse": "Le Roi ou la Reine du Canada (le souverain britannique).",
+          "choix": ["Le Roi du Canada", "Le Premier ministre", "Le Gouverneur g\u00e9n\u00e9ral", "Le pr\u00e9sident du S\u00e9nat"],
+          "explication": "Le souverain est repr\u00e9sent\u00e9 au Canada par le Gouverneur g\u00e9n\u00e9ral au niveau f\u00e9d\u00e9ral et par les lieutenants-gouverneurs au niveau provincial."
+        },
+        {
+          "question": "Quel est le r\u00f4le du Gouverneur g\u00e9n\u00e9ral?",
+          "reponse": "Repr\u00e9senter le souverain au Canada.",
+          "choix": ["Repr\u00e9senter le souverain au Canada", "Diriger le gouvernement", "Pr\u00e9sider la Chambre des communes", "\u00c9crire les lois"],
+          "explication": "Le Gouverneur g\u00e9n\u00e9ral donne la sanction royale aux projets de loi adopt\u00e9s par le Parlement pour qu'ils deviennent des lois."
+        },
+        {
+          "question": "Quelles sont les trois parties du Parlement canadien?",
+          "reponse": "Le souverain (repr\u00e9sent\u00e9 par le Gouverneur g\u00e9n\u00e9ral), le S\u00e9nat et la Chambre des communes.",
+          "choix": ["Le souverain, le S\u00e9nat et la Chambre des communes", "Le Premier ministre, le S\u00e9nat et la Cour supr\u00eame", "Le Gouverneur g\u00e9n\u00e9ral, le Cabinet et le S\u00e9nat", "La Chambre des communes, le S\u00e9nat et le Cabinet"],
+          "explication": "Le Parlement est bicam\u00e9ral, avec le S\u00e9nat (chambre haute) et la Chambre des communes (chambre basse)."
+        },
+        {
+          "question": "Comment les s\u00e9nateurs sont-ils choisis?",
+          "reponse": "Ils sont nomm\u00e9s par le Gouverneur g\u00e9n\u00e9ral sur recommandation du Premier ministre.",
+          "choix": ["Nomm\u00e9s par le Gouverneur g\u00e9n\u00e9ral sur recommandation du PM", "\u00c9lus par le peuple", "Nomm\u00e9s par les provinces", "S\u00e9lectionn\u00e9s par la Cour supr\u00eame"],
+          "explication": "Les s\u00e9nateurs si\u00e8gent jusqu'\u00e0 l'\u00e2ge de 75 ans. Le S\u00e9nat compte 105 si\u00e8ges."
+        },
+        {
+          "question": "Qui est le chef du gouvernement du Canada?",
+          "reponse": "Le Premier ministre.",
+          "choix": ["Le Roi", "Le Gouverneur g\u00e9n\u00e9ral", "Le Premier ministre", "Le pr\u00e9sident de la Chambre des communes"],
+          "explication": "Le Premier ministre est le chef du parti ayant le plus de si\u00e8ges \u00e0 la Chambre des communes."
+        },
+        {
+          "question": "Qu'est-ce que le Cabinet?",
+          "reponse": "Un groupe de ministres choisis par le Premier ministre pour diriger les minist\u00e8res f\u00e9d\u00e9raux.",
+          "choix": ["Groupe de ministres choisis par le PM", "Les juges de la Cour supr\u00eame", "Les s\u00e9nateurs les plus exp\u00e9riment\u00e9s", "Les d\u00e9put\u00e9s de l'opposition"],
+          "explication": "Les ministres du Cabinet sont responsables devant le Parlement et g\u00e8rent les minist\u00e8res du gouvernement f\u00e9d\u00e9ral."
+        },
+        {
+          "question": "Qu'est-ce qu'un gouvernement minoritaire?",
+          "reponse": "Un gouvernement form\u00e9 par un parti qui a le plus de si\u00e8ges mais pas la majorit\u00e9 absolue.",
+          "choix": ["Un parti avec le plus de si\u00e8ges sans majorit\u00e9 absolue", "Un gouvernement avec moins de 10 d\u00e9put\u00e9s", "Un gouvernement provincial", "Un gouvernement de coalition obligatoire"],
+          "explication": "Un gouvernement minoritaire doit obtenir l'appui d'autres partis pour faire adopter ses lois."
+        },
+        {
+          "question": "Qu'est-ce que l'opposition officielle?",
+          "reponse": "Le parti ayant le deuxi\u00e8me plus grand nombre de si\u00e8ges \u00e0 la Chambre des communes.",
+          "choix": ["Le parti avec le 2e plus grand nombre de si\u00e8ges", "Tous les partis sauf le parti au pouvoir", "Le S\u00e9nat", "Les m\u00e9dias"],
+          "explication": "Le chef de l'opposition officielle est consid\u00e9r\u00e9 comme le \u00abpremier ministre en attente\u00bb."
+        },
+        {
+          "question": "Combien y a-t-il de provinces et de territoires au Canada?",
+          "reponse": "10 provinces et 3 territoires.",
+          "choix": ["10 provinces et 3 territoires", "12 provinces et 2 territoires", "13 provinces", "10 provinces et 2 territoires"],
+          "explication": "Les 3 territoires sont le Yukon, les Territoires du Nord-Ouest et le Nunavut."
+        },
+        {
+          "question": "Quels sont les trois niveaux de gouvernement au Canada?",
+          "reponse": "F\u00e9d\u00e9ral, provincial/territorial et municipal.",
+          "choix": ["F\u00e9d\u00e9ral, provincial et municipal", "National et r\u00e9gional seulement", "F\u00e9d\u00e9ral, s\u00e9natorial et communal", "National, provincial et cantonal"],
+          "explication": "Chaque niveau de gouvernement a ses propres responsabilit\u00e9s d\u00e9finies par la Constitution."
+        },
+        {
+          "question": "Que sont les responsabilit\u00e9s du gouvernement f\u00e9d\u00e9ral?",
+          "reponse": "D\u00e9fense, commerce international, immigration, droit criminel, entre autres.",
+          "choix": ["D\u00e9fense, commerce international, immigration, droit criminel", "\u00c9ducation, sant\u00e9 et routes", "Collecte des ordures et biblioth\u00e8ques", "Transport en commun et pompiers"],
+          "explication": "Le gouvernement f\u00e9d\u00e9ral s'occupe aussi de la politique \u00e9trang\u00e8re, des postes, de la monnaie et des banques."
+        },
+        {
+          "question": "Que sont les responsabilit\u00e9s des gouvernements provinciaux?",
+          "reponse": "\u00c9ducation, sant\u00e9, routes, droits de propri\u00e9t\u00e9 et droits civils.",
+          "choix": ["\u00c9ducation, sant\u00e9, routes, propri\u00e9t\u00e9 et droits civils", "D\u00e9fense et affaires \u00e9trang\u00e8res", "Immigration et commerce", "Monnaie et postes"],
+          "explication": "Les provinces g\u00e8rent aussi les ressources naturelles, les h\u00f4pitaux et l'administration de la justice."
+        },
+        {
+          "question": "O\u00f9 si\u00e8ge le Parlement du Canada?",
+          "reponse": "\u00c0 Ottawa, Ontario.",
+          "choix": ["\u00c0 Ottawa, Ontario", "\u00c0 Toronto, Ontario", "\u00c0 Montr\u00e9al, Qu\u00e9bec", "\u00c0 Qu\u00e9bec, Qu\u00e9bec"],
+          "explication": "Ottawa est la capitale du Canada depuis 1857, choisie par la Reine Victoria."
+        },
+        {
+          "question": "Qu'est-ce qu'une motion de censure (ou de non-confiance)?",
+          "reponse": "Un vote \u00e0 la Chambre des communes qui peut forcer le gouvernement \u00e0 d\u00e9missionner.",
+          "choix": ["Un vote pouvant forcer le gouvernement \u00e0 d\u00e9missionner", "Un vote pour \u00e9lire le Premier ministre", "Un vote pour modifier la Constitution", "Un vote pour approuver le budget"],
+          "explication": "Si le gouvernement perd une motion de confiance, il doit d\u00e9missionner ou demander la dissolution du Parlement."
+        }
+      ]
+    },
+    {
+      "id": "elections",
+      "titre": "Les \u00e9lections f\u00e9d\u00e9rales",
+      "icone": "\ud83d\uddf3\ufe0f",
+      "cartes": [
+        {
+          "question": "Quel type de scrutin est utilis\u00e9 aux \u00e9lections f\u00e9d\u00e9rales canadiennes?",
+          "reponse": "Le scrutin uninominal majoritaire \u00e0 un tour (le candidat avec le plus de votes gagne).",
+          "choix": ["Scrutin uninominal majoritaire \u00e0 un tour", "Repr\u00e9sentation proportionnelle", "Scrutin \u00e0 deux tours", "Vote pr\u00e9f\u00e9rentiel"],
+          "explication": "Chaque circonscription \u00e9lit un seul d\u00e9put\u00e9. Le candidat avec le plus de voix remporte le si\u00e8ge."
+        },
+        {
+          "question": "Qu'est-ce qu'une circonscription \u00e9lectorale?",
+          "reponse": "Une r\u00e9gion g\u00e9ographique repr\u00e9sent\u00e9e par un d\u00e9put\u00e9 \u00e0 la Chambre des communes.",
+          "choix": ["Une r\u00e9gion g\u00e9ographique repr\u00e9sent\u00e9e par un d\u00e9put\u00e9", "Une province enti\u00e8re", "Un bureau de vote", "Un parti politique"],
+          "explication": "Le Canada est divis\u00e9 en 338 circonscriptions \u00e9lectorales (aussi appel\u00e9es \u00abcomt\u00e9s\u00bb)."
+        },
+        {
+          "question": "Qui a le droit de voter aux \u00e9lections f\u00e9d\u00e9rales?",
+          "reponse": "Tout citoyen canadien de 18 ans ou plus.",
+          "choix": ["Tout citoyen canadien de 18 ans ou plus", "Tout r\u00e9sident permanent de 18 ans ou plus", "Tout citoyen de 16 ans ou plus", "Seulement les propri\u00e9taires fonciers"],
+          "explication": "Le droit de vote est r\u00e9serv\u00e9 aux citoyens canadiens. Les r\u00e9sidents permanents ne peuvent pas voter."
+        },
+        {
+          "question": "Comment s'appelle la liste des \u00e9lecteurs admissibles?",
+          "reponse": "Le Registre national des \u00e9lecteurs.",
+          "choix": ["Le Registre national des \u00e9lecteurs", "La Liste \u00e9lectorale municipale", "Le Recensement canadien", "Le R\u00e9pertoire des citoyens"],
+          "explication": "\u00c9lections Canada tient \u00e0 jour le Registre national des \u00e9lecteurs pour les \u00e9lections f\u00e9d\u00e9rales."
+        },
+        {
+          "question": "Qu'est-ce qu'un vote secret?",
+          "reponse": "Personne ne peut regarder comment vous votez et personne ne devrait essayer de savoir pour qui vous avez vot\u00e9.",
+          "choix": ["Personne ne peut voir ou demander pour qui vous votez", "Vous devez voter en ligne de chez vous", "Seul le juge peut voir votre vote", "Vous ne pouvez pas dire pour qui vous avez vot\u00e9"],
+          "explication": "Le vote secret est un principe fondamental de la d\u00e9mocratie canadienne qui prot\u00e8ge les \u00e9lecteurs."
+        },
+        {
+          "question": "Combien de temps dure normalement un mandat entre deux \u00e9lections f\u00e9d\u00e9rales?",
+          "reponse": "Un maximum de 4 ans (avec \u00e9lections \u00e0 date fixe), mais le Parlement peut \u00eatre dissous plus t\u00f4t.",
+          "choix": ["Maximum 4 ans, dissolution possible avant", "Exactement 5 ans", "3 ans", "Le PM d\u00e9cide sans limite"],
+          "explication": "Depuis 2007, les \u00e9lections f\u00e9d\u00e9rales \u00e0 date fixe sont pr\u00e9vues tous les quatre ans, le troisi\u00e8me lundi d'octobre."
+        },
+        {
+          "question": "Qui est \u00c9lections Canada?",
+          "reponse": "L'organisme ind\u00e9pendant charg\u00e9 d'organiser les \u00e9lections f\u00e9d\u00e9rales.",
+          "choix": ["L'organisme ind\u00e9pendant organisant les \u00e9lections f\u00e9d\u00e9rales", "Un parti politique", "Un comit\u00e9 du S\u00e9nat", "Un minist\u00e8re du gouvernement"],
+          "explication": "\u00c9lections Canada est dirig\u00e9 par le Directeur g\u00e9n\u00e9ral des \u00e9lections, ind\u00e9pendant du gouvernement."
+        },
+        {
+          "question": "Comment peut-on se porter candidat aux \u00e9lections f\u00e9d\u00e9rales?",
+          "reponse": "Tout citoyen canadien de 18 ans ou plus peut se pr\u00e9senter.",
+          "choix": ["Tout citoyen de 18 ans ou plus peut se pr\u00e9senter", "Il faut \u00eatre membre d'un parti politique", "Il faut avoir 25 ans ou plus", "Il faut \u00eatre n\u00e9 au Canada"],
+          "explication": "Les candidats peuvent se pr\u00e9senter sous la banni\u00e8re d'un parti ou comme candidats ind\u00e9pendants."
+        }
+      ]
+    },
+    {
+      "id": "justice",
+      "titre": "Le syst\u00e8me de justice",
+      "icone": "\ud83d\udce6",
+      "cartes": [
+        {
+          "question": "Quel est le plus haut tribunal du Canada?",
+          "reponse": "La Cour supr\u00eame du Canada.",
+          "choix": ["La Cour supr\u00eame du Canada", "La Cour f\u00e9d\u00e9rale", "La Cour d'appel de l'Ontario", "Le Tribunal des droits de la personne"],
+          "explication": "La Cour supr\u00eame est compos\u00e9e de 9 juges, dont 3 doivent venir du Qu\u00e9bec."
+        },
+        {
+          "question": "Qu'est-ce que la primaut\u00e9 du droit?",
+          "reponse": "Le principe selon lequel personne n'est au-dessus de la loi, y compris le gouvernement.",
+          "choix": ["Personne n'est au-dessus de la loi, m\u00eame le gouvernement", "Le droit le plus ancien est le plus important", "Les juges ont le pouvoir supr\u00eame", "La Constitution peut \u00eatre modifi\u00e9e par le PM"],
+          "explication": "La primaut\u00e9 du droit est un principe fondamental de la d\u00e9mocratie canadienne."
+        },
+        {
+          "question": "Qu'est-ce que le devoir de jur\u00e9?",
+          "reponse": "L'obligation pour les citoyens de servir dans un jury si appel\u00e9s \u00e0 le faire.",
+          "choix": ["L'obligation de servir dans un jury si appel\u00e9", "Le droit de refuser de t\u00e9moigner", "Le devoir de d\u00e9noncer les crimes", "L'obligation de voter"],
+          "explication": "Servir comme jur\u00e9 est une responsabilit\u00e9 civique de la citoyennet\u00e9 canadienne."
+        },
+        {
+          "question": "Qui nomme les juges de la Cour supr\u00eame?",
+          "reponse": "Le Gouverneur g\u00e9n\u00e9ral sur recommandation du Premier ministre.",
+          "choix": ["Le Gouverneur g\u00e9n\u00e9ral sur recommandation du PM", "Le peuple par \u00e9lection", "Le S\u00e9nat", "Les provinces"],
+          "explication": "Les juges de la Cour supr\u00eame si\u00e8gent jusqu'\u00e0 l'\u00e2ge de 75 ans."
+        },
+        {
+          "question": "Quels sont les deux types de droit pratiqu\u00e9s au Canada?",
+          "reponse": "Le droit civil (Qu\u00e9bec) et la common law (reste du Canada).",
+          "choix": ["Droit civil au Qu\u00e9bec et common law ailleurs", "Droit p\u00e9nal et droit civil partout", "Common law partout au Canada", "Droit fran\u00e7ais et droit am\u00e9ricain"],
+          "explication": "Le Qu\u00e9bec utilise le Code civil inspir\u00e9 du droit fran\u00e7ais. Les autres provinces utilisent la common law d'origine britannique."
+        },
+        {
+          "question": "Qu'est-ce que l'habeas corpus?",
+          "reponse": "Le droit de ne pas \u00eatre d\u00e9tenu ill\u00e9galement et d'\u00eatre pr\u00e9sent\u00e9 devant un juge.",
+          "choix": ["Le droit de ne pas \u00eatre d\u00e9tenu ill\u00e9galement", "Le droit de garder le silence", "Le droit \u00e0 un avocat gratuit", "Le droit de faire appel"],
+          "explication": "L'habeas corpus est un droit fondamental h\u00e9rit\u00e9 de la tradition juridique britannique, prot\u00e9g\u00e9 par la Charte."
+        }
+      ]
+    },
+    {
+      "id": "symboles",
+      "titre": "Les symboles canadiens",
+      "icone": "\ud83c\udde8\ud83c\udde6",
+      "cartes": [
+        {
+          "question": "Quel est l'hymne national du Canada?",
+          "reponse": "\u00d4 Canada.",
+          "choix": ["\u00d4 Canada", "God Save the King", "Le Chant du Canada", "Terre de nos a\u00efeux"],
+          "explication": "\u00d4 Canada a \u00e9t\u00e9 adopt\u00e9 comme hymne national officiel en 1980. Il a \u00e9t\u00e9 compos\u00e9 en 1880."
+        },
+        {
+          "question": "Quel est le symbole qui appara\u00eet sur le drapeau canadien?",
+          "reponse": "La feuille d'\u00e9rable rouge.",
+          "choix": ["La feuille d'\u00e9rable rouge", "Le castor", "La fleur de lys", "L'ours polaire"],
+          "explication": "Le drapeau actuel \u00e0 la feuille d'\u00e9rable a \u00e9t\u00e9 adopt\u00e9 en 1965."
+        },
+        {
+          "question": "Quel animal est un symbole officiel du Canada?",
+          "reponse": "Le castor.",
+          "choix": ["Le castor", "L'orignal", "L'ours polaire", "Le caribou"],
+          "explication": "Le castor est un symbole de souverainet\u00e9 du Canada et rappelle l'importance historique de la traite des fourrures."
+        },
+        {
+          "question": "Quelles sont les couleurs officielles du Canada?",
+          "reponse": "Le rouge et le blanc.",
+          "choix": ["Rouge et blanc", "Rouge et bleu", "Blanc et bleu", "Rouge, blanc et bleu"],
+          "explication": "Les couleurs nationales du Canada sont le rouge et le blanc depuis 1921."
+        },
+        {
+          "question": "Quelle est la devise nationale du Canada?",
+          "reponse": "A Mari Usque Ad Mare (D'un oc\u00e9an \u00e0 l'autre).",
+          "choix": ["A Mari Usque Ad Mare (D'un oc\u00e9an \u00e0 l'autre)", "In God We Trust (En Dieu nous croyons)", "Je me souviens", "Unity in Diversity (Unit\u00e9 dans la diversit\u00e9)"],
+          "explication": "Cette devise latine refl\u00e8te l'\u00e9tendue g\u00e9ographique du Canada, de l'Atlantique au Pacifique."
+        },
+        {
+          "question": "Que repr\u00e9sente la Couronne au Canada?",
+          "reponse": "Le gouvernement, y compris le Parlement, les l\u00e9gislatures, les tribunaux, les forces de police et les forces arm\u00e9es.",
+          "choix": ["Le gouvernement et toutes ses institutions", "Seulement la famille royale", "Le Premier ministre", "Le drapeau canadien"],
+          "explication": "La Couronne est le symbole de l'autorit\u00e9 de l'\u00c9tat canadien."
+        },
+        {
+          "question": "En quelle ann\u00e9e le drapeau canadien actuel a-t-il \u00e9t\u00e9 adopt\u00e9?",
+          "reponse": "En 1965.",
+          "choix": ["1867", "1921", "1965", "1982"],
+          "explication": "Le drapeau unifoli\u00e9 a remplac\u00e9 le Red Ensign canadien le 15 f\u00e9vrier 1965."
+        },
+        {
+          "question": "Quelle est la fleur embl\u00e8me national du Canada?",
+          "reponse": "La feuille d'\u00e9rable (il n'y a pas de fleur officielle unique, mais le symbole floral est la feuille d'\u00e9rable).",
+          "choix": ["La feuille d'\u00e9rable", "La rose", "Le lys", "Le tr\u00e8fle"],
+          "explication": "La feuille d'\u00e9rable est le symbole canadien le plus reconnaissable au monde."
+        },
+        {
+          "question": "Que c\u00e9l\u00e8bre-t-on le 1er juillet?",
+          "reponse": "La f\u00eate du Canada (anciennement le Jour de la Conf\u00e9d\u00e9ration).",
+          "choix": ["La f\u00eate du Canada", "La f\u00eate de la Reine", "Le jour du Souvenir", "La f\u00eate de l'Ind\u00e9pendance"],
+          "explication": "Le 1er juillet c\u00e9l\u00e8bre l'anniversaire de la Conf\u00e9d\u00e9ration de 1867."
+        },
+        {
+          "question": "Que c\u00e9l\u00e8bre-t-on le jour de la Reine/du Roi (lundi pr\u00e9c\u00e9dant le 25 mai)?",
+          "reponse": "L'anniversaire officiel du souverain.",
+          "choix": ["L'anniversaire officiel du souverain", "La fondation du Canada", "La Conf\u00e9d\u00e9ration", "Le d\u00e9but de l'\u00e9t\u00e9"],
+          "explication": "C'est aussi la f\u00eate de la Reine Victoria, sous le r\u00e8gne de qui le Canada est devenu une f\u00e9d\u00e9ration."
+        }
+      ]
+    },
+    {
+      "id": "economie",
+      "titre": "L'\u00e9conomie canadienne",
+      "icone": "\ud83d\udcb0",
+      "cartes": [
+        {
+          "question": "Quels sont les principaux secteurs de l'\u00e9conomie canadienne?",
+          "reponse": "Les ressources naturelles, la fabrication, les services et la technologie.",
+          "choix": ["Ressources naturelles, fabrication, services et technologie", "Agriculture uniquement", "P\u00e9trole et gaz seulement", "Tourisme et agriculture"],
+          "explication": "Le Canada est l'un des pays les plus riches du monde avec une \u00e9conomie diversifi\u00e9e."
+        },
+        {
+          "question": "Quelle industrie a \u00e9t\u00e9 historiquement la plus importante au Canada?",
+          "reponse": "L'industrie des ressources naturelles (foresterie, mines, p\u00eache, \u00e9nergie).",
+          "choix": ["Les ressources naturelles", "L'automobile", "Le textile", "La finance"],
+          "explication": "Le Canada est un grand exportateur de ressources naturelles, incluant le p\u00e9trole, le gaz, les min\u00e9raux et le bois."
+        },
+        {
+          "question": "Quels sont les principaux partenaires commerciaux du Canada?",
+          "reponse": "Les \u00c9tats-Unis sont de loin le principal partenaire commercial.",
+          "choix": ["Les \u00c9tats-Unis", "La Chine", "Le Royaume-Uni", "La France"],
+          "explication": "Les \u00c9tats-Unis repr\u00e9sentent la majorit\u00e9 du commerce international du Canada."
+        },
+        {
+          "question": "Qu'est-ce que l'ACEUM (anciennement ALENA)?",
+          "reponse": "L'Accord Canada-\u00c9tats-Unis-Mexique, un accord de libre-\u00e9change nord-am\u00e9ricain.",
+          "choix": ["Accord de libre-\u00e9change Canada-\u00c9tats-Unis-Mexique", "Alliance militaire nord-am\u00e9ricaine", "Accord environnemental continental", "Trait\u00e9 d'immigration tripartite"],
+          "explication": "L'ACEUM a remplac\u00e9 l'ALENA en 2020 et r\u00e9git le commerce entre les trois pays."
+        },
+        {
+          "question": "Quelle province est le principal producteur de p\u00e9trole au Canada?",
+          "reponse": "L'Alberta.",
+          "choix": ["L'Alberta", "La Saskatchewan", "Terre-Neuve-et-Labrador", "La Colombie-Britannique"],
+          "explication": "L'Alberta poss\u00e8de les sables bitumineux et est le coeur de l'industrie p\u00e9troli\u00e8re canadienne."
+        },
+        {
+          "question": "Qu'est-ce que la Banque du Canada?",
+          "reponse": "La banque centrale du Canada, responsable de la politique mon\u00e9taire.",
+          "choix": ["La banque centrale responsable de la politique mon\u00e9taire", "La plus grande banque commerciale", "Une banque d'\u00e9pargne gouvernementale", "Un service de pr\u00eats aux \u00e9tudiants"],
+          "explication": "La Banque du Canada g\u00e8re le taux d'int\u00e9r\u00eat directeur et \u00e9met les billets de banque canadiens."
+        }
+      ]
+    },
+    {
+      "id": "regions",
+      "titre": "Les r\u00e9gions du Canada",
+      "icone": "\ud83c\udf0d",
+      "cartes": [
+        {
+          "question": "Quelle est la capitale du Canada?",
+          "reponse": "Ottawa, Ontario.",
+          "choix": ["Ottawa", "Toronto", "Montr\u00e9al", "Vancouver"],
+          "explication": "Ottawa a \u00e9t\u00e9 choisie comme capitale en 1857 par la Reine Victoria."
+        },
+        {
+          "question": "Quelle est la plus grande province du Canada en superficie?",
+          "reponse": "Le Qu\u00e9bec.",
+          "choix": ["Le Qu\u00e9bec", "L'Ontario", "La Colombie-Britannique", "L'Alberta"],
+          "explication": "Le Qu\u00e9bec est la plus grande province en superficie, mais le Nunavut est le plus grand territoire."
+        },
+        {
+          "question": "Quelle est la province la plus peupl\u00e9e du Canada?",
+          "reponse": "L'Ontario.",
+          "choix": ["L'Ontario", "Le Qu\u00e9bec", "La Colombie-Britannique", "L'Alberta"],
+          "explication": "L'Ontario compte environ 40% de la population canadienne."
+        },
+        {
+          "question": "Quelles sont les provinces de l'Atlantique?",
+          "reponse": "Le Nouveau-Brunswick, la Nouvelle-\u00c9cosse, l'\u00cele-du-Prince-\u00c9douard et Terre-Neuve-et-Labrador.",
+          "choix": ["N.-B., N.-\u00c9., \u00ce.-P.-\u00c9. et T.-N.-L.", "N.-B., N.-\u00c9. et Qu\u00e9bec", "N.-B., N.-\u00c9., \u00ce.-P.-\u00c9. et Maine", "N.-\u00c9., N.-B. et Manitoba"],
+          "explication": "Les provinces de l'Atlantique sont situ\u00e9es sur la c\u00f4te est du Canada."
+        },
+        {
+          "question": "Quelles sont les provinces des Prairies?",
+          "reponse": "Le Manitoba, la Saskatchewan et l'Alberta.",
+          "choix": ["Manitoba, Saskatchewan et Alberta", "Alberta, Colombie-Britannique et Saskatchewan", "Manitoba, Ontario et Alberta", "Saskatchewan, Alberta et Yukon"],
+          "explication": "Les Prairies sont connues pour l'agriculture, l'\u00e9levage et les ressources \u00e9nerg\u00e9tiques."
+        },
+        {
+          "question": "Quelle est la capitale de la Colombie-Britannique?",
+          "reponse": "Victoria.",
+          "choix": ["Vancouver", "Victoria", "Kelowna", "Prince George"],
+          "explication": "Victoria est situ\u00e9e sur l'\u00eele de Vancouver. Vancouver est la plus grande ville de la C.-B. mais n'est pas la capitale."
+        },
+        {
+          "question": "Quelle est la capitale du Qu\u00e9bec?",
+          "reponse": "Qu\u00e9bec (ville de Qu\u00e9bec).",
+          "choix": ["Montr\u00e9al", "Qu\u00e9bec", "Gatineau", "Sherbrooke"],
+          "explication": "Qu\u00e9bec est une des plus anciennes villes d'Am\u00e9rique du Nord, fond\u00e9e par Champlain en 1608."
+        },
+        {
+          "question": "Quels sont les trois territoires du Canada?",
+          "reponse": "Le Yukon, les Territoires du Nord-Ouest et le Nunavut.",
+          "choix": ["Yukon, Territoires du Nord-Ouest et Nunavut", "Yukon, Nunavut et Labrador", "Territoires du Nord-Ouest, Nunavut et Arctique", "Yukon, Nunavut et Alaska"],
+          "explication": "Le Nunavut a \u00e9t\u00e9 cr\u00e9\u00e9 en 1999, s\u00e9par\u00e9 des Territoires du Nord-Ouest."
+        },
+        {
+          "question": "Quelle est la capitale de l'Alberta?",
+          "reponse": "Edmonton.",
+          "choix": ["Calgary", "Edmonton", "Red Deer", "Lethbridge"],
+          "explication": "Edmonton est la capitale; Calgary est la plus grande ville de l'Alberta."
+        },
+        {
+          "question": "Quelles sont les Grands Lacs?",
+          "reponse": "Sup\u00e9rieur, Michigan, Huron, \u00c9ri\u00e9 et Ontario.",
+          "choix": ["Sup\u00e9rieur, Michigan, Huron, \u00c9ri\u00e9 et Ontario", "Sup\u00e9rieur, Winnipeg, Huron et Ontario", "Athabasca, Winnipeg, Sup\u00e9rieur et Michigan", "Ontario, Qu\u00e9bec, Manitoba et Huron"],
+          "explication": "Les Grands Lacs forment la plus grande masse d'eau douce \u00e0 la surface du globe. Le lac Michigan est enti\u00e8rement aux \u00c9.-U."
+        },
+        {
+          "question": "Quelle province est la seule officiellement bilingue?",
+          "reponse": "Le Nouveau-Brunswick.",
+          "choix": ["Le Qu\u00e9bec", "L'Ontario", "Le Nouveau-Brunswick", "Le Manitoba"],
+          "explication": "Le Nouveau-Brunswick est la seule province constitutionnellement bilingue (fran\u00e7ais et anglais)."
+        },
+        {
+          "question": "Quelles sont les chutes les plus c\u00e9l\u00e8bres du Canada?",
+          "reponse": "Les chutes Niagara.",
+          "choix": ["Les chutes Niagara", "Les chutes Montmorency", "Les chutes Churchill", "Les chutes Kakabeka"],
+          "explication": "Les chutes Niagara sont situ\u00e9es \u00e0 la fronti\u00e8re entre l'Ontario et l'\u00c9tat de New York."
+        },
+        {
+          "question": "Quel est le plus long fleuve du Canada?",
+          "reponse": "Le fleuve Mackenzie.",
+          "choix": ["Le Saint-Laurent", "Le Mackenzie", "Le Fraser", "Le Nelson"],
+          "explication": "Le Mackenzie (4 241 km) coule vers l'oc\u00e9an Arctique. Le Saint-Laurent est le plus c\u00e9l\u00e8bre mais pas le plus long."
+        },
+        {
+          "question": "Quelle est la capitale du Manitoba?",
+          "reponse": "Winnipeg.",
+          "choix": ["Winnipeg", "Brandon", "Thompson", "Regina"],
+          "explication": "Winnipeg est situ\u00e9e au confluent des rivi\u00e8res Rouge et Assiniboine."
+        },
+        {
+          "question": "Quelle est la capitale de la Saskatchewan?",
+          "reponse": "Regina.",
+          "choix": ["Saskatoon", "Regina", "Prince Albert", "Moose Jaw"],
+          "explication": "Regina a \u00e9t\u00e9 nomm\u00e9e en l'honneur de la Reine Victoria (Regina signifie reine en latin)."
+        }
+      ]
+    },
+    {
+      "id": "canadiens-celebres",
+      "titre": "Canadiens c\u00e9l\u00e8bres et culture",
+      "icone": "\u2b50",
+      "cartes": [
+        {
+          "question": "Qui a \u00e9crit le po\u00e8me \u00abIn Flanders Fields\u00bb (Au champ d'honneur)?",
+          "reponse": "Le lieutenant-colonel John McCrae.",
+          "choix": ["John McCrae", "Wilfred Owen", "Pierre Berton", "Robertson Davies"],
+          "explication": "Ce po\u00e8me \u00e9crit en 1915 pendant la Premi\u00e8re Guerre mondiale est l'un des plus c\u00e9l\u00e8bres au monde."
+        },
+        {
+          "question": "Quel sport d'hiver est le sport national du Canada?",
+          "reponse": "Le hockey sur glace.",
+          "choix": ["Le hockey sur glace", "Le curling", "Le ski alpin", "Le patinage artistique"],
+          "explication": "Le hockey est le sport national d'hiver et la crosse est le sport national d'\u00e9t\u00e9."
+        },
+        {
+          "question": "Quel est le sport national d'\u00e9t\u00e9 du Canada?",
+          "reponse": "La crosse (lacrosse).",
+          "choix": ["Le baseball", "Le football", "La crosse (lacrosse)", "Le soccer"],
+          "explication": "La crosse est un sport d'origine autochtone. Elle a \u00e9t\u00e9 d\u00e9clar\u00e9e sport national d'\u00e9t\u00e9 en 1994."
+        },
+        {
+          "question": "Qui a invent\u00e9 le t\u00e9l\u00e9phone?",
+          "reponse": "Alexander Graham Bell, qui a v\u00e9cu au Canada.",
+          "choix": ["Alexander Graham Bell", "Thomas Edison", "Guglielmo Marconi", "Nikola Tesla"],
+          "explication": "Bell a fait les premiers essais du t\u00e9l\u00e9phone \u00e0 Brantford, Ontario."
+        },
+        {
+          "question": "Qui a d\u00e9couvert l'insuline?",
+          "reponse": "Sir Frederick Banting et Charles Best.",
+          "choix": ["Frederick Banting et Charles Best", "Alexander Fleming", "Louis Pasteur", "Joseph Lister"],
+          "explication": "La d\u00e9couverte de l'insuline en 1921 \u00e0 Toronto a r\u00e9volutionn\u00e9 le traitement du diab\u00e8te. Banting a re\u00e7u le prix Nobel."
+        },
+        {
+          "question": "Qui \u00e9tait Terry Fox?",
+          "reponse": "Un h\u00e9ros canadien qui a couru le Marathon de l'espoir \u00e0 travers le Canada pour la recherche sur le cancer, malgr\u00e9 sa jambe artificielle.",
+          "choix": ["Coureur du Marathon de l'espoir contre le cancer", "Un joueur de hockey c\u00e9l\u00e8bre", "Un astronaute canadien", "Un premier ministre"],
+          "explication": "Terry Fox a commenc\u00e9 sa course en 1980 \u00e0 St. John's, Terre-Neuve. Il a d\u00fb arr\u00eater apr\u00e8s 143 jours quand le cancer s'est propag\u00e9."
+        },
+        {
+          "question": "Quel Canadien est consid\u00e9r\u00e9 comme le plus grand joueur de hockey?",
+          "reponse": "Wayne Gretzky.",
+          "choix": ["Wayne Gretzky", "Mario Lemieux", "Bobby Orr", "Maurice Richard"],
+          "explication": "Wayne Gretzky est surnomm\u00e9 \u00abThe Great One\u00bb et d\u00e9tient de nombreux records de la LNH."
+        },
+        {
+          "question": "Qui \u00e9tait le premier Canadien dans l'espace?",
+          "reponse": "Marc Garneau.",
+          "choix": ["Marc Garneau", "Chris Hadfield", "Roberta Bondar", "Julie Payette"],
+          "explication": "Marc Garneau a voyag\u00e9 dans l'espace en 1984 et a ensuite servi comme ministre f\u00e9d\u00e9ral."
+        },
+        {
+          "question": "Qu'est-ce que l'Ordre du Canada?",
+          "reponse": "La plus haute distinction civile du Canada, d\u00e9cern\u00e9e pour service m\u00e9ritoire.",
+          "choix": ["La plus haute distinction civile du Canada", "Un grade militaire", "Un prix Nobel canadien", "Un dipl\u00f4me universitaire"],
+          "explication": "L'Ordre du Canada a \u00e9t\u00e9 cr\u00e9\u00e9 en 1967, l'ann\u00e9e du centenaire de la Conf\u00e9d\u00e9ration."
+        },
+        {
+          "question": "Qui \u00e9tait Sir Wilfrid Laurier?",
+          "reponse": "Le premier Premier ministre francophone du Canada (1896-1911).",
+          "choix": ["Le premier PM francophone du Canada", "Le fondateur de Montr\u00e9al", "Un explorateur de l'Arctique", "Le cr\u00e9ateur du drapeau canadien"],
+          "explication": "Laurier a encourag\u00e9 l'immigration vers l'Ouest canadien et est l'un des plus longs mandats de PM."
+        }
+      ]
+    }
+  ]
+}
