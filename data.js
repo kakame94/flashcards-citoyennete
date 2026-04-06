@@ -94,6 +94,36 @@ window.__QUESTIONS_DATA = {
           "reponse": "18 ans.",
           "choix": ["18 ans", "16 ans", "19 ans", "21 ans"],
           "explication": "Tout citoyen canadien âgé de 18 ans ou plus a le droit de voter aux élections fédérales, provinciales et territoriales."
+        },
+        {
+          "question": "Que dit le préambule de la Charte canadienne des droits et libertés?",
+          "reponse": "« Attendu que le Canada est fondé sur des principes qui reconnaissent la suprématie de Dieu et la primauté du droit. »",
+          "choix": ["Le Canada est fondé sur la suprématie de Dieu et la primauté du droit", "Le Canada est fondé sur la liberté, l'égalité et la fraternité", "Le Canada reconnaît la souveraineté du peuple et la démocratie", "Le Canada est fondé sur la paix, l'ordre et le bon gouvernement"],
+          "explication": "Le préambule de la Charte canadienne des droits et libertés énonce que le Canada est fondé sur des principes reconnaissant la suprématie de Dieu et la primauté du droit."
+        },
+        {
+          "question": "Complétez la phrase : Les citoyens canadiens peuvent entrer et quitter le Canada librement et ont le droit de demander un ___.",
+          "reponse": "Un passeport canadien.",
+          "choix": ["Passeport canadien", "Visa de résidence", "Permis de voyage", "Certificat de citoyenneté"],
+          "explication": "Les citoyens canadiens jouissent du droit d'entrer et de quitter le Canada librement et de demander un passeport canadien."
+        },
+        {
+          "question": "Quelle responsabilité personnelle est attendue de chaque citoyen canadien en matière familiale?",
+          "reponse": "Répondre à ses propres besoins et à ceux de sa famille.",
+          "choix": ["Répondre à ses propres besoins et à ceux de sa famille", "Inscrire ses enfants dans une école publique uniquement", "Fournir un logement à ses parents âgés", "Payer les frais médicaux de toute sa famille élargie"],
+          "explication": "Parmi les responsabilités de la citoyenneté canadienne, on attend de chaque citoyen qu'il réponde à ses propres besoins et à ceux de sa famille."
+        },
+        {
+          "question": "Les candidats de 55 ans et plus doivent-ils passer l'examen de citoyenneté?",
+          "reponse": "Non, les candidats de 55 ans et plus n'ont pas besoin de passer l'examen.",
+          "choix": ["Non, ils en sont exemptés", "Oui, tous les candidats doivent le passer", "Seulement s'ils ne parlent ni français ni anglais", "Non, mais ils doivent passer un entretien oral"],
+          "explication": "Les candidats à la citoyenneté âgés de 55 ans et plus sont exemptés de l'examen de citoyenneté canadienne."
+        },
+        {
+          "question": "Complétez : L'exigence de connaissance pour la citoyenneté s'applique aux demandeurs âgés de ___ à ___ ans.",
+          "reponse": "De 18 à 54 ans.",
+          "choix": ["18 à 54 ans", "16 à 60 ans", "18 à 65 ans", "21 à 55 ans"],
+          "explication": "L'exigence de connaissance du Canada et des responsabilités de la citoyenneté s'applique aux demandeurs âgés de 18 à 54 ans."
         }
       ]
     },
@@ -191,6 +221,54 @@ window.__QUESTIONS_DATA = {
           "reponse": "Oui, le mariage entre personnes de même sexe est légal au Canada.",
           "choix": ["Oui, il est légal partout au Canada", "Non, il est interdit par la Constitution", "Seulement dans certaines provinces", "Oui, mais seulement sous forme d'union civile"],
           "explication": "Le Canada a légalisé le mariage entre personnes de même sexe, reflétant les valeurs d'égalité et de respect des droits de la personne."
+        },
+        {
+          "question": "Complétez : Le Canada compte environ ___ millions d'anglophones et ___ millions de francophones.",
+          "reponse": "18 millions d'anglophones et 7 millions de francophones.",
+          "choix": ["18 millions d'anglophones et 7 millions de francophones", "20 millions d'anglophones et 10 millions de francophones", "15 millions d'anglophones et 5 millions de francophones", "22 millions d'anglophones et 8 millions de francophones"],
+          "explication": "Le Canada compte environ 18 millions d'anglophones et 7 millions de francophones, les deux langues officielles du pays."
+        },
+        {
+          "question": "Combien de francophones vivent hors du Québec, en Ontario, au Nouveau-Brunswick et au Manitoba?",
+          "reponse": "Environ 1 million.",
+          "choix": ["Environ 1 million", "Environ 500 000", "Environ 2 millions", "Environ 250 000"],
+          "explication": "Environ 1 million de francophones vivent en communautés minoritaires hors du Québec, principalement en Ontario, au Nouveau-Brunswick et au Manitoba."
+        },
+        {
+          "question": "Où vivent les membres des Premières Nations au Canada?",
+          "reponse": "La moitié vivent dans environ 600 communautés dans les réserves, l'autre moitié hors réserve en milieu urbain.",
+          "choix": ["Moitié dans ~600 réserves, moitié hors réserve en milieu urbain", "La majorité vivent dans les grandes villes", "Presque tous vivent dans les réserves du Nord", "Un tiers dans les réserves, deux tiers dans les villes"],
+          "explication": "Environ la moitié des membres des Premières Nations vivent dans quelque 600 communautés dans les réserves, tandis que l'autre moitié vit hors réserve, principalement en milieu urbain."
+        },
+        {
+          "question": "Quelle est la deuxième langue la plus parlée à la maison au Canada après l'anglais?",
+          "reponse": "Les langues chinoises.",
+          "choix": ["Les langues chinoises", "L'espagnol", "Le pendjabi", "L'arabe"],
+          "explication": "Les langues chinoises sont les deuxièmes plus parlées à la maison après l'anglais, représentant environ 13 % à Vancouver et 7 % à Toronto."
+        },
+        {
+          "question": "Quel est le plus grand groupe religieux au Canada?",
+          "reponse": "Les catholiques, suivis des protestants.",
+          "choix": ["Les catholiques, suivis des protestants", "Les protestants, suivis des catholiques", "Les anglicans, suivis des baptistes", "Les musulmans, suivis des catholiques"],
+          "explication": "Les catholiques forment le plus grand groupe religieux au Canada, suivis des divers groupes protestants."
+        },
+        {
+          "question": "Quels sont les principaux groupes ethniques qui composent la population canadienne?",
+          "reponse": "Anglais, français, écossais, irlandais, allemand, italien, chinois, autochtone, ukrainien, néerlandais, sud-asiatique et scandinave.",
+          "choix": ["Anglais, français, écossais, irlandais, allemand, italien, chinois, autochtone, ukrainien, néerlandais", "Anglais, français, espagnol, portugais, italien, grec, polonais, russe", "Français, anglais, américain, mexicain, allemand, japonais, coréen", "Anglais, français, indien, philippin, chinois, arabe, africain, latino"],
+          "explication": "Les principaux groupes ethniques du Canada comprennent les Anglais, Français, Écossais, Irlandais, Allemands, Italiens, Chinois, Autochtones, Ukrainiens, Néerlandais, Sud-Asiatiques et Scandinaves."
+        },
+        {
+          "question": "Complétez : Le Canada est la seule ___ en Amérique du Nord.",
+          "reponse": "Monarchie constitutionnelle.",
+          "choix": ["Monarchie constitutionnelle", "République fédérale", "Démocratie parlementaire", "Confédération bilingue"],
+          "explication": "Le Canada est la seule monarchie constitutionnelle en Amérique du Nord, avec un souverain comme chef d'État."
+        },
+        {
+          "question": "Complétez la phrase : Les valeurs inscrites dans l'AANB de 1867 sont « ___, ___ et ___ ».",
+          "reponse": "Paix, ordre et bon gouvernement.",
+          "choix": ["Paix, ordre et bon gouvernement", "Liberté, égalité et fraternité", "Vie, liberté et poursuite du bonheur", "Justice, démocratie et prospérité"],
+          "explication": "L'Acte de l'Amérique du Nord britannique (AANB) de 1867 établit les valeurs de « paix, ordre et bon gouvernement » comme fondements du Canada."
         }
       ]
     },
@@ -318,6 +396,96 @@ window.__QUESTIONS_DATA = {
           "reponse": "Sir Louis-Hippolyte La Fontaine, en 1849.",
           "choix": ["Sir Louis-Hippolyte La Fontaine, en 1849", "Sir John A. Macdonald, en 1867", "Lord Durham, en 1839", "Robert Baldwin, en 1843"],
           "explication": "Sir Louis-Hippolyte La Fontaine est devenu en 1849 le premier chef d'un gouvernement responsable au Canada, travaillant avec Robert Baldwin pour réformer le système politique."
+        },
+        {
+          "question": "Quel mode de vie menaient les Hurons-Wendats, les Cris et Dénés, et les Sioux?",
+          "reponse": "Les Hurons-Wendats étaient agriculteurs/chasseurs, les Cris et Dénés chasseurs-cueilleurs, les Sioux nomades suivant les bisons.",
+          "choix": ["Hurons-Wendats agriculteurs/chasseurs, Cris/Dénés chasseurs-cueilleurs, Sioux nomades suivant les bisons", "Tous étaient des agriculteurs sédentaires", "Hurons-Wendats pêcheurs, Cris commerçants, Sioux agriculteurs", "Tous étaient des chasseurs-cueilleurs nomades"],
+          "explication": "Les Hurons-Wendats pratiquaient l'agriculture et la chasse, les Cris et Dénés étaient chasseurs-cueilleurs, et les Sioux étaient des peuples nomades qui suivaient les troupeaux de bisons dans les Prairies."
+        },
+        {
+          "question": "Combien de voyages Jacques Cartier a-t-il effectués au Canada et pour quel roi?",
+          "reponse": "Trois voyages (1534-1542), réclamant la terre pour le roi François Ier de France.",
+          "choix": ["3 voyages (1534-1542) pour François Ier", "2 voyages (1534-1536) pour Henri IV", "4 voyages (1530-1545) pour Louis XII", "1 voyage (1534) pour François Ier"],
+          "explication": "Jacques Cartier a effectué trois voyages au Canada entre 1534 et 1542, réclamant le territoire pour le roi François Ier de France."
+        },
+        {
+          "question": "Complétez : Vers les années ___, le nom « Canada » apparaît sur les cartes géographiques.",
+          "reponse": "Vers les années 1550.",
+          "choix": ["1550", "1500", "1600", "1497"],
+          "explication": "Vers les années 1550, le nom « Canada » a commencé à apparaître sur les cartes géographiques pour désigner le territoire exploré par Cartier."
+        },
+        {
+          "question": "Avec quels peuples autochtones Champlain s'est-il allié et contre qui?",
+          "reponse": "Il s'est allié aux Algonquins, Montagnais et Hurons contre les Iroquois; la paix fut signée en 1701.",
+          "choix": ["Algonquins, Montagnais et Hurons contre les Iroquois; paix en 1701", "Iroquois et Mohawks contre les Hurons; paix en 1650", "Cris et Ojibwés contre les Sioux; paix en 1750", "Micmacs et Abénaquis contre les Algonquins; paix en 1680"],
+          "explication": "Samuel de Champlain s'est allié aux Algonquins, Montagnais et Hurons contre la confédération iroquoise. Cette longue guerre s'est terminée par la Grande Paix de Montréal en 1701."
+        },
+        {
+          "question": "Qui était Pierre Le Moyne, sieur d'Iberville?",
+          "reponse": "Le plus grand héros de la Nouvelle-France, célèbre pour ses victoires contre les Anglais.",
+          "choix": ["Le plus grand héros de la Nouvelle-France, victoires contre les Anglais", "Le fondateur de la ville de Montréal", "Le premier gouverneur de la Nouvelle-France", "L'explorateur qui a découvert le fleuve Mackenzie"],
+          "explication": "Pierre Le Moyne, sieur d'Iberville, est considéré comme le plus grand héros militaire de la Nouvelle-France, réputé pour ses victoires navales et terrestres contre les Anglais."
+        },
+        {
+          "question": "Quel rôle Sir Guy Carleton (Lord Dorchester) a-t-il joué dans l'histoire du Canada?",
+          "reponse": "Il a défendu les droits des Canadiens français et repoussé l'invasion américaine de 1775.",
+          "choix": ["Défendu les droits des Canadiens français et repoussé l'invasion américaine de 1775", "Fondé la ville de Québec et négocié avec les Autochtones", "Construit les fortifications de Louisbourg", "Signé le Traité de Paris de 1763"],
+          "explication": "Sir Guy Carleton (Lord Dorchester) a défendu les droits des Canadiens français et a joué un rôle crucial en repoussant l'invasion américaine de Québec en 1775."
+        },
+        {
+          "question": "De quelles origines ethniques étaient les Loyalistes venus au Canada?",
+          "reponse": "D'origines hollandaise, allemande, britannique, scandinave et autochtone.",
+          "choix": ["Hollandaise, allemande, britannique, scandinave et autochtone", "Uniquement britannique et irlandaise", "Française, espagnole et portugaise", "Britannique, américaine et africaine"],
+          "explication": "Les Loyalistes qui ont fui vers le Canada après la Révolution américaine étaient d'origines ethniques variées : hollandaise, allemande, britannique, scandinave et autochtone."
+        },
+        {
+          "question": "Qu'est-il arrivé à certains Loyalistes noirs en 1792?",
+          "reponse": "Ils sont allés en Afrique de l'Ouest et ont fondé Freetown, en Sierra Leone.",
+          "choix": ["Ils ont fondé Freetown en Sierra Leone", "Ils se sont installés en Jamaïque", "Ils ont rejoint les colonies françaises en Afrique", "Ils ont fondé une colonie au Libéria"],
+          "explication": "En 1792, certains Loyalistes noirs du Canada sont partis pour l'Afrique de l'Ouest où ils ont fondé Freetown, la capitale actuelle de la Sierra Leone."
+        },
+        {
+          "question": "Quelles furent les premières assemblées élues en Amérique du Nord britannique?",
+          "reponse": "Halifax en 1758, Île-du-Prince-Édouard en 1773, Nouveau-Brunswick en 1785.",
+          "choix": ["Halifax 1758, Î-P-É 1773, N-B 1785", "Québec 1760, Montréal 1775, Toronto 1790", "Halifax 1750, Québec 1760, Kingston 1780", "Saint-Jean 1755, Halifax 1770, Charlottetown 1780"],
+          "explication": "Les premières assemblées élues ont été créées à Halifax (1758), à l'Île-du-Prince-Édouard (1773) et au Nouveau-Brunswick (1785)."
+        },
+        {
+          "question": "Que faisait l'Acte constitutionnel de 1791?",
+          "reponse": "Il divisait la province de Québec en Haut-Canada (Ontario) et Bas-Canada (Québec).",
+          "choix": ["Il divisait Québec en Haut-Canada (Ontario) et Bas-Canada (Québec)", "Il créait la Confédération canadienne", "Il abolissait le régime seigneurial", "Il accordait le droit de vote aux femmes"],
+          "explication": "L'Acte constitutionnel de 1791 a divisé la province de Québec en deux : le Haut-Canada (aujourd'hui l'Ontario, majoritairement anglophone) et le Bas-Canada (aujourd'hui le Québec, majoritairement francophone)."
+        },
+        {
+          "question": "En quelle année la Bourse de Montréal a-t-elle été créée?",
+          "reponse": "En 1832.",
+          "choix": ["1832", "1867", "1850", "1791"],
+          "explication": "La Bourse de Montréal a été créée en 1832, témoignant du développement économique et commercial du Canada au XIXe siècle."
+        },
+        {
+          "question": "Complétez : Le chef ___ a mené les alliés Shawnee dans la guerre de 1812.",
+          "reponse": "Le chef Tecumseh.",
+          "choix": ["Tecumseh", "Pontiac", "Joseph Brant", "Donnacona"],
+          "explication": "Le chef Tecumseh a mené les guerriers shawnee et d'autres nations autochtones alliées aux Britanniques pendant la guerre de 1812 contre les Américains."
+        },
+        {
+          "question": "Quel exploit Charles de Salaberry a-t-il accompli à la bataille de Châteauguay en 1813?",
+          "reponse": "Avec 460 soldats, il a repoussé 4 000 Américains.",
+          "choix": ["Avec 460 soldats, il a repoussé 4 000 Américains", "Avec 2 000 soldats, il a capturé un fort américain", "Avec 1 000 soldats, il a défendu Montréal", "Avec 100 soldats, il a saboté un pont ennemi"],
+          "explication": "À la bataille de Châteauguay en 1813, Charles de Salaberry et ses 460 soldats canadiens-français (les Voltigeurs) ont repoussé une force de 4 000 soldats américains."
+        },
+        {
+          "question": "Quel événement marquant s'est produit à Washington en 1814 pendant la guerre de 1812?",
+          "reponse": "Le général Robert Ross a brûlé la Maison-Blanche.",
+          "choix": ["Robert Ross a brûlé la Maison-Blanche", "Les Américains ont signé un traité de paix", "Les Canadiens ont libéré des prisonniers de guerre", "Isaac Brock a capturé le Congrès américain"],
+          "explication": "En 1814, le général britannique Robert Ross a mené une attaque sur Washington et a brûlé la Maison-Blanche, un événement marquant de la guerre de 1812."
+        },
+        {
+          "question": "Que s'est-il passé après les Rébellions de 1837-38 et quelle colonie a obtenu la première un gouvernement responsable?",
+          "reponse": "Lord Durham a recommandé le gouvernement responsable; la Nouvelle-Écosse l'a obtenu en premier (1847-48).",
+          "choix": ["Lord Durham recommande le gouvernement responsable; Nouvelle-Écosse première en 1847-48", "Lord Elgin recommande l'union; Ontario premier en 1850", "Sir John A. Macdonald propose la Confédération; Québec premier en 1849", "Robert Baldwin crée le parlement; Nouveau-Brunswick premier en 1845"],
+          "explication": "Après les Rébellions de 1837-38, Lord Durham a recommandé l'instauration d'un gouvernement responsable. La Nouvelle-Écosse est devenue la première colonie britannique à obtenir ce type de gouvernement en 1847-48."
         }
       ]
     },
@@ -445,6 +613,114 @@ window.__QUESTIONS_DATA = {
           "reponse": "En 1969.",
           "choix": ["1969", "1982", "1971", "1960"],
           "explication": "La Loi sur les langues officielles, adoptée en 1969, a confirmé le français et l'anglais comme langues officielles du Canada dans les institutions fédérales."
+        },
+        {
+          "question": "Complétez : Avant 1982, le 1er juillet était appelé la « ___ ».",
+          "reponse": "Fête du Dominion.",
+          "choix": ["Fête du Dominion", "Fête nationale", "Fête de la Confédération", "Fête de l'Empire"],
+          "explication": "Avant 1982, le 1er juillet était connu sous le nom de « Fête du Dominion ». Il a été renommé « Fête du Canada » en 1982."
+        },
+        {
+          "question": "Dans quel ordre les provinces et territoires ont-ils rejoint la Confédération après 1867?",
+          "reponse": "Manitoba/TNO 1870, C-B 1871, Î-P-É 1873, Îles arctiques 1880, Yukon 1898, AB/SK 1905, T-N 1949, Nunavut 1999.",
+          "choix": ["MB/TNO 1870, C-B 1871, Î-P-É 1873, Arctiques 1880, Yukon 1898, AB/SK 1905, T-N 1949, Nunavut 1999", "C-B 1870, MB 1871, Î-P-É 1875, Yukon 1890, AB/SK 1900, T-N 1945, Nunavut 1995", "Î-P-É 1870, MB 1872, C-B 1875, Yukon 1895, AB/SK 1910, T-N 1950, Nunavut 2000", "MB 1868, C-B 1870, Î-P-É 1872, Yukon 1900, AB/SK 1907, T-N 1948, Nunavut 1997"],
+          "explication": "Après les quatre provinces fondatrices de 1867, le Manitoba et les TNO (1870), la C-B (1871), l'Î-P-É (1873), les Îles arctiques (1880), le Yukon (1898), l'Alberta et la Saskatchewan (1905), Terre-Neuve (1949) et le Nunavut (1999) ont rejoint la Confédération."
+        },
+        {
+          "question": "Complétez : Sir John A. Macdonald est né le ___ en Écosse, et cette date est célébrée comme la Journée Sir John A. Macdonald.",
+          "reponse": "Le 11 janvier 1815.",
+          "choix": ["11 janvier 1815", "1er juillet 1820", "24 mai 1818", "15 mars 1810"],
+          "explication": "Sir John A. Macdonald est né le 11 janvier 1815 en Écosse. Le 11 janvier est célébré comme la Journée Sir John A. Macdonald au Canada."
+        },
+        {
+          "question": "Louis Riel a-t-il siégé au Parlement fédéral?",
+          "reponse": "Non, bien qu'élu député, il n'a jamais siégé au Parlement.",
+          "choix": ["Non, il a été élu mais n'a jamais siégé", "Oui, il a siégé pendant deux ans", "Oui, mais seulement lors d'une session", "Non, il n'a jamais été élu"],
+          "explication": "Louis Riel a été élu député au Parlement fédéral, mais il n'a jamais pu prendre son siège en raison d'un mandat d'arrêt contre lui."
+        },
+        {
+          "question": "Quels forts la Police montée du Nord-Ouest a-t-elle fondés dans l'Ouest?",
+          "reponse": "Fort Calgary et Fort MacLeod.",
+          "choix": ["Fort Calgary et Fort MacLeod", "Fort Edmonton et Fort Victoria", "Fort Garry et Fort Qu'Appelle", "Fort Nelson et Fort Simpson"],
+          "explication": "La Police montée du Nord-Ouest a fondé Fort Calgary et Fort MacLeod lors de sa marche vers l'Ouest pour établir l'ordre dans les Prairies."
+        },
+        {
+          "question": "Qui était Gabriel Dumont?",
+          "reponse": "Le plus grand chef militaire métis.",
+          "choix": ["Le plus grand chef militaire métis", "Le fondateur de la province du Manitoba", "Le premier sénateur métis", "Le chef de la Police montée du Nord-Ouest"],
+          "explication": "Gabriel Dumont est considéré comme le plus grand chef militaire métis. Il a commandé les forces métisses lors de la résistance du Nord-Ouest en 1885 aux côtés de Louis Riel."
+        },
+        {
+          "question": "Qui était Sir Sam Steele?",
+          "reponse": "Un célèbre héros de la Police montée du Nord-Ouest.",
+          "choix": ["Un héros de la Police montée du Nord-Ouest", "Le premier Premier ministre de l'Alberta", "Le fondateur de la ville de Calgary", "Un général de la Première Guerre mondiale"],
+          "explication": "Sir Sam Steele est l'un des héros les plus célèbres de la Police montée du Nord-Ouest, connu pour le maintien de l'ordre pendant la ruée vers l'or du Klondike et la construction du chemin de fer."
+        },
+        {
+          "question": "Pourquoi la Colombie-Britannique a-t-elle rejoint la Confédération en 1871?",
+          "reponse": "Après la promesse de construction d'un chemin de fer transcontinental.",
+          "choix": ["Après la promesse d'un chemin de fer transcontinental", "Après avoir reçu une aide financière spéciale", "Pour se protéger d'une invasion américaine", "Pour obtenir le bilinguisme officiel"],
+          "explication": "La Colombie-Britannique a rejoint la Confédération en 1871 à condition que le gouvernement fédéral construise un chemin de fer transcontinental la reliant au reste du Canada."
+        },
+        {
+          "question": "Qui a construit le chemin de fer du Canadien Pacifique et que s'est-il passé concernant les travailleurs chinois?",
+          "reponse": "Construit par des travailleurs européens et chinois; une taxe raciste a été imposée aux Chinois, avec excuses en 2006.",
+          "choix": ["Travailleurs européens et chinois; taxe raciste sur les Chinois, excuses en 2006", "Uniquement des travailleurs britanniques; aucune controverse", "Travailleurs canadiens et américains; grève en 1890", "Prisonniers et soldats; rébellion en 1885"],
+          "explication": "Le CPR a été financé par des investisseurs américains et britanniques et construit par des travailleurs européens et chinois. Une taxe discriminatoire a été imposée aux immigrants chinois, pour laquelle le gouvernement a présenté des excuses en 2006."
+        },
+        {
+          "question": "Combien d'immigrants sont arrivés au Canada lors du boom des années 1890?",
+          "reponse": "1 million de Britanniques et 1 million d'Américains.",
+          "choix": ["1 million de Britanniques et 1 million d'Américains", "500 000 Britanniques et 500 000 Américains", "2 millions de Britanniques et 500 000 Américains", "750 000 Européens et 250 000 Américains"],
+          "explication": "Lors du grand boom d'immigration des années 1890, environ 1 million de Britanniques et 1 million d'Américains se sont installés au Canada."
+        },
+        {
+          "question": "Complétez : Avant 1914, ___ Ukrainiens et ___ Polonais se sont installés dans l'Ouest canadien.",
+          "reponse": "170 000 Ukrainiens et 115 000 Polonais.",
+          "choix": ["170 000 Ukrainiens et 115 000 Polonais", "100 000 Ukrainiens et 50 000 Polonais", "200 000 Ukrainiens et 200 000 Polonais", "50 000 Ukrainiens et 75 000 Polonais"],
+          "explication": "Avant 1914, environ 170 000 Ukrainiens et 115 000 Polonais se sont installés dans les Prairies canadiennes, contribuant au développement de l'Ouest."
+        },
+        {
+          "question": "Qui était Dr Emily Stowe?",
+          "reponse": "La fondatrice du mouvement suffragiste et la première femme médecin pratiquant au Canada.",
+          "choix": ["Fondatrice du mouvement suffragiste et première femme médecin au Canada", "Première femme élue au Parlement canadien", "Fondatrice du premier hôpital pour femmes", "Première femme avocate au Canada"],
+          "explication": "Dr Emily Stowe est la fondatrice du mouvement suffragiste canadien et la première femme à pratiquer la médecine au Canada."
+        },
+        {
+          "question": "Combien de Canadiens ont participé à la guerre des Boers (1899-1902)?",
+          "reponse": "Plus de 7 000 volontaires, dont plus de 260 sont morts.",
+          "choix": ["Plus de 7 000 volontaires, 260+ morts", "Environ 3 000 volontaires, 100 morts", "Plus de 15 000 volontaires, 500 morts", "Environ 1 000 volontaires, 50 morts"],
+          "explication": "Plus de 7 000 Canadiens se sont portés volontaires pour la guerre des Boers en Afrique du Sud (1899-1902). Plus de 260 y ont perdu la vie, notamment aux batailles de Paardeberg et Lillefontein."
+        },
+        {
+          "question": "Quelle était la population du Canada pendant la Première Guerre mondiale et quel est le bilan?",
+          "reponse": "Population de 8 millions; 60 000 tués et 170 000 blessés.",
+          "choix": ["8 millions d'habitants; 60 000 tués, 170 000 blessés", "10 millions d'habitants; 100 000 tués, 200 000 blessés", "6 millions d'habitants; 40 000 tués, 100 000 blessés", "12 millions d'habitants; 80 000 tués, 250 000 blessés"],
+          "explication": "Avec une population de seulement 8 millions, le Canada a subi des pertes considérables : 60 000 tués et 170 000 blessés lors de la Première Guerre mondiale. Le 9 avril est le Jour de Vimy."
+        },
+        {
+          "question": "Combien de personnes d'origine austro-hongroise ont été internées pendant la Première Guerre mondiale?",
+          "reponse": "Plus de 8 000, principalement des Ukrainiens, dans 24 camps de travail entre 1914 et 1920.",
+          "choix": ["Plus de 8 000 dans 24 camps (1914-1920), surtout des Ukrainiens", "Environ 3 000 dans 10 camps (1914-1918)", "Plus de 15 000 dans 50 camps (1915-1920)", "Environ 5 000 dans 15 camps (1916-1919)"],
+          "explication": "Entre 1914 et 1920, plus de 8 000 personnes d'origine austro-hongroise, principalement des Ukrainiens, ont été internées dans 24 camps de travail au Canada."
+        },
+        {
+          "question": "Complétez : La bataille d'Amiens du 8 août 1918 a été qualifiée de « ___ » par le général allemand Ludendorff.",
+          "reponse": "Le jour noir de l'armée allemande.",
+          "choix": ["Le jour noir de l'armée allemande", "La fin de l'Empire allemand", "Le début de la défaite", "La plus grande catastrophe militaire"],
+          "explication": "La bataille d'Amiens du 8 août 1918, à laquelle les Canadiens ont joué un rôle clé, a été qualifiée de « jour noir de l'armée allemande » par le général Ludendorff."
+        },
+        {
+          "question": "Quel rôle les infirmières canadiennes ont-elles joué pendant la Première Guerre mondiale?",
+          "reponse": "Plus de 3 000 infirmières (« oiseaux bleus ») ont servi dans le Corps médical, dont 2 500 outre-mer.",
+          "choix": ["3 000+ infirmières (« oiseaux bleus »), 2 500 outre-mer", "1 000 infirmières, 500 outre-mer", "5 000 infirmières, 4 000 outre-mer", "2 000 infirmières, toutes au Canada"],
+          "explication": "Plus de 3 000 infirmières canadiennes, surnommées les « oiseaux bleus » en raison de leur uniforme, ont servi dans le Corps médical de l'armée canadienne pendant la Première Guerre mondiale, dont 2 500 outre-mer."
+        },
+        {
+          "question": "Quels événements majeurs ont marqué la participation du Canada à la Deuxième Guerre mondiale?",
+          "reponse": "Hong Kong 1941, Dieppe 1942, PEACB (130 000+ aviateurs formés), 3e marine mondiale, libération des Pays-Bas 1944-45.",
+          "choix": ["Hong Kong 1941, Dieppe 1942, PEACB 130 000+ aviateurs, 3e marine, libération Pays-Bas", "Uniquement le Jour J 1944 et la libération de la France", "Pearl Harbor 1941, Midway 1942, Okinawa 1945", "Bataille d'Angleterre 1940 et campagne d'Italie 1943 uniquement"],
+          "explication": "Le Canada a participé à la bataille de Hong Kong (1941), au raid de Dieppe (1942), au Programme d'entraînement aérien du Commonwealth britannique (PEACB, formant plus de 130 000 aviateurs), possédait la 3e marine mondiale, et a libéré les Pays-Bas en 1944-45. Le Japon a capitulé le 14 août 1945. Le gouvernement a présenté des excuses aux Japonais-Canadiens internés en 1988."
         }
       ]
     },
@@ -542,6 +818,150 @@ window.__QUESTIONS_DATA = {
           "reponse": "En 1947.",
           "choix": ["1947", "1930", "1960", "1905"],
           "explication": "La découverte de pétrole en Alberta en 1947 a lancé l'industrie énergétique moderne du Canada et transformé l'économie de cette province."
+        },
+        {
+          "question": "Quel accord international a assoupli les politiques commerciales après la Grande Dépression?",
+          "reponse": "Le GATT (maintenant l'OMC — Organisation mondiale du commerce).",
+          "choix": ["Le GATT (maintenant l'OMC)", "L'ALENA", "Le Traité de Versailles", "L'Accord de Bretton Woods"],
+          "explication": "Le GATT (Accord général sur les tarifs douaniers et le commerce), devenu l'OMC, a aidé à assouplir les politiques commerciales protectionnistes mises en place après la Grande Dépression."
+        },
+        {
+          "question": "Complétez : En ___, pour la première fois, une majorité de Canadiens pouvaient se nourrir, se loger et se vêtir adéquatement.",
+          "reponse": "En 1951.",
+          "choix": ["1951", "1945", "1960", "1935"],
+          "explication": "En 1951, pour la première fois dans l'histoire du Canada, une majorité de Canadiens pouvaient se nourrir, se loger et se vêtir de manière adéquate."
+        },
+        {
+          "question": "Que garantit la Loi canadienne sur la santé?",
+          "reponse": "Une protection de base en matière de santé pour tous les Canadiens.",
+          "choix": ["Une protection de base en matière de santé pour tous", "Des soins dentaires gratuits pour les enfants", "La gratuité totale de tous les médicaments", "Un accès prioritaire pour les personnes âgées"],
+          "explication": "La Loi canadienne sur la santé garantit une protection de base en matière de santé à tous les Canadiens, assurant l'accès aux soins médicaux nécessaires."
+        },
+        {
+          "question": "Avec quel pays le Canada a-t-il rejoint le NORAD?",
+          "reponse": "Les États-Unis.",
+          "choix": ["Les États-Unis", "Le Royaume-Uni", "La France", "L'Australie"],
+          "explication": "Le Canada a rejoint le NORAD (Commandement de la défense aérospatiale de l'Amérique du Nord) avec les États-Unis pour assurer la défense aérienne du continent nord-américain."
+        },
+        {
+          "question": "Dans quels pays le Canada a-t-il participé à des missions de maintien de la paix?",
+          "reponse": "En Égypte, à Chypre, en Haïti, dans l'ex-Yougoslavie et en Afghanistan.",
+          "choix": ["Égypte, Chypre, Haïti, ex-Yougoslavie, Afghanistan", "Irak, Iran, Syrie, Libye, Somalie", "Corée, Vietnam, Cambodge, Laos, Birmanie", "Allemagne, Japon, Italie, France, Belgique"],
+          "explication": "Le Canada a participé à de nombreuses missions de maintien de la paix de l'ONU, notamment en Égypte, à Chypre, en Haïti, dans l'ex-Yougoslavie et en Afghanistan."
+        },
+        {
+          "question": "Complétez : En 1963, le gouvernement a créé la Commission royale sur le ___ et le ___.",
+          "reponse": "Bilinguisme et biculturalisme.",
+          "choix": ["Bilinguisme et biculturalisme", "Multiculturalisme et immigration", "Fédéralisme et autonomie provinciale", "Commerce et industrie"],
+          "explication": "En 1963, le gouvernement a créé la Commission royale sur le bilinguisme et le biculturalisme pour examiner les relations entre les communautés anglophone et francophone du Canada."
+        },
+        {
+          "question": "En quelle année le Canada a-t-il participé à la création de la Francophonie?",
+          "reponse": "En 1970.",
+          "choix": ["1970", "1963", "1982", "1995"],
+          "explication": "En 1970, le Canada a participé à la création de la Francophonie, l'organisation internationale des pays et gouvernements ayant le français en partage."
+        },
+        {
+          "question": "Complétez : En 1982, la Constitution a été modifiée sans l'accord de la province de ___.",
+          "reponse": "Le Québec.",
+          "choix": ["Le Québec", "L'Ontario", "L'Alberta", "La Colombie-Britannique"],
+          "explication": "En 1982, la Constitution canadienne a été rapatriée et modifiée sans l'accord du Québec, ce qui a créé une crise constitutionnelle majeure."
+        },
+        {
+          "question": "Nommez quelques écrivains célèbres du Canada.",
+          "reponse": "Stephen Leacock, Louis Hémon, Émile Nelligan, Robertson Davies, Margaret Laurence, Mordecai Richler.",
+          "choix": ["Leacock, Hémon, Nelligan, Davies, Laurence, Richler", "Atwood, Munro, Ondaatje, Cohen, Bellow", "Shakespeare, Dickens, Austen, Brontë", "Hugo, Zola, Balzac, Flaubert"],
+          "explication": "Le Canada a produit de nombreux écrivains célèbres, dont Stephen Leacock (humour), Louis Hémon (Maria Chapdelaine), Émile Nelligan (poésie), Robertson Davies, Margaret Laurence et Mordecai Richler."
+        },
+        {
+          "question": "Qui étaient les Automatistes du Québec et qui en était le membre le plus célèbre?",
+          "reponse": "Des pionniers de l'art moderne abstrait dans les années 1950; Jean-Paul Riopelle en est le plus célèbre.",
+          "choix": ["Pionniers de l'art abstrait (années 1950); Jean-Paul Riopelle", "Sculpteurs classiques (années 1920); Marc-Aurèle Fortin", "Musiciens jazz (années 1960); Oscar Peterson", "Architectes modernistes (années 1970); Arthur Erickson"],
+          "explication": "Les Automatistes du Québec étaient un groupe de peintres des années 1950, pionniers de l'art moderne abstrait au Canada. Jean-Paul Riopelle en est le membre le plus célèbre."
+        },
+        {
+          "question": "Qui a inventé la première ampoule électrique?",
+          "reponse": "Les Canadiens Mathew Evans et Henry Woodward, qui ont vendu le brevet à Thomas Edison.",
+          "choix": ["Mathew Evans et Henry Woodward (brevet vendu à Edison)", "Thomas Edison seul", "Nikola Tesla", "Alexander Graham Bell"],
+          "explication": "Les Canadiens Mathew Evans et Henry Woodward ont inventé la première ampoule électrique et ont ensuite vendu leur brevet à Thomas Edison."
+        },
+        {
+          "question": "Qui a envoyé le premier message vocal sans fil (radio)?",
+          "reponse": "Reginald Fessenden, un Canadien.",
+          "choix": ["Reginald Fessenden", "Guglielmo Marconi", "Alexander Graham Bell", "Nikola Tesla"],
+          "explication": "Le Canadien Reginald Fessenden a transmis le premier message vocal sans fil par radio, une avancée majeure dans les télécommunications."
+        },
+        {
+          "question": "Qui était le Dr Wilder Penfield?",
+          "reponse": "Un célèbre neurochirurgien à l'Université McGill, surnommé « le plus grand Canadien vivant ».",
+          "choix": ["Neurochirurgien à McGill, « le plus grand Canadien vivant »", "Cardiologue à Toronto, inventeur du stimulateur cardiaque", "Chirurgien à Vancouver, pionnier des greffes", "Psychiatre à Ottawa, fondateur de la santé mentale moderne"],
+          "explication": "Le Dr Wilder Penfield était un neurochirurgien de renommée mondiale à l'Université McGill de Montréal, surnommé « le plus grand Canadien vivant » pour ses avancées en neurologie."
+        },
+        {
+          "question": "Qui a inventé le premier stimulateur cardiaque?",
+          "reponse": "Le Dr John A. Hopps, un Canadien.",
+          "choix": ["Dr John A. Hopps", "Dr Wilder Penfield", "Dr Frederick Banting", "Dr Norman Bethune"],
+          "explication": "Le Dr John A. Hopps, un ingénieur et médecin canadien, a inventé le premier stimulateur cardiaque (pacemaker), sauvant d'innombrables vies."
+        },
+        {
+          "question": "Qui a inventé le Canadarm (bras robotique spatial)?",
+          "reponse": "SPAR Aérospatiale et le Conseil national de recherches du Canada (CNR).",
+          "choix": ["SPAR Aérospatiale et le CNR", "La NASA et Bombardier", "L'Agence spatiale canadienne seule", "Boeing et le gouvernement canadien"],
+          "explication": "Le Canadarm, le célèbre bras robotique utilisé sur les navettes spatiales, a été inventé par SPAR Aérospatiale en collaboration avec le Conseil national de recherches du Canada."
+        },
+        {
+          "question": "Qui a inventé le BlackBerry?",
+          "reponse": "Mike Lazaridis et Jim Balsillie, de Research In Motion (RIM).",
+          "choix": ["Mike Lazaridis et Jim Balsillie (RIM)", "Steve Jobs et Steve Wozniak", "Bill Gates et Paul Allen", "Elon Musk et Peter Thiel"],
+          "explication": "Les Canadiens Mike Lazaridis et Jim Balsillie, cofondateurs de Research In Motion (RIM), ont inventé le BlackBerry, un téléphone intelligent révolutionnaire."
+        },
+        {
+          "question": "Nommez des Canadiens qui ont reçu le prix Nobel en sciences.",
+          "reponse": "Gerhard Herzberg, John Polanyi, Sidney Altman, Richard E. Taylor, Michael Smith et Bertram Brockhouse.",
+          "choix": ["Herzberg, Polanyi, Altman, Taylor, Smith, Brockhouse", "Banting, Best, Penfield, Bethune, Osler", "Bell, Fleming, Bombardier, Fessenden", "Einstein, Bohr, Curie, Planck"],
+          "explication": "Plusieurs Canadiens ont reçu le prix Nobel en sciences, dont Gerhard Herzberg, John Polanyi, Sidney Altman, Richard E. Taylor, Michael Smith et Bertram Brockhouse."
+        },
+        {
+          "question": "Complétez : Depuis ___, l'Agence spatiale canadienne et des astronautes canadiens participent à l'exploration spatiale.",
+          "reponse": "Depuis 1989.",
+          "choix": ["1989", "1969", "2000", "1975"],
+          "explication": "Depuis 1989, l'Agence spatiale canadienne coordonne la participation du Canada à l'exploration spatiale, avec plusieurs astronautes canadiens ayant voyagé dans l'espace."
+        },
+        {
+          "question": "Qui est Donovan Bailey et quel exploit a-t-il accompli?",
+          "reponse": "Sprinter canadien ayant établi un record mondial et remporté 2 médailles d'or aux JO de 1996.",
+          "choix": ["Record mondial et 2 médailles d'or en sprint, JO 1996", "Marathon olympique, médaille d'or, JO 2000", "Saut en longueur, record mondial, JO 1992", "Course de haies, médaille d'argent, JO 1988"],
+          "explication": "Donovan Bailey a établi un record mondial au 100 mètres et remporté deux médailles d'or aux Jeux olympiques d'Atlanta en 1996."
+        },
+        {
+          "question": "Quel exploit Paul Henderson a-t-il accompli en 1972?",
+          "reponse": "Il a marqué le « but du siècle » lors de la Série du siècle Canada-URSS.",
+          "choix": ["Le « but du siècle » dans la Série du siècle Canada-URSS", "Le but gagnant de la Coupe Stanley", "Le premier but de l'histoire de la LNH", "Le but record lors des JO d'hiver"],
+          "explication": "Paul Henderson a marqué le célèbre « but du siècle » en 1972 lors de la Série du siècle opposant le Canada à l'Union soviétique en hockey sur glace."
+        },
+        {
+          "question": "Qui est Rick Hansen et quel défi a-t-il accompli?",
+          "reponse": "Il a fait le tour du monde en fauteuil roulant en 1985 pour la recherche sur la moelle épinière.",
+          "choix": ["Tour du monde en fauteuil roulant (1985), recherche moelle épinière", "Marathon de l'espoir contre le cancer (1980)", "Traversée du Canada à vélo (1990)", "Escalade de l'Everest en fauteuil roulant (1995)"],
+          "explication": "Rick Hansen a accompli un tour du monde en fauteuil roulant en 1985 (Man in Motion World Tour) pour sensibiliser à la recherche sur les blessures de la moelle épinière."
+        },
+        {
+          "question": "Qui est Catriona Le May Doan?",
+          "reponse": "Patineuse de vitesse canadienne, médaillée d'or aux JO d'hiver de 2002.",
+          "choix": ["Patineuse de vitesse, or aux JO d'hiver 2002", "Skieuse alpine, or aux JO d'hiver 1998", "Nageuse olympique, or aux JO d'été 2000", "Gymnaste olympique, or aux JO d'été 1996"],
+          "explication": "Catriona Le May Doan est une patineuse de vitesse canadienne qui a remporté la médaille d'or en patinage de vitesse aux Jeux olympiques d'hiver de 2002."
+        },
+        {
+          "question": "Complétez : La Coupe Grey a été offerte par le gouverneur général Lord Grey en ___.",
+          "reponse": "En 1909.",
+          "choix": ["1909", "1892", "1920", "1867"],
+          "explication": "La Coupe Grey, le trophée du championnat de la Ligue canadienne de football, a été offerte par le gouverneur général Lord Grey en 1909."
+        },
+        {
+          "question": "Qui a créé la Coupe Clarkson et pour quel sport?",
+          "reponse": "Adrienne Clarkson, 26e gouverneure générale et première d'origine asiatique, l'a créée en 2005 pour le hockey féminin.",
+          "choix": ["Adrienne Clarkson (26e GG, première d'origine asiatique), 2005, hockey féminin", "Michaëlle Jean, 2008, patinage artistique féminin", "Julie Payette, 2010, soccer féminin", "Mary Simon, 2015, curling féminin"],
+          "explication": "La Coupe Clarkson a été créée en 2005 par Adrienne Clarkson, 26e gouverneure générale du Canada et première personne d'origine asiatique à occuper ce poste, pour le championnat de hockey féminin."
         }
       ]
     },
@@ -564,7 +984,12 @@ window.__QUESTIONS_DATA = {
         {"question": "Qu'arrive-t-il si le gouvernement perd un vote de confiance à la Chambre des communes?", "reponse": "Le gouvernement est défait et doit démissionner ou déclencher des élections.", "choix": ["Le gouvernement doit démissionner ou déclencher des élections", "Le Premier ministre est remplacé automatiquement par le chef de l'opposition", "Le Sénat prend le contrôle du gouvernement", "Le Gouverneur général gouverne seul jusqu'aux prochaines élections"], "explication": "Si le gouvernement perd un vote de confiance à la Chambre des communes, il est défait. Le PM doit alors démissionner ou demander la dissolution du Parlement et des élections."},
         {"question": "Quel est le rôle du Cabinet?", "reponse": "Préparer le budget et proposer les lois au Parlement.", "choix": ["Préparer le budget et proposer les lois", "Juger les causes criminelles importantes", "Élire le Premier ministre", "Représenter les provinces au niveau fédéral"], "explication": "Le Cabinet, composé des ministres choisis par le Premier ministre, prépare le budget fédéral et propose la plupart des projets de loi soumis au Parlement."},
         {"question": "Comment appelle-t-on l'opposition officielle au Canada?", "reponse": "La loyale Opposition de Sa Majesté.", "choix": ["La loyale Opposition de Sa Majesté", "Le parti de l'opposition nationale", "L'opposition parlementaire officielle", "Le contre-gouvernement du Canada"], "explication": "L'opposition officielle au Canada porte le nom de « La loyale Opposition de Sa Majesté », soulignant que l'opposition est loyale envers le Souverain tout en s'opposant au gouvernement."},
-        {"question": "Quelles compétences le Cabinet et le PM exercent-ils au sein du pouvoir exécutif?", "reponse": "Ils dirigent le gouvernement fédéral, appliquent les lois et gèrent les affaires de l'État.", "choix": ["Diriger le gouvernement, appliquer les lois, gérer les affaires de l'État", "Adopter les lois, nommer les juges, commander l'armée", "Interpréter les lois, annuler les décisions du Sénat, voter le budget", "Rédiger la Constitution, dissoudre les provinces, signer les traités"], "explication": "Le pouvoir exécutif est exercé par le Premier ministre et le Cabinet. Ils dirigent le gouvernement, appliquent les lois adoptées par le Parlement et gèrent les affaires de l'État."}
+        {"question": "Quelles compétences le Cabinet et le PM exercent-ils au sein du pouvoir exécutif?", "reponse": "Ils dirigent le gouvernement fédéral, appliquent les lois et gèrent les affaires de l'État.", "choix": ["Diriger le gouvernement, appliquer les lois, gérer les affaires de l'État", "Adopter les lois, nommer les juges, commander l'armée", "Interpréter les lois, annuler les décisions du Sénat, voter le budget", "Rédiger la Constitution, dissoudre les provinces, signer les traités"], "explication": "Le pouvoir exécutif est exercé par le Premier ministre et le Cabinet. Ils dirigent le gouvernement, appliquent les lois adoptées par le Parlement et gèrent les affaires de l'État."},
+        {"question": "Complétez : L'AANB est maintenant appelé la ___.", "reponse": "Loi constitutionnelle de 1867.", "choix": ["Loi constitutionnelle de 1867", "Charte canadienne des droits et libertés", "Loi sur le Canada de 1982", "Acte de l'Amérique du Nord"], "explication": "L'Acte de l'Amérique du Nord britannique (AANB) de 1867 est maintenant officiellement appelé la Loi constitutionnelle de 1867."},
+        {"question": "À combien de nations du Commonwealth le souverain lie-t-il le Canada?", "reponse": "53 nations.", "choix": ["53 nations", "28 nations", "75 nations", "15 nations"], "explication": "Le souverain du Canada lie le pays aux 53 nations du Commonwealth, une association de pays ayant des liens historiques avec la Couronne britannique."},
+        {"question": "Comment le lieutenant-gouverneur d'une province est-il nommé?", "reponse": "Il est nommé par le Gouverneur général sur recommandation du Premier ministre.", "choix": ["Par le GG sur recommandation du PM", "Par le premier ministre provincial", "Par un vote de l'assemblée législative", "Par le souverain directement"], "explication": "Le lieutenant-gouverneur de chaque province est nommé par le Gouverneur général sur recommandation du Premier ministre du Canada."},
+        {"question": "Combien de juges siègent à la Cour suprême du Canada et comment sont-ils nommés?", "reponse": "9 juges, nommés par le Gouverneur général.", "choix": ["9 juges, nommés par le GG", "12 juges, élus par le Sénat", "7 juges, nommés par le PM", "15 juges, élus par les provinces"], "explication": "La Cour suprême du Canada est composée de 9 juges nommés par le Gouverneur général sur recommandation du Premier ministre."},
+        {"question": "De quoi sont responsables les chefs de bande et conseillers des Premières Nations?", "reponse": "Du logement, des écoles et des services dans les réserves.", "choix": ["Du logement, des écoles et des services dans les réserves", "De la politique étrangère et de la défense", "Du commerce international et des douanes", "Des élections fédérales et provinciales"], "explication": "Les chefs de bande et les conseillers des Premières Nations sont responsables de la gestion du logement, des écoles et des services dans les réserves."}
       ]
     },
     {
@@ -622,7 +1047,24 @@ window.__QUESTIONS_DATA = {
         {"question": "Quel est le sport officiel d'été du Canada et qui le pratiquait à l'origine?", "reponse": "La crosse (lacrosse); jouée à l'origine par les Autochtones.", "choix": ["La crosse; jouée à l'origine par les Autochtones", "Le baseball; inventé par les colons britanniques", "Le football; introduit par les Loyalistes", "Le cricket; joué à l'origine par les Français"], "explication": "La crosse (lacrosse) est le sport officiel d'été du Canada. Ce sport était joué à l'origine par les peuples autochtones bien avant l'arrivée des Européens."},
         {"question": "En quelle année Ô Canada a-t-il été proclamé hymne national et quand a-t-il été chanté pour la première fois?", "reponse": "Proclamé en 1980; chanté pour la première fois en 1880 à Québec.", "choix": ["Proclamé en 1980; chanté pour la 1re fois en 1880 à Québec", "Proclamé en 1967; chanté pour la 1re fois en 1867 à Ottawa", "Proclamé en 1965; chanté pour la 1re fois en 1900 à Montréal", "Proclamé en 1921; chanté pour la 1re fois en 1867 à Toronto"], "explication": "Ô Canada a été chanté pour la première fois en 1880 à Québec, mais n'a été proclamé hymne national officiel qu'en 1980."},
         {"question": "Quand l'Ordre du Canada a-t-il été créé et quel événement célébrait-on?", "reponse": "En 1967, pour le centenaire de la Confédération.", "choix": ["1967, centenaire de la Confédération", "1982, rapatriement de la Constitution", "1965, adoption du nouveau drapeau", "1927, jubilé de diamant de la Confédération"], "explication": "L'Ordre du Canada a été créé en 1967 pour marquer le centenaire de la Confédération. C'est la plus haute distinction civile du pays."},
-        {"question": "Qu'est-ce que la Croix de Victoria et combien de Canadiens l'ont reçue?", "reponse": "La plus haute distinction militaire; décernée à 96 Canadiens depuis 1854.", "choix": ["Plus haute distinction militaire; 96 Canadiens depuis 1854", "Médaille du courage civil; 150 Canadiens depuis 1867", "Décoration pour service méritoire; 50 Canadiens depuis 1900", "Prix de bravoure policière; 200 Canadiens depuis 1920"], "explication": "La Croix de Victoria est la plus haute distinction militaire du Commonwealth. Depuis 1854, 96 Canadiens ont reçu cet honneur pour actes de bravoure exceptionnels."}
+        {"question": "Qu'est-ce que la Croix de Victoria et combien de Canadiens l'ont reçue?", "reponse": "La plus haute distinction militaire; décernée à 96 Canadiens depuis 1854.", "choix": ["Plus haute distinction militaire; 96 Canadiens depuis 1854", "Médaille du courage civil; 150 Canadiens depuis 1867", "Décoration pour service méritoire; 50 Canadiens depuis 1900", "Prix de bravoure policière; 200 Canadiens depuis 1920"], "explication": "La Croix de Victoria est la plus haute distinction militaire du Commonwealth. Depuis 1854, 96 Canadiens ont reçu cet honneur pour actes de bravoure exceptionnels."},
+        {"question": "Qu'est-ce qui a inspiré le design du drapeau canadien?", "reponse": "Le drapeau du Collège militaire royal de Kingston (1876).", "choix": ["Le drapeau du Collège militaire royal de Kingston (1876)", "Le drapeau de la Compagnie de la Baie d'Hudson", "Le drapeau de la Nouvelle-France", "L'Union Jack britannique"], "explication": "Le design du drapeau canadien actuel a été inspiré par le drapeau du Collège militaire royal de Kingston, qui arborait des feuilles d'érable depuis 1876."},
+        {"question": "Complétez : Le rouge et le blanc sont les couleurs nationales du Canada, héritées de la ___ et de l'___.", "reponse": "France et Angleterre.", "choix": ["France et Angleterre", "Écosse et Irlande", "Espagne et Portugal", "Allemagne et Pays-Bas"], "explication": "Le rouge et le blanc, couleurs nationales du Canada, sont héritées de la France (croix rouge) et de l'Angleterre (croix blanche) depuis le Moyen Âge."},
+        {"question": "En quelle année la fleur de lys a-t-elle été adoptée par le roi de France?", "reponse": "En 496.", "choix": ["496", "800", "1000", "1200"], "explication": "La fleur de lys a été adoptée par le roi français Clovis Ier en 496, devenant un symbole durable de la royauté française, puis du Québec."},
+        {"question": "Quels symboles figurent sur les armoiries du Canada?", "reponse": "Les symboles d'Angleterre, France, Écosse, Irlande, plus des feuilles d'érable rouges.", "choix": ["Angleterre, France, Écosse, Irlande + feuilles d'érable rouges", "Uniquement la feuille d'érable et le castor", "Le lion, l'aigle et l'ours", "La couronne, l'épée et le bouclier"], "explication": "Les armoiries du Canada portent les symboles des quatre nations fondatrices européennes (Angleterre, France, Écosse, Irlande) ainsi que des feuilles d'érable rouges représentant le Canada."},
+        {"question": "Quand les édifices du Parlement ont-ils été construits, incendiés et reconstruits?", "reponse": "Terminés dans les années 1860, incendiés en 1916, reconstruits en 1922; la Bibliothèque fut la seule partie épargnée.", "choix": ["Terminés ~1860, incendie 1916, reconstruits 1922, Bibliothèque épargnée", "Terminés 1867, incendie 1900, reconstruits 1910", "Terminés 1850, incendie 1890, reconstruits 1900", "Terminés 1880, incendie 1920, reconstruits 1935"], "explication": "Les édifices du Parlement ont été terminés dans les années 1860, ont subi un incendie en 1916 et ont été reconstruits en 1922. La Bibliothèque du Parlement est la seule partie qui a été épargnée par l'incendie."},
+        {"question": "Quand la Tour de la Paix a-t-elle été terminée et que contient-elle?", "reponse": "Terminée en 1927; elle abrite la Chapelle du Souvenir avec les Livres du Souvenir.", "choix": ["Terminée en 1927; Chapelle du Souvenir avec Livres du Souvenir", "Terminée en 1867; bureau du Premier ministre", "Terminée en 1922; salle du Sénat", "Terminée en 1945; musée de la guerre"], "explication": "La Tour de la Paix, terminée en 1927 sur la Colline du Parlement, abrite la Chapelle du Souvenir qui contient les Livres du Souvenir honorant les Canadiens morts au combat."},
+        {"question": "Depuis quand le castor est-il l'emblème de la Société Saint-Jean-Baptiste?", "reponse": "Depuis 1834; il figure aussi sur les armoiries de la Saskatchewan, de l'Alberta, de Montréal et de Toronto.", "choix": ["Depuis 1834; armoiries de SK, AB, Montréal, Toronto", "Depuis 1867; armoiries de l'Ontario et du Québec", "Depuis 1900; armoiries de la C-B et du Manitoba", "Depuis 1760; armoiries de la Nouvelle-France"], "explication": "Le castor est l'emblème de la Société Saint-Jean-Baptiste depuis 1834. Il figure également sur les armoiries de la Saskatchewan, de l'Alberta, de Montréal et de Toronto."},
+        {"question": "Quels sont les trois objectifs de la Loi sur les langues officielles de 1969?", "reponse": "Égalité du français et de l'anglais au Parlement, maintien des communautés minoritaires, promotion de l'égalité dans la société.", "choix": ["Égalité au Parlement, maintien des communautés minoritaires, promotion de l'égalité", "Enseignement obligatoire des deux langues, traduction de toutes les lois, bilinguisme universel", "Protection du français au Québec, anglais dans l'Ouest, bilinguisme à Ottawa", "Création d'écoles bilingues, radio bilingue, journaux bilingues"], "explication": "La Loi sur les langues officielles de 1969 vise trois objectifs : assurer l'égalité du français et de l'anglais au Parlement, maintenir les communautés de langue officielle en situation minoritaire, et promouvoir l'égalité des deux langues dans la société canadienne."},
+        {"question": "Quel est l'hymne royal du Canada?", "reponse": "« Dieu protège la Reine » (God Save the Queen).", "choix": ["Dieu protège la Reine / God Save the Queen", "Ô Canada", "Rule Britannia", "La Marseillaise"], "explication": "L'hymne royal du Canada est « Dieu protège la Reine » (God Save the Queen), chanté lors de cérémonies officielles en présence du souverain ou de son représentant."},
+        {"question": "Complétez : La reine Elizabeth II est reine du Canada depuis ___ et a célébré son jubilé d'or en ___.", "reponse": "Depuis 1952, jubilé d'or en 2002.", "choix": ["1952; jubilé d'or en 2002", "1960; jubilé d'or en 2010", "1945; jubilé d'or en 1995", "1965; jubilé d'or en 2015"], "explication": "La reine Elizabeth II est devenue reine du Canada en 1952 et a célébré son jubilé d'or (50 ans de règne) en 2002."},
+        {"question": "Qui fut le premier Canadien à recevoir la Croix de Victoria?", "reponse": "Alexander Roberts Dunn, à la bataille de Balaclava en 1854.", "choix": ["Alexander Roberts Dunn, Balaclava 1854", "William Hall, Lucknow 1857", "Billy Bishop, Somme 1916", "Filip Konowal, Vimy 1917"], "explication": "Alexander Roberts Dunn fut le premier Canadien à recevoir la Croix de Victoria pour sa bravoure lors de la célèbre charge de la brigade légère à la bataille de Balaclava en 1854."},
+        {"question": "Qui fut le premier Noir à recevoir la Croix de Victoria?", "reponse": "William Hall, au siège de Lucknow en 1857.", "choix": ["William Hall, siège de Lucknow 1857", "Alexander Roberts Dunn, Balaclava 1854", "Paul Triquet, Italie 1943", "Robert Hampton Gray, Japon 1945"], "explication": "William Hall, un Néo-Écossais, fut le premier Noir et le premier Canadien de naissance à recevoir la Croix de Victoria pour sa bravoure au siège de Lucknow en Inde en 1857."},
+        {"question": "Qui était Filip Konowal?", "reponse": "Né en Ukraine, il a reçu la Croix de Victoria pour sa bravoure à la bataille de la cote 70 en 1917.", "choix": ["Né en Ukraine, CV pour la cote 70 (1917)", "Né en Pologne, CV pour Vimy (1917)", "Né en Russie, CV pour la Somme (1916)", "Né en Italie, CV pour Passchendaele (1917)"], "explication": "Filip Konowal, né en Ukraine et immigrant au Canada, a reçu la Croix de Victoria pour sa bravoure exceptionnelle lors de la bataille de la cote 70 en 1917 pendant la Première Guerre mondiale."},
+        {"question": "Qui était Billy Bishop?", "reponse": "Un as de l'aviation canadien, récipiendaire de la Croix de Victoria en WWI, devenu maréchal de l'Air honoraire.", "choix": ["As de l'aviation, CV en WWI, maréchal de l'Air honoraire", "Pilote de bombardier en WWII, médaille du service distingué", "Commandant de la Marine royale, héros de la bataille de l'Atlantique", "Général d'infanterie, héros de la guerre des Boers"], "explication": "Billy Bishop était un as de l'aviation canadien de la Première Guerre mondiale. Il a reçu la Croix de Victoria pour ses exploits aériens et est devenu maréchal de l'Air honoraire."},
+        {"question": "Qui a reçu la Croix de Victoria pour la bataille de Casa Berardi en Italie en 1943?", "reponse": "Paul Triquet.", "choix": ["Paul Triquet", "Billy Bishop", "Filip Konowal", "Robert Hampton Gray"], "explication": "Paul Triquet a reçu la Croix de Victoria pour son courage exceptionnel lors de la bataille de Casa Berardi en Italie en décembre 1943 pendant la Deuxième Guerre mondiale."},
+        {"question": "Complétez : ___ fut le dernier Canadien à recevoir la Croix de Victoria, en août 1945.", "reponse": "Robert Hampton Gray.", "choix": ["Robert Hampton Gray", "Paul Triquet", "Billy Bishop", "Filip Konowal"], "explication": "Robert Hampton Gray fut le dernier Canadien à recevoir la Croix de Victoria, décernée à titre posthume pour ses actions héroïques en août 1945, peu avant la fin de la Deuxième Guerre mondiale."},
+        {"question": "Associez les dates aux jours fériés : 11 janvier, 9 avril, 24 juin, 1er juillet, 11 novembre, 20 novembre.", "reponse": "11 jan = Journée Macdonald, 9 avr = Jour de Vimy, 24 juin = Fête nationale du QC, 1er juil = Fête du Canada, 11 nov = Jour du Souvenir, 20 nov = Journée Laurier.", "choix": ["Macdonald 11 jan, Vimy 9 avr, Fête QC 24 juin, Fête du Canada 1er juil, Souvenir 11 nov, Laurier 20 nov", "Macdonald 20 nov, Vimy 11 nov, Fête QC 1er juil, Fête du Canada 24 juin, Souvenir 9 avr, Laurier 11 jan", "Macdonald 9 avr, Vimy 11 jan, Fête QC 11 nov, Fête du Canada 20 nov, Souvenir 1er juil, Laurier 24 juin", "Macdonald 1er juil, Vimy 24 juin, Fête QC 11 jan, Fête du Canada 9 avr, Souvenir 20 nov, Laurier 11 nov"], "explication": "Les principaux jours commémoratifs sont : Journée Macdonald (11 jan), Jour de Vimy (9 avr), Fête de Victoria (lundi avant le 25 mai), Fête nationale du Québec (24 juin), Fête du Canada (1er juil), Fête du Travail (1er lundi de sept), Action de grâces (2e lundi d'oct), Jour du Souvenir (11 nov), Journée Laurier (20 nov)."}
       ]
     },
     {
@@ -664,7 +1106,22 @@ window.__QUESTIONS_DATA = {
         {"question": "Pourquoi l'Alberta est-elle économiquement importante?", "reponse": "En raison de ses ressources en pétrole et en gaz naturel.", "choix": ["Pour ses ressources en pétrole et gaz naturel", "Pour son industrie forestière", "Pour ses mines de diamants", "Pour sa production agricole de blé"], "explication": "L'Alberta est une province économiquement très importante grâce à ses vastes ressources en pétrole et en gaz naturel, découvertes en 1947."},
         {"question": "Qu'est-ce qui caractérise l'économie de la Colombie-Britannique?", "reponse": "Le port de Vancouver et l'industrie forestière.", "choix": ["Le port de Vancouver et l'industrie forestière", "Les mines de charbon et la pêche au saumon", "L'industrie automobile et les technologies", "L'agriculture céréalière et l'élevage bovin"], "explication": "La Colombie-Britannique se distingue par le port de Vancouver (le plus grand port du Canada) et son importante industrie forestière."},
         {"question": "Quels sont les deux grands plans d'eau importants à l'intérieur du Canada?", "reponse": "La baie d'Hudson et le fleuve Saint-Laurent.", "choix": ["La baie d'Hudson et le fleuve Saint-Laurent", "Le lac Winnipeg et la rivière Mackenzie", "La baie James et le fleuve Fraser", "Le lac Supérieur et la rivière Ottawa"], "explication": "La baie d'Hudson et le fleuve Saint-Laurent sont deux des plans d'eau les plus importants du Canada, jouant un rôle central dans l'histoire et l'économie du pays."},
-        {"question": "Quelle particularité linguistique distingue le Nouveau-Brunswick des autres provinces?", "reponse": "C'est la seule province officiellement bilingue (français et anglais).", "choix": ["Seule province officiellement bilingue", "Seule province uniquement francophone", "Province avec trois langues officielles", "Seule province sans langue officielle"], "explication": "Le Nouveau-Brunswick est la seule province officiellement bilingue du Canada, où le français et l'anglais ont un statut officiel égal."}
+        {"question": "Quelle particularité linguistique distingue le Nouveau-Brunswick des autres provinces?", "reponse": "C'est la seule province officiellement bilingue (français et anglais).", "choix": ["Seule province officiellement bilingue", "Seule province uniquement francophone", "Province avec trois langues officielles", "Seule province sans langue officielle"], "explication": "Le Nouveau-Brunswick est la seule province officiellement bilingue du Canada, où le français et l'anglais ont un statut officiel égal."},
+        {"question": "Complétez : Ottawa est la ___ plus grande ville du Canada et la Région de la capitale nationale couvre ___ km².", "reponse": "4e plus grande ville, 4 700 km².", "choix": ["4e, 4 700 km²", "2e, 6 000 km²", "5e, 3 500 km²", "3e, 5 200 km²"], "explication": "Ottawa est la quatrième plus grande ville du Canada. La Région de la capitale nationale, qui englobe Ottawa et Gatineau, couvre une superficie de 4 700 km²."},
+        {"question": "Quelles sont les caractéristiques distinctives de Terre-Neuve-et-Labrador?", "reponse": "Fuseau horaire propre, plus ancienne colonie de l'Empire britannique, pétrole en mer.", "choix": ["Fuseau horaire propre, plus ancienne colonie britannique, pétrole en mer", "Plus grande province, plus grand port, plus de pêcheurs", "Climat le plus chaud, plus de tourisme, énergie éolienne", "Plus petite population, économie forestière, mines d'or"], "explication": "Terre-Neuve-et-Labrador possède son propre fuseau horaire (30 minutes de décalage), est la plus ancienne colonie de l'Empire britannique et dispose d'importantes réserves de pétrole en mer."},
+        {"question": "Quelles sont les caractéristiques de l'Île-du-Prince-Édouard?", "reponse": "Plus petite province, terre rouge, pommes de terre, Pont de la Confédération, Anne aux pignons verts (Lucy Maud Montgomery).", "choix": ["Plus petite province, terre rouge, pommes de terre, Pont de la Confédération, Anne aux pignons verts", "Plus grande île, terre noire, blé, pont suspendu, récits acadiens", "Province maritime, sable blanc, homards, tunnel sous-marin, folklore celtique", "Province insulaire, terre brune, maïs, traversier, poèmes de Longfellow"], "explication": "L'Île-du-Prince-Édouard est la plus petite province du Canada, connue pour sa terre rouge, ses pommes de terre, le Pont de la Confédération et le roman Anne aux pignons verts de Lucy Maud Montgomery."},
+        {"question": "Complétez : La Nouvelle-Écosse a la plus grande population de l'___ et Halifax possède le plus grand port en eau profonde du ___ naturel du monde.", "reponse": "Atlantique; Canada.", "choix": ["Atlantique; Canada", "Est; monde", "Nord; Commonwealth", "Amérique; continent"], "explication": "La Nouvelle-Écosse a la plus grande population des provinces de l'Atlantique. Halifax possède le plus grand port naturel en eau profonde du Canada. La Baie de Fundy abrite les plus hautes marées du monde."},
+        {"question": "Quelles sont les principales caractéristiques du Nouveau-Brunswick?", "reponse": "Saint John est la plus grande ville, Moncton est le centre francophone/acadien, un tiers de la population vit en français.", "choix": ["Saint John plus grande ville, Moncton centre acadien, un tiers francophone", "Fredericton plus grande ville, Saint John centre acadien, moitié francophone", "Moncton plus grande ville, Fredericton centre acadien, un quart francophone", "Halifax plus grande ville, Bathurst centre acadien, deux tiers francophone"], "explication": "Au Nouveau-Brunswick, Saint John est la plus grande ville, Moncton est le centre de la communauté francophone et acadienne, et environ un tiers de la population vit en français."},
+        {"question": "Quelles sont les caractéristiques économiques du Québec?", "reponse": "8 millions d'habitants, plus grand producteur de pâtes et papiers et d'hydroélectricité; Montréal 2e ville francophone du monde après Paris.", "choix": ["8 M habitants, 1er producteur pâtes/papiers et hydroélectricité, Montréal 2e ville francophone après Paris", "10 M habitants, 1er producteur de blé, Québec 2e ville francophone après Paris", "6 M habitants, 1er producteur de pétrole, Montréal 3e ville francophone", "8 M habitants, 1er producteur automobile, Montréal plus grande ville francophone"], "explication": "Le Québec compte environ 8 millions d'habitants et est le plus grand producteur de pâtes et papiers et d'hydroélectricité au Canada. Montréal est la deuxième plus grande ville francophone du monde après Paris."},
+        {"question": "Quelles sont les caractéristiques de l'Ontario?", "reponse": "Plus de 12 millions d'habitants (un tiers du Canada), région de Niagara (vignobles), plus grande population francophone hors Québec, lac Supérieur plus grand lac d'eau douce du monde.", "choix": ["12+ M hab (1/3 du Canada), Niagara/vignobles, plus grande pop francophone hors QC, lac Supérieur", "10 M hab (1/4 du Canada), Muskoka/forêts, plus grande pop autochtone, lac Huron", "15 M hab (1/2 du Canada), Ottawa/tulipes, plus grande pop anglophone, lac Érié", "8 M hab (1/5 du Canada), Hamilton/acier, plus grande pop immigrante, lac Ontario"], "explication": "L'Ontario compte plus de 12 millions d'habitants, soit un tiers de la population canadienne. La région de Niagara est connue pour ses vignobles. L'Ontario possède la plus grande population francophone hors Québec et le lac Supérieur, plus grand lac d'eau douce du monde."},
+        {"question": "Quelles sont les caractéristiques distinctives du Manitoba?", "reponse": "14 % d'origine ukrainienne, 15 %+ autochtones (plus grande proportion), Saint-Boniface plus grande communauté francophone de l'Ouest, Portage et Main à Winnipeg.", "choix": ["14 % Ukrainiens, 15 %+ autochtones, Saint-Boniface francophone, Portage et Main", "20 % Français, 10 % autochtones, Brandon bilingue, Forks à Winnipeg", "10 % Allemands, 5 % autochtones, Churchill francophone, Osborne Village", "25 % Britanniques, 8 % autochtones, Steinbach francophone, Exchange District"], "explication": "Le Manitoba se distingue par sa forte population d'origine ukrainienne (14 %), la plus grande proportion d'Autochtones (15 %+), la communauté francophone de Saint-Boniface (45 000 hab.) et l'intersection emblématique de Portage et Main à Winnipeg."},
+        {"question": "Quelles sont les caractéristiques de la Saskatchewan?", "reponse": "40 % des terres arables du Canada, plus grand producteur de céréales, plus riches gisements d'uranium et de potasse, École de la GRC à Regina.", "choix": ["40 % terres arables, plus grand producteur céréales, uranium/potasse, GRC à Regina", "60 % terres arables, plus grand producteur de pétrole, charbon/fer, RCMP à Saskatoon", "30 % terres arables, plus grand producteur de bétail, or/diamant, GRC à Prince Albert", "50 % terres arables, plus grand producteur de canola, nickel/cuivre, GRC à Moose Jaw"], "explication": "La Saskatchewan possède 40 % des terres arables du Canada, est le plus grand producteur de céréales, possède les plus riches gisements d'uranium et de potasse au monde, et abrite l'École de la GRC à Regina."},
+        {"question": "D'où vient le nom de l'Alberta et quels sont ses attraits?", "reponse": "Nommée d'après la Princesse Louise Caroline Alberta (4e fille de Victoria); 5 parcs nationaux dont Banff (1885), badlands riches en dinosaures, sables bitumineux, ranchs bovins.", "choix": ["Princesse Louise Caroline Alberta; Banff (1885), dinosaures, sables bitumineux, ranchs", "Reine Alberta de Suède; Jasper (1900), mammouths, gaz naturel, chevaux", "Duchesse Alberta d'York; Lake Louise (1870), fossiles marins, charbon, moutons", "Princesse Alberta de Galles; Waterton (1895), trilobites, pétrole conventionnel, bisons"], "explication": "L'Alberta est nommée d'après la Princesse Louise Caroline Alberta, 4e fille de la reine Victoria. Elle possède 5 parcs nationaux dont Banff (1885, premier parc national du Canada), des badlands riches en fossiles de dinosaures, des sables bitumineux et de grands ranchs bovins."},
+        {"question": "Quelles sont les caractéristiques de la Colombie-Britannique?", "reponse": "4 millions d'habitants, moitié des biens produits = foresterie, ~600 parcs provinciaux, langues chinoises et pendjabi après l'anglais.", "choix": ["4 M hab, foresterie = moitié des biens, ~600 parcs, chinois et pendjabi après anglais", "5 M hab, pêche = moitié des biens, ~300 parcs, japonais et coréen après anglais", "3 M hab, mines = moitié des biens, ~800 parcs, espagnol et tagalog après anglais", "6 M hab, tourisme = moitié des biens, ~400 parcs, hindi et arabe après anglais"], "explication": "La Colombie-Britannique compte 4 millions d'habitants, la foresterie représente la moitié de ses biens produits, elle possède environ 600 parcs provinciaux, et les langues chinoises et le pendjabi sont les langues les plus parlées après l'anglais. Victoria est le port d'attache de la Marine du Pacifique et la vallée de l'Okanagan est réputée pour ses vignobles."},
+        {"question": "Complétez : Les trois territoires couvrent ___ du territoire canadien mais ne comptent que ___ habitants.", "reponse": "Un tiers du territoire, environ 100 000 habitants.", "choix": ["Un tiers, ~100 000 habitants", "Un quart, ~200 000 habitants", "La moitié, ~500 000 habitants", "Un cinquième, ~50 000 habitants"], "explication": "Les trois territoires (Nunavut, TNO, Yukon) couvrent un tiers du territoire canadien mais ne comptent qu'environ 100 000 habitants. On y trouve des mines d'or, plomb, cuivre, diamant et zinc, et on les appelle la « terre du soleil de minuit »."},
+        {"question": "Quelles sont les caractéristiques du Nunavut?", "reponse": "Créé en 1999 des TNO, « notre terre » en inuktitut, 85 % Inuit, 19 députés choisissent le PM par consensus, inuktitut langue officielle.", "choix": ["Créé 1999 des TNO, « notre terre », 85 % Inuit, consensus, inuktitut officiel", "Créé 1993 du Yukon, « terre froide », 60 % Inuit, élection directe, anglais officiel", "Créé 2001 de la C-B, « grand nord », 90 % Dénés, référendum, français officiel", "Créé 1995 des TNO, « terre blanche », 75 % Inuit, monarchie, cri officiel"], "explication": "Le Nunavut a été créé en 1999 à partir des Territoires du Nord-Ouest. Son nom signifie « notre terre » en inuktitut. Sa population est à 85 % inuite, ses 19 députés choisissent le premier ministre par consensus et l'inuktitut est une langue officielle."},
+        {"question": "Quelles sont les caractéristiques des Territoires du Nord-Ouest?", "reponse": "Formés en 1870 de la Terre de Rupert, Yellowknife « capitale nord-américaine du diamant », plus de la moitié autochtone, fleuve Mackenzie 4 200 km.", "choix": ["Terre de Rupert 1870, Yellowknife « capitale du diamant », moitié+ autochtone, Mackenzie 4 200 km", "Terre de Rupert 1867, Inuvik « capitale du pétrole », tiers autochtone, Yukon 3 000 km", "Nouvelle-France 1880, Yellowknife « capitale de l'or », quart autochtone, Mackenzie 2 500 km", "Terre de Rupert 1900, Hay River « capitale du gaz », moitié+ autochtone, Nelson 3 800 km"], "explication": "Les TNO ont été formés en 1870 de la Terre de Rupert. Yellowknife est surnommée la « capitale nord-américaine du diamant ». Plus de la moitié de la population est autochtone. Le fleuve Mackenzie s'étend sur 4 200 km."},
+        {"question": "Quelles sont les caractéristiques du Yukon?", "reponse": "Record de froid au Canada (-63 °C), Robert W. Service poète de la ruée vers l'or, mont Logan plus haute montagne du Canada, White Pass and Yukon Railway (1900).", "choix": ["-63 °C record, R.W. Service poète, mont Logan plus haut sommet, White Pass Railway 1900", "-55 °C record, Jack London poète, mont Saint-Elias plus haut sommet, Alaska Highway 1942", "-70 °C record, Pierre Berton poète, mont Robson plus haut sommet, Klondike Railway 1898", "-50 °C record, Robert Frost poète, mont Columbia plus haut sommet, Chilkoot Railway 1895"], "explication": "Le Yukon détient le record de froid au Canada (-63 °C). Robert W. Service est le célèbre poète de la ruée vers l'or du Klondike. Le mont Logan est la plus haute montagne du Canada. Le White Pass and Yukon Railway a été construit en 1900."}
       ]
     }
   ]
