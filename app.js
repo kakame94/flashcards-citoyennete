@@ -18,6 +18,8 @@ let examIndex = 0;
 let examAnswers = [];
 let examTimer = null;
 let examTimeLeft = 45 * 60;
+let examLearnMode = false;
+let examAnswered = false;
 
 // Spaced repetition data
 let progress = loadProgress();
@@ -112,6 +114,15 @@ function bindEvents() {
 
   // Quiz next
   document.getElementById('btn-next-quiz').addEventListener('click', nextQuiz);
+
+  // Exam mode toggle
+  document.querySelectorAll('.exam-mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.exam-mode-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      examLearnMode = btn.dataset.exammode === 'learn';
+    });
+  });
 
   // Exam
   document.getElementById('btn-start-exam').addEventListener('click', startExam);
@@ -361,6 +372,7 @@ function startExam() {
 
 function showExamQuestion() {
   const card = examCards[examIndex];
+  examAnswered = false;
   document.getElementById('exam-question').textContent = card.question;
   document.getElementById('exam-index').textContent = examIndex + 1;
   document.getElementById('exam-progress').style.width = ((examIndex + 1) / 20 * 100) + '%';
@@ -370,17 +382,47 @@ function showExamQuestion() {
   const shuffled = shuffle([...card.choix]);
   const correctAnswer = getCorrectAnswer(card);
 
+  // Hide feedback
+  const feedback = document.getElementById('exam-feedback');
+  feedback.classList.add('hidden');
+  feedback.innerHTML = '';
+
   shuffled.forEach(choice => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
     if (examAnswers[examIndex] === choice) btn.style.borderColor = 'var(--red)';
     btn.textContent = choice;
     btn.addEventListener('click', () => {
+      if (examAnswered) return;
       examAnswers[examIndex] = choice;
-      document.querySelectorAll('#exam-choices .choice-btn').forEach(b => {
-        b.style.borderColor = b.textContent === choice ? 'var(--red)' : '';
-        b.style.background = b.textContent === choice ? 'var(--red-light)' : '';
-      });
+
+      if (examLearnMode) {
+        // Learn mode: show feedback immediately
+        examAnswered = true;
+        const isCorrect = choice === correctAnswer;
+
+        document.querySelectorAll('#exam-choices .choice-btn').forEach(b => {
+          b.classList.add('disabled');
+          if (b.textContent === correctAnswer) b.classList.add('correct');
+        });
+
+        if (isCorrect) {
+          btn.classList.add('correct');
+          feedback.className = 'quiz-feedback correct';
+          feedback.innerHTML = `<strong>✓ Bonne réponse !</strong><br>${card.explication}`;
+        } else {
+          btn.classList.add('wrong');
+          feedback.className = 'quiz-feedback wrong';
+          feedback.innerHTML = `<strong>✗ Mauvaise réponse</strong><br>La bonne réponse est : <strong>${correctAnswer}</strong><br>${card.explication}`;
+        }
+        feedback.classList.remove('hidden');
+      } else {
+        // Real exam mode: just highlight selection
+        document.querySelectorAll('#exam-choices .choice-btn').forEach(b => {
+          b.style.borderColor = b.textContent === choice ? 'var(--red)' : '';
+          b.style.background = b.textContent === choice ? 'var(--red-light)' : '';
+        });
+      }
     });
     choicesDiv.appendChild(btn);
   });
@@ -391,11 +433,13 @@ function showExamQuestion() {
 
 function nextExamQuestion() {
   if (examAnswers[examIndex] === null) {
-    // Highlight that they need to select
     document.getElementById('exam-choices').style.animation = 'pulse 0.3s';
     setTimeout(() => document.getElementById('exam-choices').style.animation = '', 300);
     return;
   }
+
+  // In learn mode, must have seen feedback before moving on
+  if (examLearnMode && !examAnswered) return;
 
   if (examIndex === 19) {
     finishExam();

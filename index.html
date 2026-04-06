@@ -87,6 +87,18 @@
       <div id="exam-header" class="exam-header">
         <h2>Examen simul&eacute;</h2>
         <p>20 questions &mdash; 45 minutes &mdash; 15/20 pour r&eacute;ussir</p>
+        <div class="exam-mode-toggle">
+          <button id="btn-mode-real" class="exam-mode-btn active" data-exammode="real">
+            <span class="mode-icon">🎯</span>
+            <span class="mode-label">Examen r&eacute;el</span>
+            <span class="mode-desc">R&eacute;sultats &agrave; la fin</span>
+          </button>
+          <button id="btn-mode-learn" class="exam-mode-btn" data-exammode="learn">
+            <span class="mode-icon">📖</span>
+            <span class="mode-label">Apprentissage</span>
+            <span class="mode-desc">Feedback apr&egrave;s chaque r&eacute;ponse</span>
+          </button>
+        </div>
         <button id="btn-start-exam" class="btn btn-primary btn-large">Commencer l'examen</button>
       </div>
       <div id="exam-active" class="hidden">
@@ -100,6 +112,7 @@
         <div class="quiz-card">
           <p id="exam-question" class="quiz-question"></p>
           <div id="exam-choices" class="quiz-choices"></div>
+          <div id="exam-feedback" class="quiz-feedback hidden"></div>
           <button id="btn-next-exam" class="btn btn-primary">Suivante →</button>
         </div>
       </div>
