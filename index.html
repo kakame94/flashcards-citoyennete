@@ -26,7 +26,8 @@
         <button class="tab active" data-mode="flashcard">Flashcards</button>
         <button class="tab" data-mode="quiz">Quiz QCM</button>
         <button class="tab" data-mode="exam">Examen simul&eacute;</button>
-        <button class="tab" data-mode="stats">Statistiques</button>
+        <button class="tab" data-mode="dates">Dates</button>
+        <button class="tab" data-mode="stats">Stats</button>
       </nav>
     </header>
 
@@ -124,6 +125,23 @@
           <button id="btn-retry-exam" class="btn btn-primary">Refaire un examen</button>
         </div>
       </div>
+    </section>
+
+    <!-- DATES MODE -->
+    <section id="dates-view" class="section hidden">
+      <h2>📅 Dates &amp; Personnalit&eacute;s cl&eacute;s</h2>
+      <div class="dates-filters">
+        <button class="date-filter active" data-filter="all">Tout</button>
+        <button class="date-filter" data-filter="feries">F&eacute;ri&eacute;s</button>
+        <button class="date-filter" data-filter="histoire">Histoire</button>
+        <button class="date-filter" data-filter="gouvernement">Gouvernement</button>
+        <button class="date-filter" data-filter="personnes">Personnes</button>
+      </div>
+      <div class="dates-search">
+        <input type="text" id="dates-search-input" placeholder="Rechercher une date, un nom, un &eacute;v&eacute;nement...">
+      </div>
+      <div id="dates-list" class="dates-list"></div>
+      <button id="btn-quiz-dates" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">🧠 Quiz sur les dates</button>
     </section>
 
     <!-- STATS MODE -->
