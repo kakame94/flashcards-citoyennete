@@ -132,6 +132,18 @@ function bindEvents() {
     document.getElementById('exam-header').classList.remove('hidden');
   });
 
+  // Dates
+  document.querySelectorAll('.date-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.date-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentDateFilter = btn.dataset.filter;
+      renderDates();
+    });
+  });
+  document.getElementById('dates-search-input').addEventListener('input', renderDates);
+  document.getElementById('btn-quiz-dates').addEventListener('click', startDatesQuiz);
+
   // Stats
   document.getElementById('btn-reset-stats').addEventListener('click', () => {
     if (confirm('Réinitialiser toutes les statistiques ?')) {
@@ -148,7 +160,7 @@ function switchMode(mode) {
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
 
   // Hide all views
-  ['chapter-selector', 'flashcard-view', 'quiz-view', 'exam-view', 'stats-view'].forEach(id => {
+  ['chapter-selector', 'flashcard-view', 'quiz-view', 'exam-view', 'stats-view', 'dates-view'].forEach(id => {
     document.getElementById(id).classList.add('hidden');
   });
 
@@ -157,6 +169,9 @@ function switchMode(mode) {
     document.getElementById('exam-header').classList.remove('hidden');
     document.getElementById('exam-active').classList.add('hidden');
     document.getElementById('exam-results').classList.add('hidden');
+  } else if (mode === 'dates') {
+    document.getElementById('dates-view').classList.remove('hidden');
+    renderDates();
   } else if (mode === 'stats') {
     document.getElementById('stats-view').classList.remove('hidden');
     renderStats();
@@ -572,6 +587,208 @@ function shuffle(arr) {
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
+}
+
+// === DATES DATA ===
+const DATES_DATA = [
+  // Jours fériés
+  { date: "1er janvier", event: "Jour de l'An", person: "", cat: "feries" },
+  { date: "11 janvier", event: "Journée Sir John A. Macdonald", person: "Sir John A. Macdonald — 1er Premier ministre du Canada", cat: "feries" },
+  { date: "9 avril", event: "Jour de Vimy", person: "Bataille de la crête de Vimy (1917) — 10 000 victimes", cat: "feries" },
+  { date: "Lundi avant le 25 mai", event: "Fête de Victoria", person: "Anniversaire officiel du souverain", cat: "feries" },
+  { date: "24 juin", event: "Fête nationale du Québec", person: "Saint-Jean-Baptiste", cat: "feries" },
+  { date: "1er juillet", event: "Fête du Canada", person: "Confédération de 1867 — avant 1982 : « Fête du Dominion »", cat: "feries" },
+  { date: "1er lundi de sept.", event: "Fête du Travail", person: "", cat: "feries" },
+  { date: "2e lundi d'oct.", event: "Action de grâces", person: "", cat: "feries" },
+  { date: "11 novembre", event: "Jour du Souvenir", person: "11e heure du 11e jour du 11e mois — John McCrae, « Au champ d'honneur »", cat: "feries" },
+  { date: "20 novembre", event: "Journée Sir Wilfrid Laurier", person: "Sir Wilfrid Laurier — portrait sur le billet de 5 $", cat: "feries" },
+  { date: "25 décembre", event: "Noël", person: "", cat: "feries" },
+
+  // Histoire — avant la Confédération
+  { date: "~1000", event: "Vikings atteignent le Canada", person: "L'Anse aux Meadows (T.-N.-L.) — patrimoine mondial UNESCO", cat: "histoire" },
+  { date: "1497", event: "Jean Cabot cartographie la côte Est", person: "Jean Cabot (Giovanni Caboto)", cat: "histoire" },
+  { date: "1534", event: "Premier voyage de Jacques Cartier", person: "Jacques Cartier — mot « kanata » (village en iroquois)", cat: "histoire" },
+  { date: "1604", event: "Premier établissement européen", person: "Pierre de Monts et Samuel de Champlain — Île Sainte-Croix", cat: "histoire" },
+  { date: "1608", event: "Fondation de Québec", person: "Samuel de Champlain", cat: "histoire" },
+  { date: "1670", event: "Fondation Compagnie de la Baie d'Hudson", person: "Roi Charles II d'Angleterre", cat: "histoire" },
+  { date: "1701", event: "Paix entre Français et Iroquois", person: "Grande Paix de Montréal", cat: "histoire" },
+  { date: "1759", event: "Bataille des plaines d'Abraham", person: "Général Wolfe et général Montcalm — tous deux tués", cat: "histoire" },
+  { date: "1763", event: "Proclamation royale", person: "Roi George III — droits territoriaux autochtones", cat: "histoire" },
+  { date: "1774", event: "Acte de Québec", person: "Liberté religieuse catholique, droit civil français", cat: "histoire" },
+  { date: "1776", event: "Arrivée des Loyalistes", person: "40 000+ fuient vers le Canada, dont Joseph Brant (Mohawk)", cat: "histoire" },
+  { date: "1791", event: "Acte constitutionnel", person: "Division : Haut-Canada (Ontario) et Bas-Canada (Québec)", cat: "histoire" },
+  { date: "1793", event: "Abolition de l'esclavage au Haut-Canada", person: "John Graves Simcoe — 1er lt-gouv., fonde York (Toronto)", cat: "histoire" },
+  { date: "1807", event: "Interdiction traite des esclaves (Empire britannique)", person: "Parlement britannique", cat: "histoire" },
+  { date: "1812-1814", event: "Guerre de 1812", person: "Brock (Detroit/Queenston Heights), Laura Secord, Salaberry (Châteauguay)", cat: "histoire" },
+  { date: "1832", event: "Création de la Bourse de Montréal", person: "", cat: "histoire" },
+  { date: "1833", event: "Abolition de l'esclavage dans l'Empire britannique", person: "Parlement britannique", cat: "histoire" },
+  { date: "1837-1838", event: "Rébellions au Haut et Bas-Canada", person: "Lord Durham — recommande gouvernement responsable", cat: "histoire" },
+  { date: "1847-1848", event: "Premier gouvernement responsable", person: "Nouvelle-Écosse — première colonie à l'obtenir", cat: "histoire" },
+  { date: "1849", event: "Gouvernement responsable au Canada", person: "Sir Louis-Hippolyte La Fontaine et Robert Baldwin", cat: "histoire" },
+  { date: "1853", event: "Première femme rédactrice en chef", person: "Mary Ann Shadd Cary — The Provincial Freeman", cat: "histoire" },
+
+  // Confédération et après
+  { date: "1867", event: "Confédération du Canada", person: "ON, QC, NS, NB — Sir John A. Macdonald, Sir George-Étienne Cartier", cat: "histoire" },
+  { date: "1869-1870", event: "Révolte de la rivière Rouge / Création du Manitoba", person: "Louis Riel", cat: "histoire" },
+  { date: "1871", event: "La C.-B. rejoint la Confédération", person: "Promesse du chemin de fer transcontinental", cat: "histoire" },
+  { date: "1873", event: "Î.-P.-É. rejoint / Création de la Police montée", person: "GRC — QG à Regina, fonde Fort Calgary et Fort MacLeod", cat: "histoire" },
+  { date: "1885 (7 nov.)", event: "Achèvement du chemin de fer Canadien Pacifique", person: "Donald Smith (Lord Strathcona) enfonce le dernier crampon", cat: "histoire" },
+  { date: "1885", event: "Seconde révolte des Métis / Parc national Banff", person: "Louis Riel exécuté, Gabriel Dumont chef militaire métis", cat: "histoire" },
+  { date: "1891", event: "Invention du basketball", person: "James Naismith (Canadien)", cat: "histoire" },
+  { date: "1892", event: "Don de la Coupe Stanley", person: "Lord Stanley, gouverneur général", cat: "histoire" },
+  { date: "1899-1902", event: "Guerre des Boers (Afrique du Sud)", person: "7 000+ volontaires canadiens, 260+ morts", cat: "histoire" },
+  { date: "1905", event: "Création de l'Alberta et de la Saskatchewan", person: "", cat: "histoire" },
+  { date: "1909", event: "Création de la Coupe Grey", person: "Gouverneur général Lord Grey — football canadien", cat: "histoire" },
+  { date: "1914-1918", event: "Première Guerre mondiale", person: "600 000+ Canadiens servent; 60 000 tués, 170 000 blessés", cat: "histoire" },
+  { date: "9 avril 1917", event: "Bataille de la crête de Vimy", person: "Général Sir Arthur Currie — 10 000 victimes", cat: "histoire" },
+  { date: "8 août 1918", event: "Bataille d'Amiens", person: "« Jour noir de l'armée allemande »", cat: "histoire" },
+  { date: "1916", event: "Manitoba : 1re province à donner le vote aux femmes", person: "", cat: "histoire" },
+  { date: "1917-1918", event: "Vote fédéral des femmes", person: "Sir Robert Borden — d'abord les infirmières (1917), puis toutes (1918)", cat: "histoire" },
+  { date: "1921", event: "Première femme élue au Parlement fédéral", person: "Agnes Macphail", cat: "histoire" },
+  { date: "1921", event: "Rouge et blanc : couleurs nationales officielles", person: "Roi George V", cat: "histoire" },
+  { date: "1927", event: "Tour de la Paix terminée / Sécurité de la vieillesse", person: "Édifices du Parlement — Chapelle du Souvenir", cat: "histoire" },
+  { date: "1929", event: "Krach boursier — début de la Grande Dépression", person: "Chômage à 27 % en 1933", cat: "histoire" },
+  { date: "1934", event: "Création de la Banque du Canada", person: "", cat: "histoire" },
+  { date: "1939-1945", event: "Deuxième Guerre mondiale", person: "1 million+ servent; 44 000 tués; 3e marine mondiale", cat: "histoire" },
+  { date: "6 juin 1944", event: "Jour J — Débarquement de Normandie", person: "15 000 Canadiens sur la plage Juno", cat: "histoire" },
+  { date: "8 mai 1945", event: "Capitulation de l'Allemagne", person: "", cat: "histoire" },
+  { date: "14 août 1945", event: "Capitulation du Japon", person: "", cat: "histoire" },
+  { date: "1947", event: "Découverte de pétrole en Alberta", person: "Lance l'industrie énergétique moderne", cat: "histoire" },
+  { date: "1948", event: "Droit de vote : Canadiens d'origine japonaise", person: "Derniers Canadiens asiatiques à obtenir ce droit", cat: "histoire" },
+  { date: "1949", event: "Terre-Neuve rejoint le Canada / OTAN créée", person: "", cat: "histoire" },
+  { date: "1950-1953", event: "Guerre de Corée", person: "26 000+ Canadiens servent; 500 morts", cat: "histoire" },
+  { date: "1952", event: "Elizabeth II devient reine du Canada", person: "Jubilé d'or en 2002", cat: "histoire" },
+  { date: "1957", event: "Prix Nobel de la Paix", person: "Lester B. Pearson — crise de Suez", cat: "histoire" },
+  { date: "1960", event: "Droit de vote des Autochtones / Déclaration des droits", person: "Déclaration canadienne des droits", cat: "histoire" },
+  { date: "Années 1960", event: "Révolution tranquille au Québec", person: "", cat: "histoire" },
+  { date: "1965", event: "Nouveau drapeau canadien hissé / Régime de pensions", person: "Unifolié rouge et blanc", cat: "histoire" },
+  { date: "1967", event: "Création de l'Ordre du Canada", person: "Centenaire de la Confédération", cat: "histoire" },
+  { date: "1969", event: "Loi sur les langues officielles", person: "Français et anglais = langues officielles", cat: "histoire" },
+  { date: "1970", event: "Création de la Francophonie", person: "Association internationale de pays francophones", cat: "histoire" },
+  { date: "1972", event: "Série du siècle Canada-URSS", person: "Paul Henderson — « le but du siècle »", cat: "histoire" },
+  { date: "1980", event: "Référendum au Québec (1er) / Marathon de l'espoir", person: "Souveraineté défaite — Terry Fox", cat: "histoire" },
+  { date: "1980", event: "Ô Canada proclamé hymne national", person: "Chanté pour la 1re fois en 1880 à Québec", cat: "histoire" },
+  { date: "1982", event: "Rapatriement de la Constitution", person: "Charte canadienne des droits et libertés — sans l'accord du Québec", cat: "histoire" },
+  { date: "1988", event: "Excuses aux Japonais-Canadiens / Libre-échange É.-U.", person: "Compensation pour internement WWII", cat: "histoire" },
+  { date: "1994", event: "ALENA entre en vigueur", person: "Canada, États-Unis, Mexique — 444 millions de personnes", cat: "histoire" },
+  { date: "1995", event: "Référendum au Québec (2e)", person: "Souveraineté défaite à nouveau", cat: "histoire" },
+  { date: "1999", event: "Création du Nunavut", person: "« Notre terre » en inuktitut — 85 % Inuit", cat: "histoire" },
+  { date: "2006", event: "Québécois reconnus comme nation / Excuses aux Chinois", person: "Chambre des communes — taxe d'entrée raciste", cat: "histoire" },
+  { date: "2008", event: "Excuses pour les pensionnats autochtones", person: "Gouvernement du Canada", cat: "histoire" },
+
+  // Gouvernement
+  { date: "1215", event: "Magna Carta", person: "800 ans de liberté ordonnée — fondement du droit canadien", cat: "gouvernement" },
+  { date: "1758", event: "Première assemblée élue au Canada", person: "Halifax, Nouvelle-Écosse", cat: "gouvernement" },
+  { date: "1857", event: "Ottawa choisie comme capitale", person: "Reine Victoria", cat: "gouvernement" },
+  { date: "1867", event: "Loi constitutionnelle (AANB)", person: "Définit les responsabilités fédérales et provinciales", cat: "gouvernement" },
+  { date: "1940", event: "Création de l'assurance-chômage", person: "Aujourd'hui « assurance-emploi »", cat: "gouvernement" },
+
+  // Personnes célèbres
+  { date: "1854", event: "1re Croix de Victoria canadienne", person: "Alexander Roberts Dunn — Balaclava, guerre de Crimée", cat: "personnes" },
+  { date: "1857", event: "1er Noir à recevoir la Croix de Victoria", person: "William Hall — siège de Lucknow, Nouvelle-Écosse", cat: "personnes" },
+  { date: "1917", event: "Croix de Victoria — cote 70", person: "Filip Konowal — né en Ukraine, 1er non-britannique", cat: "personnes" },
+  { date: "WWI", event: "Croix de Victoria — as de l'aviation", person: "Billy Bishop — Owen Sound, ON; maréchal de l'Air", cat: "personnes" },
+  { date: "1943", event: "Croix de Victoria — Casa Berardi (Italie)", person: "Paul Triquet — Cabano, Québec", cat: "personnes" },
+  { date: "Août 1945", event: "Dernier Canadien à recevoir la CV", person: "Robert Hampton Gray — Trail, C.-B., pilote naval", cat: "personnes" },
+  { date: "1815 (11 janv.)", event: "Naissance de Sir John A. Macdonald", person: "1er PM du Canada — portrait sur billet de 10 $", cat: "personnes" },
+  { date: "1920", event: "Fondation du Groupe des Sept", person: "Peinture de paysages canadiens sauvages", cat: "personnes" },
+  { date: "Années 1950", event: "Automatistes du Québec", person: "Jean-Paul Riopelle — art moderne abstrait", cat: "personnes" },
+  { date: "1980", event: "Marathon de l'espoir", person: "Terry Fox — course à travers le Canada contre le cancer", cat: "personnes" },
+  { date: "1985", event: "Tour du monde en fauteuil roulant", person: "Rick Hansen — recherche sur la moelle épinière", cat: "personnes" },
+  { date: "1996", event: "2 médailles d'or olympiques en sprint", person: "Donovan Bailey — record mondial, JO d'Atlanta", cat: "personnes" },
+  { date: "1979-1988", event: "Wayne Gretzky avec les Oilers d'Edmonton", person: "Plus grand joueur de hockey de tous les temps", cat: "personnes" },
+  { date: "2002", event: "Médaille d'or en patinage de vitesse", person: "Catriona Le May Doan — JO d'hiver", cat: "personnes" },
+  { date: "2005", event: "Création de la Coupe Clarkson", person: "Adrienne Clarkson — 26e GG, 1re d'origine asiatique, hockey féminin", cat: "personnes" },
+  { date: "1915", event: "Poème « Au champ d'honneur »", person: "John McCrae — In Flanders Fields", cat: "personnes" },
+  { date: "Invention", event: "Téléphone", person: "Alexander Graham Bell", cat: "personnes" },
+  { date: "Invention", event: "Motoneige", person: "Joseph-Armand Bombardier", cat: "personnes" },
+  { date: "Invention", event: "Fuseaux horaires standardisés", person: "Sir Sandford Fleming", cat: "personnes" },
+  { date: "Invention", event: "Insuline", person: "Sir Frederick Banting et Charles Best — 16 millions de vies sauvées", cat: "personnes" },
+  { date: "Invention", event: "Ampoule électrique", person: "Mathew Evans et Henry Woodward — brevet vendu à Edison", cat: "personnes" },
+  { date: "Invention", event: "Stimulateur cardiaque", person: "Dr John A. Hopps", cat: "personnes" },
+  { date: "Invention", event: "Radio (message vocal sans fil)", person: "Reginald Fessenden", cat: "personnes" },
+  { date: "Invention", event: "Canadarm (bras robotique spatial)", person: "SPAR Aérospatiale / Conseil national de recherches", cat: "personnes" },
+  { date: "Invention", event: "BlackBerry", person: "Mike Lazaridis et Jim Balsillie (RIM)", cat: "personnes" },
+];
+
+let currentDateFilter = 'all';
+let datesQuizMode = false;
+
+function renderDates() {
+  const list = document.getElementById('dates-list');
+  const searchVal = document.getElementById('dates-search-input').value.toLowerCase();
+  list.innerHTML = '';
+
+  const filtered = DATES_DATA.filter(d => {
+    if (currentDateFilter !== 'all' && d.cat !== currentDateFilter) return false;
+    if (searchVal) {
+      const text = `${d.date} ${d.event} ${d.person}`.toLowerCase();
+      return text.includes(searchVal);
+    }
+    return true;
+  });
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<p style="color:var(--gray-400);text-align:center;padding:20px;">Aucun résultat</p>';
+    return;
+  }
+
+  filtered.forEach((d, i) => {
+    const row = document.createElement('div');
+    row.className = 'date-row';
+    row.innerHTML = `
+      <div class="date-badge">${d.date}</div>
+      <div class="date-info">
+        <div class="date-event">${d.event}</div>
+        <div class="date-person">${d.person || '—'}</div>
+      </div>
+    `;
+    row.addEventListener('click', () => row.classList.toggle('revealed'));
+    list.appendChild(row);
+  });
+}
+
+function startDatesQuiz() {
+  // Pick 20 random dates and quiz on them
+  const pool = shuffle([...DATES_DATA].filter(d => d.person));
+  const questions = pool.slice(0, 20);
+
+  const allCards = [];
+  data.chapitres.forEach(chap => {
+    chap.cartes.forEach((carte, i) => {
+      allCards.push({ ...carte, chapId: chap.id, origIndex: i });
+    });
+  });
+
+  examLearnMode = true;
+  examCards = questions.map(q => {
+    // Generate wrong answers from other dates
+    const others = DATES_DATA.filter(d => d !== q && d.person);
+    const wrongChoices = shuffle(others).slice(0, 3).map(d => d.person || d.event);
+    const correctAnswer = q.person;
+
+    return {
+      question: `${q.date} — ${q.event}. Qui ou quoi est associé à cette date ?`,
+      reponse: correctAnswer,
+      choix: [correctAnswer, ...wrongChoices],
+      explication: `${q.date} : ${q.event} — ${q.person}`,
+      chapId: 'dates-quiz',
+      origIndex: 0
+    };
+  });
+
+  examAnswers = new Array(examCards.length).fill(null);
+  examIndex = 0;
+  examTimeLeft = 45 * 60;
+
+  // Switch to exam view
+  switchMode('exam');
+  document.getElementById('exam-header').classList.add('hidden');
+  document.getElementById('exam-active').classList.remove('hidden');
+  document.getElementById('exam-results').classList.add('hidden');
+
+  showExamQuestion();
+  startExamTimer();
 }
 
 // === START ===
