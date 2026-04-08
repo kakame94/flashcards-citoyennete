@@ -257,8 +257,9 @@ function loadProgress() {
         if (c.ease === undefined) {
           c.ease = 2.5;
           c.interval = 0;
-          c.repetitions = 0;
-          c.nextReview = 0;
+          // Migrate: preserve mastery from old format (correct >= 2 && correct > wrong)
+          c.repetitions = (c.correct >= 2 && c.correct > c.wrong) ? c.correct : 0;
+          c.nextReview = c.lastSeen ? c.lastSeen + 86400000 : 0;
         }
       });
     }
