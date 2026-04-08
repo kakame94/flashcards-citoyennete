@@ -621,6 +621,35 @@ h3 {
   border-left: 4px solid var(--orange);
 }
 
+/* === TRUE/FALSE BADGE === */
+.tf-badge {
+  display: inline-block;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  margin-right: 6px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* True/False choice buttons - wider, side by side */
+.quiz-choices.tf-layout {
+  flex-direction: row;
+  gap: 12px;
+}
+
+.tf-layout .choice-btn {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 16px;
+}
+
 /* === EXAM === */
 .exam-header { text-align: center; padding: 40px 0; }
 .exam-header p { color: var(--gray-600); margin-bottom: 20px; }

@@ -86,6 +86,9 @@ const i18n = {
     srPrevCard: 'Carte pr\u00e9c\u00e9dente',
     reviewNow: 'R\u00e9vision recommand\u00e9e',
     newCards: 'Nouvelles cartes',
+    trueLabel: 'Vrai',
+    falseLabel: 'Faux',
+    trueOrFalse: 'Vrai ou Faux ?',
     langSwitch: 'EN',
   },
   en: {
@@ -169,6 +172,9 @@ const i18n = {
     srPrevCard: 'Previous card',
     reviewNow: 'Review recommended',
     newCards: 'New cards',
+    trueLabel: 'True',
+    falseLabel: 'False',
+    trueOrFalse: 'True or False?',
     langSwitch: 'FR',
   }
 };
@@ -913,6 +919,29 @@ function nextQuiz() {
 }
 
 // === EXAM MODE ===
+// Convert a QCM card into a true/false card (~30% of exam questions)
+function toTrueFalse(card) {
+  const isTrue = Math.random() > 0.5;
+  const correctAnswer = getCorrectAnswer(card);
+  let statement;
+  if (isTrue) {
+    // Show the correct answer as a statement
+    statement = card.question.replace(/\?$/, '') + ' : ' + correctAnswer;
+  } else {
+    // Show a wrong answer as a statement
+    const wrongChoices = card.choix.slice(1); // index 0 is always correct
+    const wrongAnswer = wrongChoices[Math.floor(Math.random() * wrongChoices.length)];
+    statement = card.question.replace(/\?$/, '') + ' : ' + wrongAnswer;
+  }
+  return {
+    ...card,
+    isTrueFalse: true,
+    tfStatement: statement,
+    tfCorrectAnswer: isTrue ? t('trueLabel') : t('falseLabel'),
+    tfExplication: card.explication + (isTrue ? '' : ` (${t('correctAnswerIs')} : ${correctAnswer})`)
+  };
+}
+
 function startExam() {
   const allCards = [];
   data.chapitres.forEach(chap => {
@@ -920,7 +949,11 @@ function startExam() {
       allCards.push({ ...carte, chapId: chap.id, origIndex: i });
     });
   });
-  examCards = shuffle(allCards).slice(0, 20);
+  let selected = shuffle(allCards).slice(0, 20);
+  // Convert ~30% (6 questions) to true/false format, like the real exam
+  const tfCount = 6;
+  const tfIndices = shuffle([...Array(20).keys()]).slice(0, tfCount);
+  examCards = selected.map((card, i) => tfIndices.includes(i) ? toTrueFalse(card) : card);
   examAnswers = new Array(20).fill(null);
   examIndex = 0;
   examTimeLeft = 45 * 60;
@@ -936,20 +969,32 @@ function startExam() {
 function showExamQuestion() {
   const card = examCards[examIndex];
   examAnswered = false;
-  document.getElementById('exam-question').textContent = card.question;
   document.getElementById('exam-index').textContent = examIndex + 1;
   document.getElementById('exam-progress').style.width = ((examIndex + 1) / 20 * 100) + '%';
 
   const choicesDiv = document.getElementById('exam-choices');
   choicesDiv.innerHTML = '';
-  const shuffled = shuffle([...card.choix]);
-  const correctAnswer = getCorrectAnswer(card);
 
   const feedback = document.getElementById('exam-feedback');
   feedback.classList.add('hidden');
   feedback.innerHTML = '';
 
-  shuffled.forEach(choice => {
+  // True/False or QCM
+  let choices, correctAnswer;
+  if (card.isTrueFalse) {
+    document.getElementById('exam-question').innerHTML =
+      `<span class="tf-badge">${t('trueOrFalse')}</span> ${card.tfStatement}`;
+    choices = [t('trueLabel'), t('falseLabel')];
+    correctAnswer = card.tfCorrectAnswer;
+    choicesDiv.classList.add('tf-layout');
+  } else {
+    document.getElementById('exam-question').textContent = card.question;
+    choices = shuffle([...card.choix]);
+    correctAnswer = getCorrectAnswer(card);
+    choicesDiv.classList.remove('tf-layout');
+  }
+
+  choices.forEach(choice => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
     if (examAnswers[examIndex] === choice) btn.style.borderColor = 'var(--red)';
@@ -975,14 +1020,15 @@ function showExamQuestion() {
           if (b.textContent === correctAnswer) b.classList.add('correct');
         });
 
+        const expText = card.isTrueFalse ? card.tfExplication : card.explication;
         if (isCorrect) {
           btn.classList.add('correct');
           feedback.className = 'quiz-feedback correct';
-          feedback.innerHTML = `<strong>\u2713 ${t('correct')}</strong><br>${card.explication}`;
+          feedback.innerHTML = `<strong>\u2713 ${t('correct')}</strong><br>${expText}`;
         } else {
           btn.classList.add('wrong');
           feedback.className = 'quiz-feedback wrong';
-          feedback.innerHTML = `<strong>\u2717 ${t('wrong')}</strong><br>${t('correctAnswerIs')} : <strong>${correctAnswer}</strong><br>${card.explication}`;
+          feedback.innerHTML = `<strong>\u2717 ${t('wrong')}</strong><br>${t('correctAnswerIs')} : <strong>${correctAnswer}</strong><br>${expText}`;
         }
         feedback.classList.remove('hidden');
       } else {
@@ -1047,24 +1093,26 @@ function finishExam() {
   details.innerHTML = '';
 
   examCards.forEach((card, i) => {
-    const correctAnswer = getCorrectAnswer(card);
+    const correctAnswer = card.isTrueFalse ? card.tfCorrectAnswer : getCorrectAnswer(card);
     const isCorrect = examAnswers[i] === correctAnswer;
     if (isCorrect) correct++;
 
     const key = getCardKey(card.chapId, card.origIndex);
     if (!progress.cards[key]) progress.cards[key] = getDefaultCardProgress();
     if (!examLearnMode) {
-      // Only save progress from real mode (learn mode saved inline)
       const updated = sm2(progress.cards[key], isCorrect ? 4 : 1);
       if (isCorrect) updated.correct++;
       else updated.wrong++;
       progress.cards[key] = updated;
     }
 
+    const questionText = card.isTrueFalse
+      ? `${t('trueOrFalse')} ${card.tfStatement}`
+      : card.question;
     const div = document.createElement('div');
     div.className = `result-item ${isCorrect ? 'correct' : 'wrong'}`;
     div.innerHTML = `
-      <div class="result-q">${i + 1}. ${card.question}</div>
+      <div class="result-q">${i + 1}. ${questionText}</div>
       <div class="result-a">${isCorrect ? '\u2713' : '\u2717'} ${t('yourAnswer')} : ${examAnswers[i] || t('noAnswer')}${!isCorrect ? '<br>' + t('correctAnswer') + ' : ' + correctAnswer : ''}</div>
     `;
     details.appendChild(div);
