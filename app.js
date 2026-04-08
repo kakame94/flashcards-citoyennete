@@ -59,7 +59,7 @@ function getCardProgress(key) {
 
 function isMastered(key) {
   const p = getCardProgress(key);
-  return p.correct >= 3 && p.correct > p.wrong;
+  return p.correct >= 2 && p.correct > p.wrong;
 }
 
 // === CHAPTER RENDERING ===
@@ -416,6 +416,14 @@ function showExamQuestion() {
         examAnswered = true;
         const isCorrect = choice === correctAnswer;
 
+        // Save per-card progress immediately in learn mode
+        const key = getCardKey(card.chapId, card.origIndex);
+        if (!progress.cards[key]) progress.cards[key] = { correct: 0, wrong: 0, lastSeen: 0 };
+        if (isCorrect) progress.cards[key].correct++;
+        else progress.cards[key].wrong++;
+        progress.cards[key].lastSeen = Date.now();
+        saveProgress();
+
         document.querySelectorAll('#exam-choices .choice-btn').forEach(b => {
           b.classList.add('disabled');
           if (b.textContent === correctAnswer) b.classList.add('correct');
@@ -498,6 +506,16 @@ function finishExam() {
     const correctAnswer = getCorrectAnswer(card);
     const isCorrect = examAnswers[i] === correctAnswer;
     if (isCorrect) correct++;
+
+    // Save per-card progress from exam
+    const key = getCardKey(card.chapId, card.origIndex);
+    if (!progress.cards[key]) progress.cards[key] = { correct: 0, wrong: 0, lastSeen: 0 };
+    if (isCorrect) {
+      progress.cards[key].correct++;
+    } else {
+      progress.cards[key].wrong++;
+    }
+    progress.cards[key].lastSeen = Date.now();
 
     const div = document.createElement('div');
     div.className = `result-item ${isCorrect ? 'correct' : 'wrong'}`;
