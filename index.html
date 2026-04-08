@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="Citoyenneté">
+  <meta name="apple-mobile-web-app-title" content="Citoyennet&eacute;">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#D80621">
+  <meta name="description" content="Pr&eacute;parez votre examen de citoyennet&eacute; canadienne avec des flashcards, quiz et examens simul&eacute;s. R&eacute;p&eacute;tition espac&eacute;e SM-2, bilingue FR/EN, fonctionne hors ligne.">
   <title>Examen de Citoyennet&eacute; Canadienne - Flashcards</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍁</text></svg>">
@@ -15,39 +16,65 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- CONFETTI CANVAS -->
+  <canvas id="confetti-canvas" class="hidden" aria-hidden="true"></canvas>
+
+  <!-- OFFLINE BADGE -->
+  <div id="offline-badge" class="offline-badge" aria-live="polite"></div>
+
+  <!-- ONBOARDING OVERLAY -->
+  <div id="onboarding-overlay" class="onboarding-overlay hidden" role="dialog" aria-modal="true" aria-label="Bienvenue">
+    <div class="onboarding-card">
+      <div class="onboarding-icon">&#x1F341;</div>
+      <h2 class="onboarding-title">Bienvenue ! &#x1F341;</h2>
+      <p class="onboarding-text">Pr&eacute;parez votre examen de citoyennet&eacute; canadienne avec des flashcards intelligentes, des quiz et des examens simul&eacute;s.</p>
+      <ul class="onboarding-tips">
+        <li class="onboarding-tip">&#x1F9E0; R&eacute;p&eacute;tition espac&eacute;e &mdash; les cartes difficiles reviennent plus souvent</li>
+        <li class="onboarding-tip">&#x1F4CA; Suivez votre progression chapitre par chapitre</li>
+        <li class="onboarding-tip">&#x1F4F1; Fonctionne hors ligne &mdash; &eacute;tudiez partout !</li>
+      </ul>
+      <button id="btn-start-onboarding" class="btn btn-primary btn-large">Commencer &agrave; &eacute;tudier</button>
+    </div>
+  </div>
+
   <div id="app">
     <!-- HEADER -->
     <header>
+      <div class="header-top-bar">
+        <span id="streak-badge" class="streak-badge hidden" aria-label="S&eacute;rie d'&eacute;tude"></span>
+        <span id="online-status" class="online-status online" aria-live="polite"></span>
+        <button id="btn-lang" class="btn-lang" aria-label="Changer de langue">&#x1F310; EN</button>
+      </div>
       <div class="header-content">
-        <h1>🍁 Citoyennet&eacute; Canadienne</h1>
+        <h1>&#x1F341; Citoyennet&eacute; Canadienne</h1>
         <p class="subtitle">Pr&eacute;paration &agrave; l'examen &mdash; D&eacute;couvrir le Canada</p>
       </div>
-      <nav id="nav-tabs">
-        <button class="tab active" data-mode="flashcard">Flashcards</button>
-        <button class="tab" data-mode="quiz">Quiz QCM</button>
-        <button class="tab" data-mode="exam">Examen simul&eacute;</button>
-        <button class="tab" data-mode="dates">Dates</button>
-        <button class="tab" data-mode="stats">Stats</button>
+      <nav id="nav-tabs" aria-label="Navigation principale">
+        <button class="tab active" data-mode="flashcard" role="tab" aria-selected="true">Flashcards</button>
+        <button class="tab" data-mode="quiz" role="tab" aria-selected="false">Quiz QCM</button>
+        <button class="tab" data-mode="exam" role="tab" aria-selected="false">Examen simul&eacute;</button>
+        <button class="tab" data-mode="dates" role="tab" aria-selected="false">Dates</button>
+        <button class="tab" data-mode="stats" role="tab" aria-selected="false">Stats</button>
       </nav>
     </header>
 
     <!-- CHAPTER SELECTOR -->
-    <section id="chapter-selector" class="section">
+    <section id="chapter-selector" class="section" aria-label="S&eacute;lection de chapitre">
       <h2>Choisir un chapitre</h2>
-      <div id="chapter-grid" class="chapter-grid"></div>
+      <div id="chapter-grid" class="chapter-grid" role="list"></div>
       <button id="btn-all-chapters" class="btn btn-primary">Tous les chapitres</button>
     </section>
 
     <!-- FLASHCARD MODE -->
-    <section id="flashcard-view" class="section hidden">
-      <div class="progress-bar-container">
+    <section id="flashcard-view" class="section hidden" aria-label="Mode flashcards">
+      <div class="progress-bar-container" role="progressbar" aria-valuemin="0" aria-valuemax="100">
         <div id="flashcard-progress" class="progress-bar"></div>
       </div>
       <div class="card-counter">
         <span id="card-index">1</span> / <span id="card-total">0</span>
         <span id="mastery-badge" class="mastery-badge"></span>
       </div>
-      <div id="flashcard" class="flashcard" tabindex="0">
+      <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Retourner la carte">
         <div class="flashcard-inner">
           <div class="flashcard-front">
             <p id="flash-question"></p>
@@ -59,16 +86,17 @@
         </div>
       </div>
       <div class="flashcard-controls">
-        <button id="btn-dont-know" class="btn btn-danger">✗ Je ne sais pas</button>
-        <button id="btn-flip" class="btn btn-secondary">Retourner</button>
-        <button id="btn-know" class="btn btn-success">✓ Je sais</button>
+        <button id="btn-dont-know" class="btn btn-danger" aria-label="Je ne sais pas">&#x2717; Je ne sais pas</button>
+        <button id="btn-flip" class="btn btn-secondary" aria-label="Retourner la carte">Retourner</button>
+        <button id="btn-know" class="btn btn-success" aria-label="Je sais">&#x2713; Je sais</button>
       </div>
-      <button id="btn-back-flash" class="btn btn-link">← Retour aux chapitres</button>
+      <p class="swipe-hint-text" aria-hidden="true">&#x1F448; Swipe gauche / droite &#x1F449;</p>
+      <button id="btn-back-flash" class="btn btn-link">&larr; Retour aux chapitres</button>
     </section>
 
     <!-- QUIZ MODE -->
-    <section id="quiz-view" class="section hidden">
-      <div class="progress-bar-container">
+    <section id="quiz-view" class="section hidden" aria-label="Mode quiz">
+      <div class="progress-bar-container" role="progressbar">
         <div id="quiz-progress" class="progress-bar"></div>
       </div>
       <div class="card-counter">
@@ -76,26 +104,26 @@
       </div>
       <div class="quiz-card">
         <p id="quiz-question" class="quiz-question"></p>
-        <div id="quiz-choices" class="quiz-choices"></div>
-        <div id="quiz-feedback" class="quiz-feedback hidden"></div>
-        <button id="btn-next-quiz" class="btn btn-primary hidden">Question suivante →</button>
+        <div id="quiz-choices" class="quiz-choices" role="radiogroup"></div>
+        <div id="quiz-feedback" class="quiz-feedback hidden" role="alert"></div>
+        <button id="btn-next-quiz" class="btn btn-primary hidden">Question suivante &rarr;</button>
       </div>
-      <button id="btn-back-quiz" class="btn btn-link">← Retour aux chapitres</button>
+      <button id="btn-back-quiz" class="btn btn-link">&larr; Retour aux chapitres</button>
     </section>
 
     <!-- EXAM MODE -->
-    <section id="exam-view" class="section hidden">
+    <section id="exam-view" class="section hidden" aria-label="Mode examen">
       <div id="exam-header" class="exam-header">
         <h2>Examen simul&eacute;</h2>
         <p>20 questions &mdash; 45 minutes &mdash; 15/20 pour r&eacute;ussir</p>
         <div class="exam-mode-toggle">
           <button id="btn-mode-real" class="exam-mode-btn active" data-exammode="real">
-            <span class="mode-icon">🎯</span>
+            <span class="mode-icon">&#x1F3AF;</span>
             <span class="mode-label">Examen r&eacute;el</span>
             <span class="mode-desc">R&eacute;sultats &agrave; la fin</span>
           </button>
           <button id="btn-mode-learn" class="exam-mode-btn" data-exammode="learn">
-            <span class="mode-icon">📖</span>
+            <span class="mode-icon">&#x1F4D6;</span>
             <span class="mode-label">Apprentissage</span>
             <span class="mode-desc">Feedback apr&egrave;s chaque r&eacute;ponse</span>
           </button>
@@ -104,7 +132,7 @@
       </div>
       <div id="exam-active" class="hidden">
         <div class="exam-timer-bar">
-          <span id="exam-timer" class="exam-timer">45:00</span>
+          <span id="exam-timer" class="exam-timer" aria-live="off" aria-label="Temps restant">45:00</span>
           <div class="progress-bar-container">
             <div id="exam-progress" class="progress-bar"></div>
           </div>
@@ -112,25 +140,28 @@
         </div>
         <div class="quiz-card">
           <p id="exam-question" class="quiz-question"></p>
-          <div id="exam-choices" class="quiz-choices"></div>
-          <div id="exam-feedback" class="quiz-feedback hidden"></div>
-          <button id="btn-next-exam" class="btn btn-primary">Suivante →</button>
+          <div id="exam-choices" class="quiz-choices" role="radiogroup"></div>
+          <div id="exam-feedback" class="quiz-feedback hidden" role="alert"></div>
+          <button id="btn-next-exam" class="btn btn-primary">Suivante &rarr;</button>
         </div>
       </div>
       <div id="exam-results" class="hidden">
         <div class="results-card">
           <h2 id="exam-result-title"></h2>
           <p id="exam-result-score" class="result-score"></p>
+          <div class="results-actions">
+            <button id="btn-share-score" class="btn btn-secondary hidden" aria-label="Partager le r&eacute;sultat">&#x1F4E4; Partager mon r&eacute;sultat</button>
+            <button id="btn-retry-exam" class="btn btn-primary">Refaire un examen</button>
+          </div>
           <div id="exam-result-details"></div>
-          <button id="btn-retry-exam" class="btn btn-primary">Refaire un examen</button>
         </div>
       </div>
     </section>
 
     <!-- DATES MODE -->
-    <section id="dates-view" class="section hidden">
-      <h2>📅 Dates &amp; Personnalit&eacute;s cl&eacute;s</h2>
-      <div class="dates-filters">
+    <section id="dates-view" class="section hidden" aria-label="Dates et personnalit&eacute;s">
+      <h2>&#x1F4C5; Dates &amp; Personnalit&eacute;s cl&eacute;s</h2>
+      <div class="dates-filters" role="group" aria-label="Filtres">
         <button class="date-filter active" data-filter="all">Tout</button>
         <button class="date-filter" data-filter="feries">F&eacute;ri&eacute;s</button>
         <button class="date-filter" data-filter="histoire">Histoire</button>
@@ -138,14 +169,14 @@
         <button class="date-filter" data-filter="personnes">Personnes</button>
       </div>
       <div class="dates-search">
-        <input type="text" id="dates-search-input" placeholder="Rechercher une date, un nom, un &eacute;v&eacute;nement...">
+        <input type="text" id="dates-search-input" placeholder="Rechercher une date, un nom, un &eacute;v&eacute;nement..." aria-label="Recherche">
       </div>
       <div id="dates-list" class="dates-list"></div>
-      <button id="btn-quiz-dates" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">🧠 Quiz sur les dates</button>
+      <button id="btn-quiz-dates" class="btn btn-primary" style="margin-top:16px;width:100%;justify-content:center;">&#x1F9E0; Quiz sur les dates</button>
     </section>
 
     <!-- STATS MODE -->
-    <section id="stats-view" class="section hidden">
+    <section id="stats-view" class="section hidden" aria-label="Statistiques">
       <h2>Statistiques</h2>
       <div class="stats-grid">
         <div class="stat-card">
@@ -169,6 +200,11 @@
       <div id="chapter-stats"></div>
       <h3>Historique des examens</h3>
       <div id="exam-history"></div>
+      <div class="stats-actions">
+        <button id="btn-export" class="btn btn-secondary btn-small">&#x1F4E4; Exporter mes donn&eacute;es</button>
+        <button id="btn-import" class="btn btn-secondary btn-small">&#x1F4E5; Importer des donn&eacute;es</button>
+        <input type="file" id="import-file" accept=".json" class="hidden" aria-hidden="true">
+      </div>
       <button id="btn-reset-stats" class="btn btn-danger btn-small">R&eacute;initialiser les statistiques</button>
     </section>
   </div>
