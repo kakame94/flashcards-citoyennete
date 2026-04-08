@@ -924,34 +924,48 @@ function nextQuiz() {
 }
 
 // === EXAM MODE ===
-// Convert a QCM card into a true/false card (~30% of exam questions)
+// Convert a QCM card into a true/false card
+// NEVER convert "Complétez" (fill-in-the-blank) cards
+function canBeTrueFalse(card) {
+  return !card.question.includes('Complétez') && !card.question.includes('___');
+}
+
 function toTrueFalse(card) {
   const isTrue = Math.random() > 0.5;
   const correctAnswer = getCorrectAnswer(card);
-  let statement;
+  let statement, explanation;
+
   if (isTrue) {
-    // Build a clean affirmative statement with the correct answer
-    statement = buildAffirmation(card.question, correctAnswer);
+    // Affirmation VRAIE : on utilise l'explication (c'est un fait correct)
+    statement = card.explication;
+    explanation = card.explication;
   } else {
-    // Build a statement with a wrong answer
+    // Affirmation FAUSSE : on remplace la bonne réponse par une mauvaise dans l'explication
     const wrongChoices = card.choix.slice(1);
     const wrongAnswer = wrongChoices[Math.floor(Math.random() * wrongChoices.length)];
-    statement = buildAffirmation(card.question, wrongAnswer);
+    statement = card.explication.replace(correctAnswer, wrongAnswer);
+    // Si le remplacement n'a rien changé (la bonne réponse n'apparait pas textuellement),
+    // on reformule autrement
+    if (statement === card.explication) {
+      // Essayer avec juste le début de la bonne réponse (avant virgule/point-virgule)
+      const shortCorrect = correctAnswer.split(/[;,]/)[0].trim();
+      const shortWrong = wrongAnswer.split(/[;,]/)[0].trim();
+      statement = card.explication.replace(shortCorrect, shortWrong);
+    }
+    if (statement === card.explication) {
+      // Dernier recours: phrase simple avec la mauvaise réponse
+      statement = card.explication.replace(/\.$/, '') + ' — ' + wrongAnswer + '.';
+    }
+    explanation = `FAUX. ${card.explication}`;
   }
+
   return {
     ...card,
     isTrueFalse: true,
     tfStatement: statement,
     tfCorrectAnswer: isTrue ? t('trueLabel') : t('falseLabel'),
-    tfExplication: card.explication + (isTrue ? '' : ` (${t('correctAnswerIs')} : ${correctAnswer})`)
+    tfExplication: explanation
   };
-}
-
-function buildAffirmation(question, answer) {
-  // Simply present the answer as a clean factual statement
-  // Format: "La bonne réponse à [question] est : [answer]"
-  // But cleaner: just show the answer as a direct affirmation
-  return answer + '.';
 }
 
 function startExam() {
@@ -961,7 +975,14 @@ function startExam() {
       allCards.push({ ...carte, chapId: chap.id, origIndex: i });
     });
   });
-  examCards = shuffle(allCards).slice(0, 20);
+  const shuffled = shuffle(allCards);
+  // Separate cards that can be V/F from fill-in-the-blank
+  const tfCandidates = shuffled.filter(c => canBeTrueFalse(c));
+  const noTfCards = shuffled.filter(c => !canBeTrueFalse(c));
+  // Pick 6 V/F from eligible cards, rest are QCM
+  const tfPick = tfCandidates.splice(0, 6).map(c => toTrueFalse(c));
+  const qcmPick = shuffle([...tfCandidates, ...noTfCards]).slice(0, 14);
+  examCards = shuffle([...tfPick, ...qcmPick]);
   examAnswers = new Array(20).fill(null);
   examIndex = 0;
   examTimeLeft = 45 * 60;
@@ -987,11 +1008,20 @@ function showExamQuestion() {
   feedback.classList.add('hidden');
   feedback.innerHTML = '';
 
-  // QCM only (4 choices like the real exam)
-  document.getElementById('exam-question').textContent = card.question;
-  const choices = shuffle([...card.choix]);
-  const correctAnswer = getCorrectAnswer(card);
-  choicesDiv.classList.remove('tf-layout');
+  // V/F or QCM
+  let choices, correctAnswer;
+  if (card.isTrueFalse) {
+    document.getElementById('exam-question').innerHTML =
+      `<span class="tf-badge">${t('trueOrFalse')}</span> ${card.tfStatement}`;
+    choices = [t('trueLabel'), t('falseLabel')];
+    correctAnswer = card.tfCorrectAnswer;
+    choicesDiv.classList.add('tf-layout');
+  } else {
+    document.getElementById('exam-question').textContent = card.question;
+    choices = shuffle([...card.choix]);
+    correctAnswer = getCorrectAnswer(card);
+    choicesDiv.classList.remove('tf-layout');
+  }
 
   choices.forEach(choice => {
     const btn = document.createElement('button');
@@ -1019,7 +1049,7 @@ function showExamQuestion() {
           if (b.textContent === correctAnswer) b.classList.add('correct');
         });
 
-        const expText = card.explication;
+        const expText = card.isTrueFalse ? card.tfExplication : card.explication;
         if (isCorrect) {
           btn.classList.add('correct');
           feedback.className = 'quiz-feedback correct';
@@ -1092,7 +1122,7 @@ function finishExam() {
   details.innerHTML = '';
 
   examCards.forEach((card, i) => {
-    const correctAnswer = getCorrectAnswer(card);
+    const correctAnswer = card.isTrueFalse ? card.tfCorrectAnswer : getCorrectAnswer(card);
     const isCorrect = examAnswers[i] === correctAnswer;
     if (isCorrect) correct++;
 
@@ -1105,7 +1135,9 @@ function finishExam() {
       progress.cards[key] = updated;
     }
 
-    const questionText = card.question;
+    const questionText = card.isTrueFalse
+      ? `${t('trueOrFalse')} ${card.tfStatement}`
+      : card.question;
     const div = document.createElement('div');
     div.className = `result-item ${isCorrect ? 'correct' : 'wrong'}`;
     div.innerHTML = `
