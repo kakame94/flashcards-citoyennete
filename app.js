@@ -90,6 +90,8 @@ const i18n = {
     falseLabel: 'Faux',
     trueOrFalse: 'Vrai ou Faux ?',
     langSwitch: 'EN',
+    confirmLeaveExam: 'Quitter l’examen en cours ? Votre progression sera perdue.',
+    langLockedDuringExam: 'Langue verrouillée pendant l’examen',
   },
   en: {
     title: 'Canadian Citizenship',
@@ -176,6 +178,8 @@ const i18n = {
     falseLabel: 'False',
     trueOrFalse: 'True or False?',
     langSwitch: 'FR',
+    confirmLeaveExam: 'Leave the exam in progress? Your progress will be lost.',
+    langLockedDuringExam: 'Language locked during exam',
   }
 };
 
@@ -189,6 +193,72 @@ function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('citoyennete-lang', lang);
   updateUI();
+}
+
+// === UX UTILITIES (Toast, Haptic, CountUp, Personalized message) ===
+
+// Toast: non-blocking inline notification (better than alert())
+function toast(msg, kind = 'info', duration = 2800) {
+  const container = document.getElementById('toast-container');
+  if (!container) return;
+  const el = document.createElement('div');
+  el.className = `toast ${kind}`;
+  el.setAttribute('role', kind === 'error' ? 'alert' : 'status');
+  el.textContent = msg;
+  container.appendChild(el);
+  setTimeout(() => {
+    el.classList.add('toast-out');
+    setTimeout(() => el.remove(), 280);
+  }, duration);
+}
+
+// Haptic feedback — short pulse for known/unknown, longer for major events
+function haptic(pattern = 12) {
+  if (navigator.vibrate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    try { navigator.vibrate(pattern); } catch (e) {}
+  }
+}
+
+// Count-up animation for memorable score reveal (Peak-End Rule)
+function animateCountUp(el, target, duration = 800) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reducedMotion) { el.textContent = `${target}/20`; return; }
+  const start = performance.now();
+  function frame(now) {
+    const progress = Math.min(1, (now - start) / duration);
+    // ease-out cubic
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.round(target * eased);
+    el.textContent = `${current}/20`;
+    if (progress < 1) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+
+// Personalized message based on exam score (Peak-End: meaningful finale)
+function getExamMessage(score) {
+  const messages = {
+    fr: {
+      perfect: { title: 'Score parfait ! 🏆', text: 'Vous maîtrisez chaque question. Le jour J vous attend.' },
+      excellent: { title: 'Excellent ! 🌟', text: 'Une marge confortable au-dessus du seuil. Continuez ainsi.' },
+      pass: { title: 'Réussi ! 🍁', text: 'Vous passez le seuil. Visez encore plus haut pour la sécurité.' },
+      close: { title: 'Presque ! 💪', text: 'Vous y êtes presque. Quelques chapitres clés à consolider.' },
+      study: { title: 'À retravailler 📚', text: 'Le seuil est de 15/20. Revoyez les chapitres avec peu de cartes maîtrisées.' }
+    },
+    en: {
+      perfect: { title: 'Perfect score! 🏆', text: 'You’ve mastered every question. Exam day awaits.' },
+      excellent: { title: 'Excellent! 🌟', text: 'A comfortable margin above the threshold. Keep it up.' },
+      pass: { title: 'Passed! 🍁', text: 'You’re above the threshold. Aim higher for safety.' },
+      close: { title: 'Almost! 💪', text: 'You’re very close. A few key chapters to consolidate.' },
+      study: { title: 'More practice 📚', text: 'Pass threshold is 15/20. Review chapters with few mastered cards.' }
+    }
+  };
+  const lang = messages[currentLang] || messages.fr;
+  if (score === 20) return lang.perfect;
+  if (score >= 18) return lang.excellent;
+  if (score >= 15) return lang.pass;
+  if (score >= 12) return lang.close;
+  return lang.study;
 }
 
 // === STATE ===
@@ -211,7 +281,7 @@ let examIndex = 0;
 let examAnswers = [];
 let examTimer = null;
 let examTimeLeft = 45 * 60;
-let examLearnMode = false;
+let examLearnMode = false; // set during init() based on user history
 let examAnswered = false;
 
 // Progress (SM-2 enhanced)
@@ -401,12 +471,22 @@ function launchConfetti() {
 // === INIT ===
 function init() {
   data = window.__QUESTIONS_DATA;
+  // Tesler's Law: smarter default — first-timer gets Learning mode (immediate feedback)
+  examLearnMode = (progress.exams.length === 0);
   bindEvents();
+  syncExamModeDefault();
   registerSW();
   checkOnboarding();
   updateStreak();
   renderChapters();
   updateOfflineStatus();
+}
+
+function syncExamModeDefault() {
+  const target = examLearnMode ? 'learn' : 'real';
+  document.querySelectorAll('.exam-mode-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.exammode === target);
+  });
 }
 
 function registerSW() {
@@ -497,8 +577,12 @@ function renderChapters() {
 
 // === NAVIGATION ===
 function bindEvents() {
-  // Language toggle
+  // Language toggle — gated during active exam (Jakob: predictability)
   document.getElementById('btn-lang')?.addEventListener('click', () => {
+    if (examInProgress()) {
+      toast(t('langLockedDuringExam'), 'info');
+      return;
+    }
     setLang(currentLang === 'fr' ? 'en' : 'fr');
   });
 
@@ -677,7 +761,18 @@ function updateUI() {
   if (currentMode === 'dates') renderDates();
 }
 
+function examInProgress() {
+  const active = document.getElementById('exam-active');
+  return active && !active.classList.contains('hidden') && examIndex < 20;
+}
+
 function switchMode(mode) {
+  // Guard exam abandonment (P0 fix)
+  if (currentMode === 'exam' && examInProgress() && mode !== 'exam') {
+    if (!confirm(t('confirmLeaveExam'))) return;
+    clearInterval(examTimer);
+    examTimer = null;
+  }
   currentMode = mode;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.mode === mode));
 
@@ -700,6 +795,15 @@ function switchMode(mode) {
     document.getElementById('chapter-selector').classList.remove('hidden');
     renderChapters();
   }
+
+  // Focus management — predictable focus on view switch (Jakob's Law + a11y)
+  requestAnimationFrame(() => {
+    const visibleSection = document.querySelector('.section:not(.hidden)');
+    if (!visibleSection) return;
+    const target = visibleSection.querySelector('h2') || visibleSection;
+    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: false });
+  });
 }
 
 function backToChapters() {
@@ -777,15 +881,20 @@ function showFlashcard() {
     badge.textContent = t('masteredBadge');
     badge.style.background = 'var(--green-light)';
     badge.style.color = 'var(--green)';
+    badge.style.display = 'inline-block';
   } else if (due) {
     badge.textContent = t('dueForReview');
     badge.style.background = 'var(--orange-light)';
     badge.style.color = 'var(--orange)';
+    badge.style.display = 'inline-block';
   } else {
     badge.textContent = '';
-    badge.style.background = '';
-    badge.style.color = '';
+    badge.style.display = 'none'; // prevent CLS
   }
+
+  // Force flip first — enforces honest self-assessment (Fitts + UX best practice)
+  document.getElementById('btn-know').disabled = true;
+  document.getElementById('btn-dont-know').disabled = true;
 
   const pct = ((cardIndex + 1) / currentCards.length) * 100;
   document.getElementById('flashcard-progress').style.width = pct + '%';
@@ -804,12 +913,25 @@ function showFlashcard() {
 function flipCard() {
   flipped = !flipped;
   document.getElementById('flashcard').classList.toggle('flipped', flipped);
+  // Enable answer buttons once card has been flipped
+  if (flipped) {
+    document.getElementById('btn-know').disabled = false;
+    document.getElementById('btn-dont-know').disabled = false;
+  }
 }
 
 function answerFlashcard(knew) {
+  // If user swipes/keys without flipping, force flip first so they see the answer
+  if (!flipped) {
+    flipCard();
+    return;
+  }
   const card = currentCards[cardIndex];
   const key = getCardKey(card.chapId, card.origIndex);
   if (!progress.cards[key]) progress.cards[key] = getDefaultCardProgress();
+
+  // Haptic feedback (Doherty: responsive sensation < 400ms)
+  haptic(knew ? 10 : [8, 40, 8]);
 
   // SM-2: quality 4 = knew, 1 = didn't know
   const quality = knew ? 4 : 1;
@@ -1148,10 +1270,22 @@ function finishExam() {
   });
 
   const passed = correct >= 15;
-  document.getElementById('exam-result-title').textContent = passed ? t('congrats') : t('keepStudying');
+  const msg = getExamMessage(correct);
+  document.getElementById('exam-result-title').textContent = msg.title;
   const scoreEl = document.getElementById('exam-result-score');
-  scoreEl.textContent = `${correct}/20`;
   scoreEl.className = `result-score ${passed ? 'pass' : 'fail'}`;
+  // Animated count-up reveal — Peak-End Rule (memorable finale)
+  animateCountUp(scoreEl, correct);
+
+  // Personalized message under the score
+  let msgEl = document.getElementById('exam-result-message');
+  if (!msgEl) {
+    msgEl = document.createElement('p');
+    msgEl.id = 'exam-result-message';
+    msgEl.className = 'result-message';
+    scoreEl.parentNode.insertBefore(msgEl, scoreEl.nextSibling);
+  }
+  msgEl.textContent = msg.text;
 
   // Show share button
   const shareBtn = document.getElementById('btn-share-score');
@@ -1160,7 +1294,12 @@ function finishExam() {
     shareBtn.classList.remove('hidden');
   }
 
-  if (passed) launchConfetti();
+  if (passed) {
+    haptic([20, 80, 20, 80, 40]);
+    launchConfetti();
+  } else {
+    haptic([15, 60, 15]);
+  }
 
   progress.exams.push({ date: new Date().toISOString(), score: correct, passed });
   saveProgress();
@@ -1175,11 +1314,8 @@ function shareExamScore() {
     navigator.share({ title: t('title'), text }).catch(() => {});
   } else {
     navigator.clipboard.writeText(text).then(() => {
-      const btn = document.getElementById('btn-share-score');
-      const orig = btn.textContent;
-      btn.textContent = '\u2713 Copied!';
-      setTimeout(() => btn.textContent = orig, 2000);
-    }).catch(() => {});
+      toast(currentLang === 'fr' ? '\u2713 Copi\u00e9 dans le presse-papier' : '\u2713 Copied to clipboard', 'success');
+    }).catch(() => toast(currentLang === 'fr' ? 'Copie impossible' : 'Copy failed', 'error'));
   }
 }
 
@@ -1208,12 +1344,12 @@ function importProgress(e) {
         renderChapters();
         renderStats();
         renderStreakBadge();
-        alert(t('importSuccess'));
+        toast(t('importSuccess'), 'success');
       } else {
-        alert(t('importError'));
+        toast(t('importError'), 'error');
       }
     } catch {
-      alert(t('importError'));
+      toast(t('importError'), 'error');
     }
   };
   reader.readAsText(file);
@@ -1257,7 +1393,12 @@ function renderStats() {
   const histDiv = document.getElementById('exam-history');
   histDiv.innerHTML = '';
   if (progress.exams.length === 0) {
-    histDiv.innerHTML = `<p style="color:var(--gray-400);font-size:0.9rem;">${t('noExams')}</p>`;
+    histDiv.innerHTML = `
+      <div class="empty-state">
+        <div class="empty-icon" aria-hidden="true">📋</div>
+        <div class="empty-title">${t('noExams')}</div>
+        <div class="empty-desc">${currentLang === 'fr' ? 'Lancez un examen simulé pour voir vos résultats ici.' : 'Take a practice exam to see results here.'}</div>
+      </div>`;
   } else {
     progress.exams.slice().reverse().forEach(exam => {
       const d = new Date(exam.date);

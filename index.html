@@ -16,8 +16,14 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <!-- SKIP LINK (a11y) -->
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+
   <!-- CONFETTI CANVAS -->
   <canvas id="confetti-canvas" class="hidden" aria-hidden="true"></canvas>
+
+  <!-- TOAST NOTIFICATIONS -->
+  <div id="toast-container" class="toast-container" role="status" aria-live="polite" aria-atomic="true"></div>
 
   <!-- OFFLINE BADGE -->
   <div id="offline-badge" class="offline-badge" aria-live="polite"></div>
@@ -39,7 +45,7 @@
 
   <div id="app">
     <!-- HEADER -->
-    <header>
+    <header id="main-header">
       <div class="header-top-bar">
         <span id="streak-badge" class="streak-badge hidden" aria-label="S&eacute;rie d'&eacute;tude"></span>
         <span id="online-status" class="online-status online" aria-live="polite"></span>
@@ -60,9 +66,11 @@
 
     <!-- CHAPTER SELECTOR -->
     <section id="chapter-selector" class="section" aria-label="S&eacute;lection de chapitre">
-      <h2>Choisir un chapitre</h2>
-      <div id="chapter-grid" class="chapter-grid" role="list"></div>
-      <button id="btn-all-chapters" class="btn btn-primary">Tous les chapitres</button>
+      <main id="main-content" tabindex="-1">
+        <h2>Choisir un chapitre</h2>
+        <div id="chapter-grid" class="chapter-grid" role="list"></div>
+        <button id="btn-all-chapters" class="btn btn-primary">Tous les chapitres</button>
+      </main>
     </section>
 
     <!-- FLASHCARD MODE -->
@@ -197,9 +205,9 @@
         </div>
       </div>
       <h3>Progression par chapitre</h3>
-      <div id="chapter-stats"></div>
+      <div id="chapter-stats" aria-live="polite"></div>
       <h3>Historique des examens</h3>
-      <div id="exam-history"></div>
+      <div id="exam-history" aria-live="polite"></div>
       <div class="stats-actions">
         <button id="btn-export" class="btn btn-secondary btn-small">&#x1F4E4; Exporter mes donn&eacute;es</button>
         <button id="btn-import" class="btn btn-secondary btn-small">&#x1F4E5; Importer des donn&eacute;es</button>
