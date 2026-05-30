@@ -1,4 +1,4 @@
-const CACHE_NAME = 'citoyennete-v5';
+const CACHE_NAME = 'citoyennete-v6';
 const ASSETS = [
   './',
   './index.html',
