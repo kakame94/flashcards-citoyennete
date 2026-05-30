@@ -233,7 +233,8 @@ window.__QUESTIONS_DATA = {
             "L'Acte de l'Amérique du Nord britannique",
             "La Loi sur le multiculturalisme"
           ],
-          "explication": "La Déclaration canadienne des droits, adoptée en 1960, a été le premier document à reconnaître les droits fondamentaux au Canada, avant l'adoption de la Charte en 1982."
+          "explication": "La Déclaration canadienne des droits, adoptée en 1960, a été le premier document à reconnaître les droits fondamentaux au Canada, avant l'adoption de la Charte en 1982.",
+          "reponse": "La Déclaration canadienne des droits."
         },
         {
           "question": "Qu'est-ce que la Loi constitutionnelle de 1982 a permis?",
@@ -243,7 +244,8 @@ window.__QUESTIONS_DATA = {
             "Accorder le droit de vote aux femmes",
             "Instaurer le bilinguisme officiel"
           ],
-          "explication": "La Loi constitutionnelle de 1982 a permis de rapatrier la Constitution canadienne du Royaume-Uni et d'y inclure la Charte canadienne des droits et libertés."
+          "explication": "La Loi constitutionnelle de 1982 a permis de rapatrier la Constitution canadienne du Royaume-Uni et d'y inclure la Charte canadienne des droits et libertés.",
+          "reponse": "Rapatrier la Constitution du Royaume-Uni et y inclure la Charte des droits."
         },
         {
           "question": "Quel droit est protégé par la liberté de conscience au Canada?",
@@ -253,7 +255,8 @@ window.__QUESTIONS_DATA = {
             "Le droit de critiquer le gouvernement sans limites",
             "Le droit de refuser de payer l'impôt"
           ],
-          "explication": "La liberté de conscience protège le droit de chaque Canadien de pratiquer la religion de son choix ou de n'en avoir aucune, sans contrainte ni discrimination."
+          "explication": "La liberté de conscience protège le droit de chaque Canadien de pratiquer la religion de son choix ou de n'en avoir aucune, sans contrainte ni discrimination.",
+          "reponse": "Le droit de pratiquer sa religion ou de n'en avoir aucune."
         },
         {
           "question": "Les lois canadiennes protègent-elles les minorités linguistiques en matière d'éducation?",
@@ -263,7 +266,8 @@ window.__QUESTIONS_DATA = {
             "Seulement au Québec et en Ontario",
             "Seulement pour les peuples autochtones"
           ],
-          "explication": "La Charte canadienne des droits et libertés garantit aux minorités linguistiques officielles le droit à l'instruction dans leur langue, partout au Canada."
+          "explication": "La Charte canadienne des droits et libertés garantit aux minorités linguistiques officielles le droit à l'instruction dans leur langue, partout au Canada.",
+          "reponse": "Oui, la Charte garantit le droit à l'instruction dans la langue de la minorité officielle."
         },
         {
           "question": "Quelle est la seule province officiellement bilingue au Canada?",
@@ -273,7 +277,8 @@ window.__QUESTIONS_DATA = {
             "L'Ontario",
             "Le Manitoba"
           ],
-          "explication": "Le Nouveau-Brunswick est la seule province officiellement bilingue du Canada, où le français et l'anglais ont un statut officiel égal."
+          "explication": "Le Nouveau-Brunswick est la seule province officiellement bilingue du Canada, où le français et l'anglais ont un statut officiel égal.",
+          "reponse": "Le Nouveau-Brunswick."
         },
         {
           "question": "Que permet la Loi sur la citoyenneté canadienne?",
@@ -283,7 +288,8 @@ window.__QUESTIONS_DATA = {
             "Seulement travailler au Canada",
             "Seulement voyager à l'étranger"
           ],
-          "explication": "La Loi sur la citoyenneté canadienne permet aux citoyens de voter aux élections, de se porter candidats et de demander un passeport canadien."
+          "explication": "La Loi sur la citoyenneté canadienne permet aux citoyens de voter aux élections, de se porter candidats et de demander un passeport canadien.",
+          "reponse": "Voter, se porter candidat aux élections et demander un passeport."
         },
         {
           "question": "Quelles sont les quatre sources des règles juridiques du Canada?",
@@ -317,6 +323,50 @@ window.__QUESTIONS_DATA = {
             "Une tradition d'égalité républicaine de 300 ans"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 8) : « ces règles préservent pour les Canadiens une tradition de liberté ordonnée vieille de 800 ans, qui remonte à 1215, année de la signature de la Magna Carta »."
+        },
+        {
+          "question": "Quelle expression de la Charte canadienne inclut « la liberté de la presse » comme partie de la liberté fondamentale d'expression?",
+          "reponse": "« La liberté de pensée, de croyance, d'opinion et d'expression, y compris la liberté de la presse ».",
+          "choix": [
+            "La liberté de pensée, croyance, opinion et expression, y compris la liberté de la presse",
+            "Uniquement la liberté de réunion pacifique et d'association",
+            "La liberté d'opinion politique et religieuse seulement",
+            "La liberté de circulation et d'établissement seulement"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 8) : « la liberté de pensée, de croyance, d'opinion et d'expression, y compris la liberté de la presse »."
+        },
+        {
+          "question": "Quelles sont les six responsabilités principales liées à la citoyenneté canadienne selon « Découvrir le Canada »?",
+          "reponse": "Respecter les lois, répondre à ses propres besoins et à ceux de sa famille, faire partie d'un jury, voter aux élections, offrir de l'aide aux membres de la communauté, et protéger notre patrimoine et notre environnement.",
+          "choix": [
+            "Respecter lois, besoins famille, jury, voter, aider communauté, protéger patrimoine/environnement",
+            "Payer impôts, voter, parler deux langues, recycler, bénévolat, voyager",
+            "Voter, s'enrôler dans l'armée, parler français, payer dettes, respecter voisins",
+            "Travailler, étudier, voyager, respecter voisins, recycler"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 9) : les six responsabilités liées à la citoyenneté sont : Respecter les lois ; Répondre à ses propres besoins et à ceux de sa famille ; Faire partie d'un jury ; Voter aux élections ; Offrir de l'aide aux membres de la communauté ; Protéger notre patrimoine et notre environnement."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », faire partie d'un jury est qualifié de quoi?",
+          "reponse": "Un privilège et une participation essentielle au bon fonctionnement du système judiciaire.",
+          "choix": [
+            "Un privilège essentiel au système judiciaire",
+            "Une simple obligation administrative",
+            "Un droit facultatif que l'on peut refuser",
+            "Une charge réservée aux juristes"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 9) : « Être membre d'un jury est un privilège et la participation des citoyens à des jurys impartiaux est essentielle au bon fonctionnement du système judiciaire »."
+        },
+        {
+          "question": "Outre les Forces canadiennes, quelles voies permettent de défendre le Canada selon « Découvrir le Canada »?",
+          "reponse": "La Réserve navale ou aérienne, la Milice locale, les Cadets et la Garde côtière.",
+          "choix": [
+            "Réserve navale/aérienne, Milice locale, Cadets, Garde côtière",
+            "Uniquement les Forces canadiennes régulières",
+            "Service militaire obligatoire pour les jeunes hommes",
+            "Police municipale et services d'urgence uniquement"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 9) : on peut travailler à temps partiel dans la Réserve navale ou aérienne ou encore dans la Milice locale ; les jeunes peuvent s'engager dans les Cadets ; on peut aussi faire partie de la Garde côtière."
         }
       ]
     },
@@ -547,12 +597,12 @@ window.__QUESTIONS_DATA = {
         },
         {
           "question": "Quels sont les principaux groupes ethniques qui composent la population canadienne?",
-          "reponse": "Anglais, français, écossais, irlandais, allemand, italien, chinois, autochtone, ukrainien, néerlandais, sud-asiatique et scandinave.",
+          "reponse": "Anglais, Français, Écossais, Irlandais, allemand, italien, Chinois, autochtone, ukrainien, Néerlandais, sud-asiatique et scandinave.",
           "choix": [
-            "Anglais, français, écossais, irlandais, allemand, italien, chinois, autochtone, ukrainien, néerlandais",
-            "Anglais, français, espagnol, portugais, italien, grec, polonais, russe",
+            "Anglais, Français, Écossais, Irlandais, allemand, italien, Chinois, autochtone, ukrainien, Néerlandais",
+            "Anglais, Français, espagnol, portugais, italien, grec, polonais, russe",
             "Français, anglais, américain, mexicain, allemand, japonais, coréen",
-            "Anglais, français, indien, philippin, chinois, arabe, africain, latino"
+            "Anglais, Français, indien, philippin, Chinois, arabe, africain, latino"
           ],
           "explication": "Les principaux groupes ethniques du Canada comprennent les Anglais, Français, Écossais, Irlandais, Allemands, Italiens, Chinois, Autochtones, Ukrainiens, Néerlandais, Sud-Asiatiques et Scandinaves."
         },
@@ -610,6 +660,28 @@ window.__QUESTIONS_DATA = {
             "Charles II"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 10) : « Les droits territoriaux ont été garantis pour la première fois par la Proclamation royale de 1763, du roi George III, qui établissait les bases de la négociation des traités avec les nouveaux arrivants »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », d'où viennent les ancêtres des peuples autochtones?",
+          "reponse": "D'Asie, il y a plusieurs milliers d'années.",
+          "choix": [
+            "D'Asie, il y a plusieurs milliers d'années",
+            "D'Europe, il y a environ 1 000 ans",
+            "D'Afrique, il y a plus de 50 000 ans",
+            "D'Amérique du Sud, par migration nordique"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 10) : « On croit que les ancêtres des peuples autochtones sont venus d'Asie il y a plusieurs milliers d'années »."
+        },
+        {
+          "question": "Comment certains observateurs ont-ils déjà appelé le Canada pour souligner sa grandeur?",
+          "reponse": "Le « Great Dominion » (grand dominion ou grande puissance).",
+          "choix": [
+            "Le « Great Dominion » (grand dominion / grande puissance)",
+            "Le « New Britain » (nouvelle Bretagne)",
+            "Le « North America's Heart » (cœur de l'Amérique du Nord)",
+            "Le « Free Republic » (république libre)"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 11) : le Canada a parfois été surnommé le « Great Dominion », c'est-à-dire « grand dominion » ou « grande puissance », pour souligner son importance au sein de l'Empire britannique."
         }
       ]
     },
@@ -939,7 +1011,7 @@ window.__QUESTIONS_DATA = {
         },
         {
           "question": "Que faisait l'Acte constitutionnel de 1791?",
-          "reponse": "Il divisait la province de Québec en Haut-Canada (Ontario) et Bas-Canada (Québec).",
+          "reponse": "Il divisait la province de Québec en Haut-Canada (Ontario) et Bas-Canada (Québec) ; le nom « Canada » devient officiel.",
           "choix": [
             "Il divisait Québec en Haut-Canada (Ontario) et Bas-Canada (Québec)",
             "Il créait la Confédération canadienne",
@@ -1008,9 +1080,9 @@ window.__QUESTIONS_DATA = {
           "reponse": "Bataille navale ; la flotte de Napoléon est défaite et la Royal Navy domine la mer, ce qui mènera à la guerre de 1812.",
           "choix": [
             "Bataille navale ; défaite de Napoléon ; Royal Navy domine ; mène à 1812",
-            "Traité commercial USA-Canada",
+            "Traité commercial États-Unis–Canada",
             "Alliance franco-britannique contre l'Espagne",
-            "Pacte de paix USA-Royaume-Uni"
+            "Pacte de paix États-Unis–Royaume-Uni"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 16) : « Après la défaite de la flotte de Napoléon Bonaparte à la bataille de Trafalgar (1805), la Royal Navy domine sur la mer. L'Empire britannique, dont le Canada fait partie, résiste à Bonaparte »."
         },
@@ -1035,6 +1107,50 @@ window.__QUESTIONS_DATA = {
             "Le réseau des Quakers de Boston"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 16) : « Des milliers d'esclaves fuient les États-Unis. Ils suivent « l'étoile du Nord » et s'établissent au Canada grâce au « chemin de fer clandestin », un réseau chrétien antiesclavagiste »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », où Pierre de Monts et Champlain ont-ils fondé un établissement en 1605, après l'île Sainte-Croix?",
+          "reponse": "À Port-Royal, en Acadie (actuelle Nouvelle-Écosse).",
+          "choix": [
+            "À Port-Royal, en Acadie",
+            "À Tadoussac, sur le Saint-Laurent",
+            "À Stadacona, près de l'actuelle ville de Québec",
+            "À Louisbourg, au cap Breton"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 14) : « Pierre de Monts a fondé en 1604 le premier établissement européen au nord de la Floride, sur l'île Sainte-Croix, puis à Port-Royal en Acadie (Nouvelle-Écosse) »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel régime juridique l'Acte de Québec de 1774 a-t-il réintroduit pour les affaires civiles, et quel régime a-t-il maintenu pour les affaires criminelles?",
+          "reponse": "Le droit civil français pour les affaires civiles ; le droit anglais pour les affaires criminelles.",
+          "choix": [
+            "Droit civil français (civil) + droit anglais (criminel)",
+            "Droit anglais pour tout",
+            "Droit français pour tout",
+            "Common law pour le civil et droit canon pour le criminel"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 16) : « L'Acte de Québec prévoit que les règles juridiques françaises seront de nouveau appliquées pour les affaires civiles, et que les règles juridiques anglaises continueront d'être appliquées pour les affaires criminelles »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », à quelle activité Mary Ann Shadd Cary a-t-elle consacré son journal « The Provincial Freeman »?",
+          "reponse": "Le mouvement antiesclavagiste et l'aide aux réfugiés du chemin de fer clandestin.",
+          "choix": [
+            "Le mouvement antiesclavagiste et l'aide aux réfugiés du chemin de fer clandestin",
+            "La promotion du droit de vote des femmes au Canada",
+            "La cause de l'indépendance des colonies britanniques",
+            "La défense des droits linguistiques des francophones"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 17) : « Mary Ann Shadd Cary, fille d'abolitionnistes américains libres, fonde et publie The Provincial Freeman, devenant en 1853 la première femme rédactrice en chef d'un journal au Canada »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qu'est-ce que l'Acte constitutionnel de 1791 a permis pour la première fois?",
+          "reponse": "Il a créé des assemblées élues au Haut-Canada et au Bas-Canada, et le nom « Canada » devient officiel.",
+          "choix": [
+            "Création d'assemblées élues ; le nom « Canada » devient officiel",
+            "Création du Sénat canadien",
+            "Abolition du régime seigneurial",
+            "Adoption du bilinguisme officiel"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 16) : « L'Acte constitutionnel de 1791 permet l'élection d'une assemblée. Le nom Canada devient officiel à cette date »."
         }
       ]
     },
@@ -1325,7 +1441,7 @@ window.__QUESTIONS_DATA = {
             "Le plus grand chef militaire métis",
             "Le fondateur de la province du Manitoba",
             "Le premier sénateur métis",
-            "Le chef de la Police montée du Nord-Ouest"
+            "Le chef de la Police à cheval du Nord-Ouest (PCNO)"
           ],
           "explication": "Gabriel Dumont est considéré comme le plus grand chef militaire métis. Il a commandé les forces métisses lors de la résistance du Nord-Ouest en 1885 aux côtés de Louis Riel."
         },
@@ -1493,6 +1609,39 @@ window.__QUESTIONS_DATA = {
             "Allemagne 25 déc. 1944 ; Japon 20 juil. 1945"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 23) : « les Allemands sont forcés de se rendre le 8 mai 1945 »; « Le Japon capitule le 14 août 1945, mettant ainsi fin à quatre années de guerre dans le Pacifique »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », où Sir John A. Macdonald est-il né et quelle profession exerçait-il à Kingston?",
+          "reponse": "Né en Écosse, élevé à Kingston (Ontario) où il a pratiqué le droit comme avocat.",
+          "choix": [
+            "Né en Écosse, élevé à Kingston (Ontario), avocat",
+            "Né à Montréal, marchand de fourrures",
+            "Né à Halifax, médecin militaire",
+            "Né à Toronto, journaliste"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 18) : « Sir John A. Macdonald, né le 11 janvier 1815 en Écosse, élevé à Kingston (Ontario), a pratiqué le droit »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », en quoi l'Empire britannique s'est-il transformé après la Première Guerre mondiale?",
+          "reponse": "En Commonwealth des nations, une association libre d'États souverains.",
+          "choix": [
+            "En Commonwealth des nations (libre association d'États souverains)",
+            "En Union européenne occidentale",
+            "En république fédérale britannique",
+            "En Confédération militaire de l'Atlantique"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 21) : après la Première Guerre mondiale, l'Empire britannique évolue et se transforme en une libre association de nations connue sous le nom de Commonwealth."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel était le statut de Terre-Neuve pendant la Deuxième Guerre mondiale?",
+          "reponse": "Une entité britannique distincte, qui n'a rejoint le Canada qu'en 1949.",
+          "choix": [
+            "Une entité britannique distincte (rejoindra le Canada en 1949)",
+            "Une province canadienne depuis 1867",
+            "Un dominion indépendant allié des États-Unis",
+            "Un territoire français sous mandat britannique"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 23) : « Plus d'un million de Canadiens et de Terre-Neuviens (Terre-Neuve étant à l'époque une entité britannique distincte) ont servi pendant la Deuxième Guerre mondiale »."
         }
       ]
     },
@@ -1951,6 +2100,72 @@ window.__QUESTIONS_DATA = {
             "Mary Ann Shadd Cary"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 25) : « Kenojuak Ashevak jette pour sa part les fondations de l'art inuit moderne par ses gravures, ses estampes et ses sculptures en pierre de savon »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel dictateur soviétique était à la tête de l'URSS pendant les débuts de la Guerre froide?",
+          "reponse": "Joseph Staline.",
+          "choix": [
+            "Joseph Staline",
+            "Léon Trotski",
+            "Nikita Khrouchtchev",
+            "Vladimir Lénine"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 24) : « Au début de la Guerre froide, l'expansion communiste menée par l'Union soviétique sous la dictature de Joseph Staline représente une nouvelle menace »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », à quelle alliance militaire le Canada s'est-il joint pour faire face à l'expansion soviétique?",
+          "reponse": "À l'OTAN (Organisation du Traité de l'Atlantique Nord).",
+          "choix": [
+            "À l'OTAN (Organisation du Traité de l'Atlantique Nord)",
+            "Au Pacte de Varsovie",
+            "Au G7 / G8",
+            "Au Commonwealth militaire"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 24) : « Le Canada s'unit à d'autres démocraties de l'Occident au sein de l'Organisation du Traité de l'Atlantique Nord (OTAN), une alliance militaire »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qui sont des poètes et écrivains canadiens classiques qui ont contribué à la littérature anglophone du pays?",
+          "reponse": "Pauline Johnson et sir Charles G. D. Roberts.",
+          "choix": [
+            "Pauline Johnson et sir Charles G. D. Roberts",
+            "Émile Nelligan et Louis Hémon",
+            "Margaret Atwood et Alice Munro",
+            "Stephen Leacock et Robertson Davies"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 25) : « De nombreux écrivains canadiens dont sir Charles G. D. Roberts, Pauline Johnson, Émile Nelligan » ont façonné la littérature du pays."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quels penseurs canadiens avant-gardistes ont étudié l'effet des communications sur la société?",
+          "reponse": "Marshall McLuhan et Harold Innis.",
+          "choix": [
+            "Marshall McLuhan et Harold Innis",
+            "Wilder Penfield et John Hopps",
+            "Sandford Fleming et Joseph-Armand Bombardier",
+            "Northrop Frye et Margaret Laurence"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 26) : « Marshall McLuhan et Harold Innis sont des penseurs avant-gardistes en matière de communications et leur effet sur la façon dont la société pense et fait des affaires »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qui sont Mark Tewksbury et Chantal Petitclerc?",
+          "reponse": "Mark Tewksbury est médaillé d'or olympique en natation ; Chantal Petitclerc est une grande paralympienne canadienne (course en fauteuil roulant).",
+          "choix": [
+            "Tewksbury médaillé d'or olympique (natation) ; Petitclerc paralympienne en course",
+            "Tewksbury hockeyeur ; Petitclerc patineuse artistique",
+            "Tewksbury skieur alpin ; Petitclerc gymnaste",
+            "Tewksbury cycliste ; Petitclerc marathonienne"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 26) : Mark Tewksbury est médaillé d'or olympique, et Chantal Petitclerc est une grande athlète paralympienne."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quels cinéastes canadiens ont connu un rayonnement international?",
+          "reponse": "Denys Arcand, Norman Jewison et Atom Egoyan.",
+          "choix": [
+            "Denys Arcand, Norman Jewison, Atom Egoyan",
+            "James Cameron, David Cronenberg, Sarah Polley",
+            "Steven Spielberg, Martin Scorsese, Quentin Tarantino",
+            "François Truffaut, Jean-Luc Godard, Éric Rohmer"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 26) : « Le cinéma canadien produit aussi des réalisateurs de renom, comme Denys Arcand, Norman Jewison et Atom Egoyan »."
         }
       ]
     },
@@ -2211,6 +2426,39 @@ window.__QUESTIONS_DATA = {
             "L'opposition doit approuver le budget annuel"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 28) : « Les ministres du Cabinet sont responsables devant les représentants élus, c'est-à-dire qu'ils doivent conserver la « confiance de la Chambre » et doivent démissionner s'ils sont défaits à l'issue d'un vote de censure »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quelles compétences fédérales sont énumérées en plus de la défense, de la politique étrangère, de la monnaie et du droit criminel?",
+          "reponse": "La navigation et le commerce et les communications entre les provinces.",
+          "choix": [
+            "Navigation, commerce et communications entre provinces",
+            "Éducation, santé, autoroutes",
+            "Transport en commun, déneigement, bibliothèques",
+            "Ressources naturelles, droits civils, propriété"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 28) : « Le gouvernement fédéral assume des responsabilités en matière de défense, de politique étrangère, du commerce et des communications entre les provinces, de la monnaie, de la navigation, du droit criminel et de la citoyenneté »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », comment appelle-t-on les membres des assemblées législatives provinciales selon la province?",
+          "reponse": "MAL, MAN, MPP, ou membres de la Chambre d'assemblée — selon la province.",
+          "choix": [
+            "MAL, MAN, MPP, ou membres de la Chambre d'assemblée (selon province)",
+            "Tous sont appelés « députés provinciaux » uniformément",
+            "Sénateurs provinciaux ou commissaires",
+            "Conseillers provinciaux et préfets régionaux"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 28) : selon les provinces, les membres des assemblées législatives sont appelés membres de l'Assemblée législative (MAL), de l'Assemblée nationale (MAN), du Parlement provincial (MPP), ou membres de la Chambre d'assemblée."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel rôle particulier le souverain joue-t-il à l'égard des libertés constitutionnelles?",
+          "reponse": "Il en est la gardienne (ou le gardien) — garantissant que les ministres ne s'arrogent jamais des pouvoirs illimités.",
+          "choix": [
+            "Gardienne/gardien des libertés constitutionnelles",
+            "Juge en chef du Canada",
+            "Commandant militaire suprême en temps de guerre seulement",
+            "Représentant du peuple à l'ONU"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 28) : « Le souverain veille à ce que ces droits et libertés ne deviennent jamais l'objet du caprice ou de l'arbitraire d'un seul individu », faisant du souverain la gardienne des libertés constitutionnelles."
         }
       ]
     },
@@ -2359,7 +2607,8 @@ window.__QUESTIONS_DATA = {
             "Le Gouverneur général",
             "Le juge en chef de la Cour suprême"
           ],
-          "explication": "Le chef de l'opposition officielle est le chef du parti politique qui détient le deuxième plus grand nombre de sièges à la Chambre des communes."
+          "explication": "Le chef de l'opposition officielle est le chef du parti politique qui détient le deuxième plus grand nombre de sièges à la Chambre des communes.",
+          "reponse": "Le chef du parti ayant le deuxième plus grand nombre de sièges à la Chambre."
         },
         {
           "question": "Qu'est-ce qu'un gouvernement de coalition?",
@@ -2369,7 +2618,8 @@ window.__QUESTIONS_DATA = {
             "Un gouvernement nommé par le Sénat",
             "Un gouvernement formé après un référendum"
           ],
-          "explication": "Un gouvernement de coalition naît de l'alliance formelle de deux partis politiques ou plus qui s'unissent pour former le gouvernement et obtenir la majorité à la Chambre."
+          "explication": "Un gouvernement de coalition naît de l'alliance formelle de deux partis politiques ou plus qui s'unissent pour former le gouvernement et obtenir la majorité à la Chambre.",
+          "reponse": "Une alliance de deux partis politiques ou plus pour former le gouvernement."
         },
         {
           "question": "Quel est le rôle du directeur général des élections?",
@@ -2379,7 +2629,8 @@ window.__QUESTIONS_DATA = {
             "Nommer les sénateurs",
             "Décider de la date des élections"
           ],
-          "explication": "Le directeur général des élections dirige Élections Canada, l'organisme indépendant et non partisan responsable de l'administration des élections fédérales au Canada."
+          "explication": "Le directeur général des élections dirige Élections Canada, l'organisme indépendant et non partisan responsable de l'administration des élections fédérales au Canada.",
+          "reponse": "Diriger Élections Canada, l'organisme neutre qui administre les élections fédérales."
         },
         {
           "question": "Que doit faire un électeur le jour du vote?",
@@ -2389,7 +2640,8 @@ window.__QUESTIONS_DATA = {
             "Voter par téléphone",
             "Déclarer publiquement son choix de candidat"
           ],
-          "explication": "Le jour du vote, l'électeur doit prouver son identité en présentant une pièce d'identité valide, puis voter de façon secrète dans l'isoloir."
+          "explication": "Le jour du vote, l'électeur doit prouver son identité en présentant une pièce d'identité valide, puis voter de façon secrète dans l'isoloir.",
+          "reponse": "Prouver son identité et voter de façon secrète."
         },
         {
           "question": "Qui peut se porter candidat aux élections fédérales?",
@@ -2399,7 +2651,8 @@ window.__QUESTIONS_DATA = {
             "Tout membre d'un parti politique",
             "Toute personne vivant au Canada depuis 5 ans"
           ],
-          "explication": "Pour se porter candidat aux élections fédérales, il faut être citoyen canadien et avoir au moins 18 ans."
+          "explication": "Pour se porter candidat aux élections fédérales, il faut être citoyen canadien et avoir au moins 18 ans.",
+          "reponse": "Tout citoyen canadien d'au moins 18 ans."
         },
         {
           "question": "Combien y a-t-il actuellement de grands partis politiques représentés à la Chambre des communes?",
@@ -2433,6 +2686,39 @@ window.__QUESTIONS_DATA = {
             "Les responsables du parti politique"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 32) : « Aucune autre personne — ni votre conjoint, ni un membre de votre famille, ni un ami, ni un patron, ni un dirigeant syndical, ni un religieux — n'a le droit de regarder votre bulletin ou de vous demander pour qui vous avez voté »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qu'est-ce que la carte d'information de l'électeur et que contient-elle?",
+          "reponse": "Une carte envoyée par Élections Canada qui confirme l'inscription sur la liste, et indique quand et où voter ainsi que les services spéciaux disponibles.",
+          "choix": [
+            "Carte d'Élections Canada : confirme inscription, indique date/lieu, services spéciaux",
+            "Carte de citoyenneté valant pièce d'identité au scrutin",
+            "Carte du parti politique pour lequel on vote",
+            "Carte permettant de voter par Internet ou téléphone"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 32) : « Élections Canada envoie par la poste une carte d'information de l'électeur. La carte indique quand et à quel endroit vous devez voter ainsi que le numéro de téléphone à composer si vous avez besoin d'un interprète ou d'autres services spéciaux »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qui un député élu représente-t-il à la Chambre des communes?",
+          "reponse": "Ses électeurs (sa circonscription) ainsi que tous les Canadiens.",
+          "choix": [
+            "Ses électeurs ET tous les Canadiens",
+            "Uniquement les membres de son parti politique",
+            "Uniquement les électeurs ayant voté pour lui",
+            "Uniquement la province qu'il habite"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 30) : « Les citoyens de chaque circonscription élisent un député qui siège à la Chambre des communes. Ce député représente ses électeurs ainsi que tous les Canadiens »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qui peut demander au gouverneur général de déclencher une élection avant le terme prévu?",
+          "reponse": "Le premier ministre.",
+          "choix": [
+            "Le premier ministre",
+            "Le chef de l'opposition officielle",
+            "Le Sénat par un vote majoritaire",
+            "La Cour suprême du Canada"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 30) : « Le premier ministre peut demander au gouverneur général de déclencher une élection plus tôt »."
         }
       ]
     },
@@ -2559,7 +2845,8 @@ window.__QUESTIONS_DATA = {
             "La common law est fédérale et le droit civil est municipal",
             "Il n'y a aucune différence, les deux systèmes sont identiques"
           ],
-          "explication": "Le Canada utilise la common law dans toutes les provinces sauf le Québec, qui utilise le Code civil pour les affaires privées. Ce système dualiste est une caractéristique unique du droit canadien."
+          "explication": "Le Canada utilise la common law dans toutes les provinces sauf le Québec, qui utilise le Code civil pour les affaires privées. Ce système dualiste est une caractéristique unique du droit canadien.",
+          "reponse": "La common law s'applique partout sauf au Québec, qui utilise le droit civil (Code civil)."
         },
         {
           "question": "Qui nomme les juges de la Cour suprême du Canada?",
@@ -2569,7 +2856,8 @@ window.__QUESTIONS_DATA = {
             "Les citoyens lors d'élections spéciales",
             "Les barreaux provinciaux"
           ],
-          "explication": "Les juges de la Cour suprême du Canada sont nommés par le Gouverneur général sur recommandation du Premier ministre."
+          "explication": "Les juges de la Cour suprême du Canada sont nommés par le Gouverneur général sur recommandation du Premier ministre.",
+          "reponse": "Le Gouverneur général, sur recommandation du Premier ministre."
         },
         {
           "question": "Combien de juges siègent à la Cour suprême et combien doivent provenir du Québec?",
@@ -2579,7 +2867,8 @@ window.__QUESTIONS_DATA = {
             "12 juges, dont 4 du Québec",
             "15 juges, dont 5 du Québec"
           ],
-          "explication": "La Cour suprême du Canada est composée de 9 juges. La Constitution garantit que 3 d'entre eux proviennent du Québec, en raison de son système de droit civil distinct."
+          "explication": "La Cour suprême du Canada est composée de 9 juges. La Constitution garantit que 3 d'entre eux proviennent du Québec, en raison de son système de droit civil distinct.",
+          "reponse": "9 juges, dont 3 du Québec."
         },
         {
           "question": "Quel est le rôle du procureur de la Couronne?",
@@ -2589,7 +2878,8 @@ window.__QUESTIONS_DATA = {
             "Nommer les juges provinciaux",
             "Rédiger les lois fédérales"
           ],
-          "explication": "Le procureur de la Couronne est le représentant de l'État qui poursuit les infractions criminelles au nom de la société devant les tribunaux."
+          "explication": "Le procureur de la Couronne est le représentant de l'État qui poursuit les infractions criminelles au nom de la société devant les tribunaux.",
+          "reponse": "Poursuivre les infractions criminelles au nom de la société."
         },
         {
           "question": "Quels sont les droits d'une personne arrêtée au Canada?",
@@ -2599,7 +2889,8 @@ window.__QUESTIONS_DATA = {
             "Aucun droit jusqu'au procès",
             "Le droit de quitter le pays"
           ],
-          "explication": "Toute personne arrêtée au Canada a le droit d'être informée des raisons de son arrestation, de consulter un avocat et d'avoir un procès équitable devant un tribunal impartial."
+          "explication": "Toute personne arrêtée au Canada a le droit d'être informée des raisons de son arrestation, de consulter un avocat et d'avoir un procès équitable devant un tribunal impartial.",
+          "reponse": "Être informée des raisons de l'arrestation, avoir un avocat et un procès équitable."
         },
         {
           "question": "Que la Charte canadienne interdit-elle comme punition?",
@@ -2609,7 +2900,8 @@ window.__QUESTIONS_DATA = {
             "Les peines de prison de plus de 25 ans",
             "Les travaux communautaires obligatoires"
           ],
-          "explication": "La Charte canadienne des droits et libertés interdit expressément l'imposition de traitements ou peines cruels et inusités, garantissant la dignité de toute personne."
+          "explication": "La Charte canadienne des droits et libertés interdit expressément l'imposition de traitements ou peines cruels et inusités, garantissant la dignité de toute personne.",
+          "reponse": "Les traitements ou peines cruels et inusités."
         },
         {
           "question": "Que signifie « l'application régulière de la loi »?",
@@ -2632,6 +2924,50 @@ window.__QUESTIONS_DATA = {
             "Gérer l'immigration, contrôler la santé, organiser l'éducation"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 36-37) : « Nos lois ont pour objectifs de maintenir l'ordre dans la société, de fournir un moyen pacifique de régler les conflits et d'exprimer les valeurs et les croyances des Canadiens »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », de quels types d'infractions s'occupent les tribunaux provinciaux?",
+          "reponse": "Des infractions de moindre importance.",
+          "choix": [
+            "Les infractions de moindre importance",
+            "Les seuls crimes contre l'État",
+            "Toutes les affaires criminelles graves uniquement",
+            "Les questions de défense nationale"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 36) : « Les tribunaux provinciaux s'occupent de la plupart des infractions, des infractions de moindre importance »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », avez-vous le droit de poser des questions aux agents de police au sujet de leurs services ou de leur conduite?",
+          "reponse": "Oui, tout citoyen a ce droit au Canada.",
+          "choix": [
+            "Oui, c'est un droit reconnu au Canada",
+            "Non, on doit faire confiance aux policiers",
+            "Seulement par écrit au moyen d'un formulaire officiel",
+            "Seulement si un avocat est présent"
+          ],
+          "explication": "Selon « Découvrir le Canada » : « Avez-vous le droit de poser des questions aux agents de police au sujet de leurs services ou de leur conduite au Canada? » — Oui, ce droit existe et fait partie des connaissances attendues du citoyen."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », que symbolisent les yeux bandés de la déesse de la Justice?",
+          "reponse": "L'impartialité de la justice — la loi s'applique à tous également.",
+          "choix": [
+            "L'impartialité de la justice (loi égale pour tous)",
+            "La sévérité des peines criminelles",
+            "Le secret professionnel des juges",
+            "La cécité spirituelle des accusés"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 36) : la déesse de la Justice a les yeux bandés pour symboliser que la loi est appliquée également à tous, sans distinction de rang ou de classe."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », dans quelles situations un citoyen peut-il demander l'aide de la police?",
+          "reponse": "Lors d'un accident, d'un vol, d'une agression, si on est témoin d'un crime, ou si une personne disparaît.",
+          "choix": [
+            "Accident, vol, agression, témoin d'un crime, disparition de personne",
+            "Uniquement pour signaler un meurtre",
+            "Uniquement pour les problèmes de circulation routière",
+            "Jamais directement ; toujours via un avocat"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 37) : « Vous pouvez demander l'aide de la police si vous êtes témoin d'un crime, si vous êtes victime d'un crime, en cas d'accident, ou si une personne disparaît »."
         }
       ]
     },
@@ -2950,10 +3286,10 @@ window.__QUESTIONS_DATA = {
         },
         {
           "question": "Qui était Billy Bishop?",
-          "reponse": "Un as de l'aviation canadien, récipiendaire de la Croix de Victoria en WWI, devenu maréchal de l'Air honoraire.",
+          "reponse": "Un as de l'aviation canadien, récipiendaire de la Croix de Victoria en Première Guerre mondiale, devenu maréchal de l'Air honoraire.",
           "choix": [
-            "As de l'aviation, CV en WWI, maréchal de l'Air honoraire",
-            "Pilote de bombardier en WWII, médaille du service distingué",
+            "As de l'aviation, CV en Première Guerre mondiale, maréchal de l'Air honoraire",
+            "Pilote de bombardier en Deuxième Guerre mondiale, médaille du service distingué",
             "Commandant de la Marine royale, héros de la bataille de l'Atlantique",
             "Général d'infanterie, héros de la guerre des Boers"
           ],
@@ -3013,6 +3349,50 @@ window.__QUESTIONS_DATA = {
             "La crosse"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 39) : « Le soccer, quant à lui, compte plus de joueurs inscrits que toute autre activité sportive au Canada »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », que signifie le coquelicot du jour du Souvenir?",
+          "reponse": "Il rend hommage aux sacrifices des Canadiens qui ont participé ou sont morts à la guerre, d'hier à aujourd'hui.",
+          "choix": [
+            "Hommage aux sacrifices des Canadiens à la guerre (d'hier à aujourd'hui)",
+            "Honorer la souveraine, la reine Elizabeth II",
+            "Célébrer la Confédération canadienne",
+            "Rendre hommage aux premiers ministres décédés"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 52) : la signification du coquelicot du jour du Souvenir est d'« honorer les sacrifices des Canadiens qui ont participé ou sont morts à la guerre, d'hier à aujourd'hui »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel style architectural caractérise les édifices du Parlement à Ottawa?",
+          "reponse": "L'architecture néogothique, populaire à l'époque du règne de la reine Victoria.",
+          "choix": [
+            "Néogothique (époque victorienne)",
+            "Néoclassique (inspiration grecque)",
+            "Art déco (années 1920-30)",
+            "Beaux-Arts (style français du XIXe)"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 38) : les édifices du Parlement « expriment les traditions françaises, anglaises et autochtones ainsi que l'architecture néogothique populaire à l'époque du règne de la reine Victoria »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », qui a introduit le curling au Canada?",
+          "reponse": "Les pionniers écossais.",
+          "choix": [
+            "Les pionniers écossais",
+            "Les colons français de la Nouvelle-France",
+            "Les Loyalistes américains",
+            "Les peuples autochtones"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 38) : « Le curling, jeu sur glace introduit par les pionniers écossais, est également populaire »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel escadron de démonstration aérienne est devenu l'un des emblèmes canadiens?",
+          "reponse": "Les Snowbirds (le 431e Escadron de démonstration aérienne — 431 EDA).",
+          "choix": [
+            "Les Snowbirds (431 EDA)",
+            "Les Red Arrows (escadron britannique)",
+            "Les Thunderbirds (escadron américain)",
+            "La Patrouille de France"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 38) : « L'Équipe de démonstration aérienne des Snowbirds (431 EDA) constitue l'un des emblèmes canadiens »."
         }
       ]
     },
@@ -3125,7 +3505,7 @@ window.__QUESTIONS_DATA = {
           "reponse": "La plus importante relation commerciale bilatérale du monde.",
           "choix": [
             "La plus importante relation commerciale bilatérale du monde",
-            "La deuxième relation commerciale en importance après la Chine-USA",
+            "La deuxième relation commerciale en importance après la Chine–États-Unis",
             "La plus ancienne relation commerciale des Amériques",
             "La relation commerciale la plus réglementée du monde"
           ],
@@ -3139,7 +3519,8 @@ window.__QUESTIONS_DATA = {
             "Le charbon et le fer uniquement",
             "Le cuivre et le nickel uniquement"
           ],
-          "explication": "Le Canada possède d'abondantes ressources naturelles, dont le pétrole, le gaz naturel, les minéraux, le bois d'œuvre et d'immenses réserves d'eau douce."
+          "explication": "Le Canada possède d'abondantes ressources naturelles, dont le pétrole, le gaz naturel, les minéraux, le bois d'œuvre et d'immenses réserves d'eau douce.",
+          "reponse": "Le pétrole, le gaz naturel, les minéraux, le bois d'œuvre et l'eau douce."
         },
         {
           "question": "Quelle industrie est la plus importante en Colombie-Britannique?",
@@ -3149,7 +3530,8 @@ window.__QUESTIONS_DATA = {
             "L'industrie textile",
             "L'industrie des technologies"
           ],
-          "explication": "La Colombie-Britannique est le principal producteur de bois d'œuvre au Canada, et l'industrie forestière constitue le pilier de son économie."
+          "explication": "La Colombie-Britannique est le principal producteur de bois d'œuvre au Canada, et l'industrie forestière constitue le pilier de son économie.",
+          "reponse": "L'industrie forestière (bois d'œuvre)."
         },
         {
           "question": "Quelles provinces produisent le plus de pétrole et de gaz naturel?",
@@ -3159,7 +3541,8 @@ window.__QUESTIONS_DATA = {
             "Le Manitoba et la Colombie-Britannique",
             "Le Nouveau-Brunswick et la Nouvelle-Écosse"
           ],
-          "explication": "L'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador sont les principales provinces productrices de pétrole et de gaz naturel au Canada."
+          "explication": "L'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador sont les principales provinces productrices de pétrole et de gaz naturel au Canada.",
+          "reponse": "L'Alberta, la Saskatchewan et Terre-Neuve-et-Labrador."
         },
         {
           "question": "Quelle est l'importance de l'agriculture au Canada?",
@@ -3169,7 +3552,8 @@ window.__QUESTIONS_DATA = {
             "Le Canada importe la majorité de ses aliments",
             "L'agriculture n'existe que dans les provinces de l'Atlantique"
           ],
-          "explication": "Le Canada figure parmi les plus grands exportateurs mondiaux de produits agricoles, notamment le blé et le canola, grâce aux vastes terres arables des Prairies."
+          "explication": "Le Canada figure parmi les plus grands exportateurs mondiaux de produits agricoles, notamment le blé et le canola, grâce aux vastes terres arables des Prairies.",
+          "reponse": "Le Canada est un grand exportateur mondial de blé et de canola."
         },
         {
           "question": "Quel secteur représente la majorité du PIB canadien?",
@@ -3179,7 +3563,8 @@ window.__QUESTIONS_DATA = {
             "Le secteur minier",
             "Le secteur agricole"
           ],
-          "explication": "Le secteur des services représente la majorité du PIB canadien et emploie plus de 75 % des travailleurs, ce qui en fait le moteur principal de l'économie."
+          "explication": "Le secteur des services représente la majorité du PIB canadien et emploie plus de 75 % des travailleurs, ce qui en fait le moteur principal de l'économie.",
+          "reponse": "Le secteur des services."
         },
         {
           "question": "Qu'est-ce que les sables bitumineux et où sont-ils situés?",
@@ -3189,7 +3574,8 @@ window.__QUESTIONS_DATA = {
             "Des carrières de sable en Colombie-Britannique",
             "Des dépôts de gaz naturel au Manitoba"
           ],
-          "explication": "Les sables bitumineux sont d'immenses gisements de pétrole situés dans le nord de l'Alberta. Ils font du Canada une superpuissance énergétique mondiale."
+          "explication": "Les sables bitumineux sont d'immenses gisements de pétrole situés dans le nord de l'Alberta. Ils font du Canada une superpuissance énergétique mondiale.",
+          "reponse": "Des gisements de pétrole situés dans le nord de l'Alberta."
         },
         {
           "question": "Quel rôle joue le système bancaire canadien dans l'économie mondiale?",
@@ -3199,16 +3585,17 @@ window.__QUESTIONS_DATA = {
             "Il est considéré comme instable et peu fiable",
             "Il n'a aucune influence internationale"
           ],
-          "explication": "Le système bancaire canadien est reconnu comme l'un des plus solides et des plus stables au monde, contribuant à la solidité de l'économie canadienne."
+          "explication": "Le système bancaire canadien est reconnu comme l'un des plus solides et des plus stables au monde, contribuant à la solidité de l'économie canadienne.",
+          "reponse": "C'est l'un des systèmes bancaires les plus solides au monde."
         },
         {
           "question": "Quels sept pays, avec le Canada, composent le G8?",
           "reponse": "Les États-Unis, l'Allemagne, le Royaume-Uni, l'Italie, la France, le Japon et la Russie.",
           "choix": [
-            "USA, Allemagne, RU, Italie, France, Japon, Russie",
-            "USA, Mexique, Brésil, Argentine, Chine, Japon, Australie",
-            "USA, Inde, Chine, Brésil, RU, Allemagne, Afrique du Sud",
-            "USA, France, RU, Espagne, Italie, Suisse, Suède"
+            "É.-U., Allemagne, R.-U., Italie, France, Japon, Russie",
+            "É.-U., Mexique, Brésil, Argentine, Chine, Japon, Australie",
+            "É.-U., Inde, Chine, Brésil, R.-U., Allemagne, Afrique du Sud",
+            "É.-U., France, R.-U., Espagne, Italie, Suisse, Suède"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 42) : « Le Canada compte parmi les dix économies les plus importantes de la planète et fait partie du G8, le groupe des huit principaux pays industrialisés, avec les États-Unis, l'Allemagne, le Royaume-Uni, l'Italie, la France, le Japon et la Russie »."
         },
@@ -3222,6 +3609,39 @@ window.__QUESTIONS_DATA = {
             "2000"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 42) : « En 1988, le Canada a négocié un accord de libre-échange avec les États-Unis. Le Mexique est devenu notre partenaire en 1994, dans le cadre de l'Accord de libre-échange nord-américain (ALENA) »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quelle valeur de commerce de marchandises l'ALENA a-t-il représenté en 2008?",
+          "reponse": "Plus de un billion de dollars (1 000 milliards).",
+          "choix": [
+            "Plus de un billion de dollars",
+            "Environ 500 milliards de dollars",
+            "Environ 250 milliards de dollars",
+            "Plus de 10 billions de dollars"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 42) : l'ALENA « englobe 444 millions de personnes et a représenté en 2008 plus de un billion de dollars en commerce de marchandises »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quel monument à la frontière canado-américaine porte les inscriptions « children of a common mother » et « brethren dwelling together in unity »?",
+          "reponse": "L'Arche de la paix, à Blaine, dans l'État de Washington.",
+          "choix": [
+            "L'Arche de la paix, à Blaine (Washington)",
+            "Le Monument du Traité de Paris, à Halifax",
+            "Le Mémorial du commerce libre, à Detroit",
+            "Le Pont de la Confédération, à l'Î.-P.-É."
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 43) : « À Blaine, dans l'État de Washington, l'Arche de la paix porte les inscriptions « children of a common mother » (enfants d'une même mère) et « brethren dwelling together in unity » (deux frères vivant ensemble dans l'harmonie) »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quels sont les cinq éléments composant le secteur de l'exploitation des ressources naturelles?",
+          "reponse": "La foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie.",
+          "choix": [
+            "Foresterie, pêche, agriculture, exploitation minière, énergie",
+            "Pétrole, gaz, charbon, uranium, hydroélectricité",
+            "Bois, papier, métaux, blé, viande",
+            "Pêche, élevage, agriculture, sylviculture, tourisme"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 42) : « Le secteur de l'exploitation des ressources naturelles comprend la foresterie, la pêche, l'agriculture, l'exploitation minière et l'énergie »."
         }
       ]
     },
@@ -3647,6 +4067,50 @@ window.__QUESTIONS_DATA = {
             "Foxe Bay (Luke Foxe, 1631)"
           ],
           "explication": "Selon « Découvrir le Canada » (p. 51) : « La capitale, Iqaluit, s'appelait autrefois Frobisher Bay en l'honneur de l'explorateur anglais Martin Frobisher, qui, au nom de la reine Elizabeth 1re, s'est aventuré en 1576 dans cette région non cartographiée qu'était alors l'Arctique »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », quelle proportion des biens fabriqués au Canada provient de la région du Centre (Ontario + Québec)?",
+          "reponse": "Plus des trois quarts.",
+          "choix": [
+            "Plus des trois quarts",
+            "Environ la moitié",
+            "Un tiers",
+            "Environ 90 %"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 47) : « Ensemble, l'Ontario et le Québec produisent plus des trois quarts de tous les biens fabriqués au pays »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », sur quelle formation géologique reposent les industries québécoises de la foresterie, de l'énergie et de l'exploitation minière?",
+          "reponse": "Le Bouclier canadien.",
+          "choix": [
+            "Le Bouclier canadien",
+            "Les Appalaches",
+            "Les montagnes Rocheuses",
+            "Les Grands Lacs"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 47) : « Les ressources du Bouclier canadien ont permis au Québec de développer d'importantes industries, notamment la foresterie, l'énergie et l'exploitation minière »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », comment qualifie-t-on le port de Vancouver dans le commerce avec l'Asie?",
+          "reponse": "La « porte d'entrée du Canada dans le Pacifique » — le plus grand et le plus fréquenté du Canada.",
+          "choix": [
+            "Porte d'entrée du Canada dans le Pacifique (plus grand et plus fréquenté du Canada)",
+            "Premier port de la côte Atlantique du Canada",
+            "Plus ancien port commercial du Canada",
+            "Port le plus profond du Commonwealth"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 49) : « La Colombie-Britannique est connue à titre de porte d'entrée du Canada dans le Pacifique. Des milliards de dollars de marchandises transitent par le port de Vancouver – le plus grand et le plus fréquenté du Canada »."
+        },
+        {
+          "question": "Selon « Découvrir le Canada », en l'honneur de qui le mont Logan a-t-il été nommé?",
+          "reponse": "Sir William Logan, géologue de renommée mondiale, fondateur de la Commission géologique du Canada.",
+          "choix": [
+            "Sir William Logan (géologue, fondateur de la Commission géologique du Canada)",
+            "Sir John A. Macdonald, premier PM du Canada",
+            "Lord Logan, gouverneur général du Canada",
+            "Sir Robert Logan, explorateur de l'Arctique"
+          ],
+          "explication": "Selon « Découvrir le Canada » (p. 50) : « Le mont Logan, plus haute montagne du Canada, a été nommé en l'honneur de sir William Logan, géologue de renommée mondiale, fondateur de la Commission géologique du Canada »."
         }
       ]
     }

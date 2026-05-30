@@ -1048,44 +1048,59 @@ function nextQuiz() {
 // === EXAM MODE ===
 // Convert a QCM card into a true/false card
 // NEVER convert "Complétez" (fill-in-the-blank) cards
+// AND only if a clean substitution is possible (no dash-fallback that
+// would leak the answer via pattern: "phrase. — added bit" = always false)
 function canBeTrueFalse(card) {
-  return !card.question.includes('Complétez') && !card.question.includes('___');
+  if (card.question.includes('Complétez') || card.question.includes('___')) return false;
+  const correct = getCorrectAnswer(card);
+  if (!correct) return false;
+  const short = correct.split(/[;,]/)[0].trim();
+  // Require correct answer (or short prefix) to appear in explication so we
+  // can do an in-place word-swap (no detectable trailing-dash fallback).
+  return card.explication.includes(correct) || (short.length > 2 && card.explication.includes(short));
 }
 
 function toTrueFalse(card) {
-  const isTrue = Math.random() > 0.5;
+  const wantFalse = Math.random() > 0.5; // intended polarity (50/50)
   const correctAnswer = getCorrectAnswer(card);
-  let statement, explanation;
+  let statement, explanation, actualIsTrue;
 
-  if (isTrue) {
-    // Affirmation VRAIE : on utilise l'explication (c'est un fait correct)
+  if (!wantFalse) {
+    // Affirmation VRAIE : on utilise l'explication telle quelle (fait correct)
     statement = card.explication;
     explanation = card.explication;
+    actualIsTrue = true;
   } else {
-    // Affirmation FAUSSE : on remplace la bonne réponse par une mauvaise dans l'explication
+    // Affirmation FAUSSE : substitution in-place de correctAnswer par wrong
     const wrongChoices = card.choix.slice(1);
     const wrongAnswer = wrongChoices[Math.floor(Math.random() * wrongChoices.length)];
     statement = card.explication.replace(correctAnswer, wrongAnswer);
-    // Si le remplacement n'a rien changé (la bonne réponse n'apparait pas textuellement),
-    // on reformule autrement
     if (statement === card.explication) {
-      // Essayer avec juste le début de la bonne réponse (avant virgule/point-virgule)
+      // Fallback : version courte avant 1re virgule/point-virgule
       const shortCorrect = correctAnswer.split(/[;,]/)[0].trim();
       const shortWrong = wrongAnswer.split(/[;,]/)[0].trim();
-      statement = card.explication.replace(shortCorrect, shortWrong);
+      if (shortCorrect.length > 2) {
+        statement = card.explication.replace(shortCorrect, shortWrong);
+      }
     }
     if (statement === card.explication) {
-      // Dernier recours: phrase simple avec la mauvaise réponse
-      statement = card.explication.replace(/\.$/, '') + ' — ' + wrongAnswer + '.';
+      // Pas de substitution propre possible → bascule en VRAI (évite le
+      // pattern détectable "phrase. — ajout = toujours faux")
+      statement = card.explication;
+      explanation = card.explication;
+      actualIsTrue = true;
+    } else {
+      explanation = `FAUX. ${card.explication}`;
+      actualIsTrue = false;
     }
-    explanation = `FAUX. ${card.explication}`;
   }
 
   return {
     ...card,
     isTrueFalse: true,
+    tfIsTrue: actualIsTrue,                                     // booléen — source de vérité
     tfStatement: statement,
-    tfCorrectAnswer: isTrue ? t('trueLabel') : t('falseLabel'),
+    tfCorrectAnswer: actualIsTrue ? t('trueLabel') : t('falseLabel'), // compat (recalculé au render)
     tfExplication: explanation
   };
 }
@@ -1136,7 +1151,9 @@ function showExamQuestion() {
     document.getElementById('exam-question').innerHTML =
       `<span class="tf-badge">${t('trueOrFalse')}</span> ${card.tfStatement}`;
     choices = [t('trueLabel'), t('falseLabel')];
-    correctAnswer = card.tfCorrectAnswer;
+    // Recompute from booleen at render time → toujours en langue courante
+    // (sinon mismatch si user a switché la langue après génération)
+    correctAnswer = card.tfIsTrue ? t('trueLabel') : t('falseLabel');
     choicesDiv.classList.add('tf-layout');
   } else {
     document.getElementById('exam-question').textContent = card.question;
@@ -1244,7 +1261,11 @@ function finishExam() {
   details.innerHTML = '';
 
   examCards.forEach((card, i) => {
-    const correctAnswer = card.isTrueFalse ? card.tfCorrectAnswer : getCorrectAnswer(card);
+    // V/F : recompute from boolean → fixes bug when user switched lang
+    // between answer and result (compared "True" vs stored "Vrai" before)
+    const correctAnswer = card.isTrueFalse
+      ? (card.tfIsTrue ? t('trueLabel') : t('falseLabel'))
+      : getCorrectAnswer(card);
     const isCorrect = examAnswers[i] === correctAnswer;
     if (isCorrect) correct++;
 
